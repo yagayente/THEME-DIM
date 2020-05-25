@@ -1,0 +1,70 @@
+@import "vars";
+@import "_mixin.scss";
+
+.components-toolbar__control[aria-label="Align left"],
+.components-toolbar__control[aria-label="Align center"],
+.components-toolbar__control[aria-label="Align right"],
+.components-toolbar__control[aria-label="Wide width"],
+.components-toolbar__control[aria-label="Full width"] {
+	display: none !important;
+}
+
+
+.formatingtext p {
+  @include p;
+}
+
+.formatingtext p em {
+  @include em;
+}
+.formatingtext h1, .formatingtext h2, .formatingtext h3, .formatingtext h4, .formatingtext h5 {
+@include h_texte;
+}
+.formatingtext strong {
+ font-weight: bold;
+}
+.formatingtext blockquote {
+  @include blockquote;
+}
+.formatingtext blockquote p{
+  @include p;
+
+}
+
+.formatingtext ol {
+  @include ol;
+}
+.formatingtext ol li{
+  @include li;
+}
+
+.formatingtext ol li::before {
+  @include ol_li_before;
+}
+
+.formatingtext ul {
+  @include ul;
+}
+.formatingtext li {
+  @include li;
+}
+.formatingtext ul li::before {
+  @include ul_li_before;
+}
+.formatingtext ul li em {
+  @include em;
+}
+.formatingtext blockquote cite {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+.formatingtext blockquote cite a, .article_complet ul li a{
+  @include link;
+}
+.formatingtext blockquote cite a:hover, .article_complet ul li a:hover{
+  @include linkover;
+}
+
+.formatingtext a{
+  @include link;
+}

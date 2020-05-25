@@ -1,0 +1,12 @@
+@import "vars";
+@import "_mixin.scss";
+@import "grid";
+
+.my_custom_post {
+  background-color: gray;
+  border-bottom: 2px solid white;
+}
+
+.search_post {
+  background-color: yellow;
+}

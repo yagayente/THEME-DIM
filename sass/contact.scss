@@ -1,0 +1,186 @@
+@import "vars";
+@import "_mixin.scss";
+@import "grid";
+
+.prez_droite {
+  @include respond-to(small-screens){
+  min-height: unset;
+    }
+}
+.grid_contact {
+  @include respond-to(small-screens){
+  @include mixin_border_top;
+    grid-column-start: 1;  grid-column-end: 8;
+    }
+}
+.prez_gauche .stickyprez .info_contact {
+  @include fadein;
+  @include respond-to(wide-screens){
+    padding: $spacing_large $spacing_large $spacing_large 16%;
+  }
+  @include respond-to(medium-screens){
+    padding: $spacing_medium $spacing_medium $spacing_medium $spacing_medium;
+  }
+  @include respond-to(small-screens){
+    margin-top: 120px;
+    padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+  }
+}
+
+.prez_gauche .stickyprez .info_contact a{
+@include link;
+}
+
+.prez_gauche .stickyprez .info_contact a:hover{
+@include linkover;
+}
+
+.header_contact {
+width:100%;
+padding: $spacing_large;
+@include mixin_border_bottom;
+}
+.header_contact h2 {
+font-size: $font_size_title;
+  @include fadein;
+}
+div.contact_fields {
+display: grid;
+padding-left: $spacing_large;
+padding-right: $spacing_large;
+
+@include respond-to(wide-screens) {
+grid-template-columns: repeat(10, 1fr) $margeexterieur_large;
+}
+
+@include respond-to(medium-screens) {
+grid-template-columns: repeat(6, 1fr) $margeexterieur_medium;
+}
+
+@include respond-to(small-screens){
+grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_small;
+z-index: 9999;
+border-left: none;
+
+}
+
+div.wpcf7 {
+  display: grid;
+  @include respond-to(wide-screens) {
+    grid-column-start: 1;  grid-column-end: 11;
+  }
+  @include respond-to(medium-screens) {
+  grid-column-start: 1;  grid-column-end: 8;
+  }
+  @include respond-to(small-screens){
+    grid-column-start: 1;  grid-column-end: 8;
+    }
+}
+
+}
+
+.accept {
+    @include fadein;
+  width: 100%;
+  padding: $spacing_large 0px $spacing_large 0px;
+}
+
+
+span.wpcf7-not-valid-tip {
+  color: $red !important;
+}
+div.wpcf7 .ajax-loader {
+  display: none;
+}
+
+.postit {
+  @include fadein;
+  width: 100%;
+  display: inline-block;
+  padding:  $spacing_large $spacing_large 0px 0px;
+}
+div.wpcf7-response-output {
+    margin: unset !important;
+     padding: $spacing_large !important;
+    border: unset !important;
+    @include mixin_border_bottom;
+    color: $red !important;
+}
+/* Custom CF7 Loader */
+div.wpcf7 .ajax-loader {
+background-image: unset !important;
+}
+
+div.wpcf7  .wpcf7-not-valid-tip {
+  text-transform: lowercase;
+}
+
+div.wpcf7 label .wpcf7-form-control-wrap{
+  @include fadein;
+}
+
+div.wpcf7 label {
+
+    padding-top: $spacing_large !important;
+    padding-bottom: $spacing_large !important;
+}
+
+div.wpcf7 label:hover {
+  background-color: unset !important;
+}
+div.wpcf7 label.prenom, div.wpcf7 label.nom,{
+    line-height: 100% !important;
+    @include mixin_border_bottom;
+    @include respond-to(small-screens){
+        width: 100% !important;
+        }
+}
+
+div.wpcf7 label.prenom {
+  width: calc(50% - #{$spacing_large});
+  margin-right: $spacing_large;
+}
+div.wpcf7 label.nom {
+  width: 50%;
+}
+
+div.wpcf7 label.cent {
+    width: 100% !important;
+    line-height: 100% !important;
+      @include mixin_border_bottom;
+}
+
+
+div.wpcf7 label input.wpcf7-form-control{
+  width: 100% !important;
+    line-height: 100% !important;
+    font-size: $font_size_global;
+}
+input[type=submit] {
+  width: unset !important;
+}
+
+
+
+.wpcf7 textarea {
+padding-top: unset !important;
+width: 100% !important;
+  @include fadein;
+}
+.form-box textarea, .wpcf7 .wpcf7-textarea {
+    border: medium none;
+    display: block;
+    min-height: 1em; //REDUCE THIS
+}
+
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"] {
+@include button;
+padding-top: unset;
+width: 80px;
+text-align: center;
+padding-bottom: unset;
+}
+.wpcf7 input[type="submit"]:hover {
+  @include button_hover;
+}

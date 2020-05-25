@@ -1,0 +1,81 @@
+<?php
+/*
+Template Name: Actu
+*/
+get_header(); ?>
+
+<div id="primary">
+ACTU
+
+
+<form id="misha_filters" action="#">
+
+<?php echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' ); ?>
+<label for="category">category</label>
+
+
+
+<?php
+if( $terms = get_terms( array(
+'taxonomy' => 'category',
+'orderby' => 'name'
+) ) ) :
+foreach ( $terms as $term ) :
+echo '<p><input type="checkbox" id="categ_' . $term->term_id . '" name="categ_' . $term->term_id . '" /><label for="categ_' . $term->term_id . '">' . $term->name . '</label></p>';
+endforeach;
+endif;
+?>
+
+<br><br>
+<label>
+	<input type="checkbox" name="featured_image" /> Only posts with featured images
+</label>
+
+	<label for="misha_order_by">Order</label>
+	<select name="misha_order_by" id="misha_order_by">
+		<option value="date-DESC">Date ↓</option><!-- I will explode these values by "-" symbol later -->
+		<option value="date-ASC">Date ↑</option>
+	</select>
+
+
+	<!-- required hidden field for admin-ajax.php -->
+	<input type="hidden" name="action" value="mishafilter" />
+
+	<button>Apply Filters</button>
+</form>
+<!-- Filters will be here -->
+<div id="misha_posts_wrap">
+																	ACTU NORMAL
+																	<!-- #primary -->
+																		<main id="main" class="site-main" role="main">
+																				<?php
+																				// the query
+																				$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1));
+
+																				 if ( $wpb_all_query->have_posts() ) :
+
+
+																				   while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
+
+
+																				      	get_template_part( 'template-parts/previewarticle');
+																				  			endwhile;
+																								wp_reset_postdata();
+
+																								else :
+																									get_template_part('template-parts/none');
+																				 		endif; ?>
+
+																		</main><!-- #main -->
+																	</div><!-- #primary -->
+																	<!-- #primary -->
+
+</div>
+<!-- Load more button will be here -->
+<? if (  $wp_query->max_num_pages > 1 ) :
+	echo '<div id="misha_loadmore">More posts</div>'; // you can use <a> as well
+endif;?>
+
+
+<?php
+get_footer();

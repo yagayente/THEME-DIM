@@ -1,0 +1,307 @@
+@import "vars";
+@import "_mixin.scss";
+@import "grid";
+
+/* COL */
+.row_prez {
+  	display: flex;
+    min-height: 80vh;
+    /* same height div for sticky */
+    @include respond-to(small-screens){
+      	display: block;
+      }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.row_prez  {
+  height:  70vh; overflow: hidden;}
+
+}
+.prez_gauche {
+  top:0px;
+    z-index: 3!important;
+    /* ici l'illustration est traitée hors grille */
+    float: left;
+    @include respond-to(wide-screens) {
+      width: 35%;
+    }
+    @include respond-to(medium-screens) {
+      width: 33.3333%;
+      }
+    @include respond-to(small-screens){
+      width: 100%;
+      top: 40px !important;  /* unset */
+      float: none;
+
+    }
+}
+
+.prez_droite {
+  float: right;
+
+  @include mixin_border_left;
+  @include respond-to(wide-screens) {
+    width: 65%;
+    }
+  @include respond-to(medium-screens) {
+    width: 66.6666%;
+  }
+  @include respond-to(small-screens){
+    min-height: unset;
+    border-left: none;
+    width: 100%;
+  }
+  }
+
+
+
+
+
+div.stickyprez {
+  position: -webkit-sticky;
+  position: sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top:0;
+
+
+}
+
+
+/* Illu prez */
+
+
+.stickyprez .image_presentation {
+  z-index: 1!important;
+  /* ici l'illustration est traitée hors grille */
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  @include respond-to(small-screens){
+    margin-top: 120px;
+    height: 40vh;
+    position: relative;
+    display: inline-block;
+  }
+}
+.stickyprez .image_presentation  img {
+  min-height: 100%; /* iE hack */
+  min-width: 100%; /* iE hack */
+  position: absolute; /* iE hack */
+  top: 50%; /* iE hack */
+  padding: 0 ;
+  margin: 0;
+  left: 50%; /* iE hack */
+  transform: translateX(-50%) translateY(-50%); /* iE hack */
+  z-index: 1;
+}
+ /* Spécial iE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.stickyprez .image_presentation {
+ overflow: hidden;
+    @include respond-to(wide-screens) {
+      width: 35%;
+      left:0px;
+    }
+    @include respond-to(medium-screens) {
+      width: 33.3333%;
+      left:0px;
+      }
+    @include respond-to(small-screens){
+      width: 100%;
+      left:0px;
+      float: none;
+      position: relative;
+      display: inline-block;
+    }
+}
+
+
+
+
+}
+
+.stickyprez .image_presentation img {
+    cursor: crosshair;
+    -webkit-filter: url(#traitement_couleur_1);
+    -moz-filter: url(#traitement_couleur_1);
+    -o-filter: url(#traitement_couleur_1);
+    -ms-filter: url(#traitement_couleur_1);
+    filter: url(#traitement_couleur_1);
+
+  }
+.row_prez .prez_gauche .stickyprez .image_presentation img:hover {
+  -webkit-filter: none;
+   filter: none;
+   background-blend-mode: normal;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.illustration_prez {
+  @include fadein;
+  z-index: 3!important;
+    background-color: $my_color_transpa;
+    top:0px;
+    width: 100%;
+      /* ici l'illustration est traitée hors grille */
+    overflow: hidden;
+    height: 100vh;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    text-indent:-9999px;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
+    width: 100%;
+
+    @include respond-to(small-screens){
+      width: calc(#{$margeexterieur_small} + (#{$valeurde_unecolonne_small} * 5) + #{$margeexterieur_small} );
+      top: 0px !important;  /* unset */
+      display: block;
+      height: 50vh;
+    }
+}
+
+.illustration_prez {
+    cursor: crosshair;
+    -webkit-filter: url(#traitement_couleur_1);
+    -moz-filter: url(#traitement_couleur_1);
+    -o-filter: url(#traitement_couleur_1);
+    -ms-filter: url(#traitement_couleur_1);
+    filter: url(#traitement_couleur_1);
+
+  }
+.illustration_prez:hover {
+  -webkit-filter: none;
+   filter: none;
+   background-blend-mode: normal;
+  }
+
+
+
+.prez_droite .basic h3 {
+  width: 100%;
+  @include fadein;
+  font-size: $font_size_title;
+  padding-top: $spacing_large;
+  padding-bottom: $spacing_large;
+  padding-left:  $spacing_large;
+  @include mixin_border_bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /***********************************************************************************************************************
+  DOCUMENT: style/format.css
+  DEVELOPED BY: Ryan Stemkoski
+  COMPANY: Zipline Interactive
+  EMAIL: ryan@gozipline.com
+  PHONE: 509-321-2849
+  DATE: 2/26/2009
+  DESCRIPTION: This document contains the structural formatting files for the accordion style menu.
+  ************************************************************************************************************************/
+  #wrapper {
+  	width: 100%;
+  	margin-left: auto;
+  	margin-right: auto;
+    margin-bottom: $spacing_large;
+    display: inline-block;
+
+  	}
+
+  .accordionButton {
+    @include fadein;
+  	width: 100%;
+    background-color: white;
+    font-size: $font_size_subtitle;
+  	float: left;
+  	_float: none;  /* Float works in all browsers but IE6 */
+  	border-bottom: 1px solid #FFFFFF;
+  	cursor: pointer;
+    @include mixin_border_bottom;
+    padding: $spacing_large;
+  	}
+
+
+  .accordionContent {
+    width: 100%;
+  	float: left;
+  	_float: none; /* Float works in all browsers but IE6 */
+    @include mixin_border_bottom;
+    @include respond-to(wide-screens) {
+      padding-left: $spacing_large;
+      padding-top: $spacing_large;
+      padding-bottom: $spacing_large;
+    }
+    @include respond-to(medium-screens) {
+      padding-left: $spacing_medium;
+      padding-top: $spacing_medium;
+      padding-bottom: $spacing_medium;
+    }
+    @include respond-to(small-screens) {
+      padding-left: none;
+      padding-top: $spacing_small;
+      padding-bottom: $spacing_small;
+    }
+    }
+
+    .accordionButton:last-child {
+      border-bottom: none;
+    }
+    .accordionContent:last-child {
+      border-bottom: none;
+    }
+  .accordionContent .texte{
+      @include texte_courant;
+      @include respond-to(wide-screens) {
+        grid-column-start: 1;  grid-column-end: 11;
+      }
+      @include respond-to(medium-screens) {
+      grid-column-start: 1;  grid-column-end: 7;
+    }
+    @include respond-to(small-screens){
+        grid-column-start: 2;  grid-column-end: 7;
+
+      }
+      }
+
+  /***********************************************************************************************************************
+   EXTRA STYLES ADDED FOR MOUSEOVER / ACTIVE EVENTS
+  ************************************************************************************************************************/
+
+  .on {
+
+  	}
+
+  .over {
+    color: $red;
+  	}

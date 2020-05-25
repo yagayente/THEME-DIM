@@ -1,0 +1,64 @@
+/* Dynamic grid */
+$showhide_grid: none;/* none ou grid*/
+$nombrede_row: 30;
+
+$hauteurde_row: 1fr;
+$gap_colonne: unset;
+$gap_row: unset;
+
+/* PIMP */
+$grid_color: red;
+$grid_opacity:0.5;
+$size_border_grid: 0.04em;
+
+/* LARGE */
+/* valeur de 1  col large = 6 */
+$margeexterieur_large: 5%;
+$nombredecolonne_large: 15;
+$hauteurderow_large: 60px;
+$valeurde_unecolonne_large: calc((100% - (#{$margeexterieur_large} * 2)) / #{$nombredecolonne_large});
+
+/* MEDIUM */
+$margeexterieur_medium: 0px;
+$nombredecolonne_medium: 9;
+$valeurde_unecolonne_medium: calc(100vw / #{$nombredecolonne_medium});
+
+/* SMALL */
+$margeexterieur_small: 10px;
+$nombredecolonne_small: 5;
+$valeurde_unecolonne_small: calc((100% - (#{$margeexterieur_small} * 2)) / #{$nombredecolonne_small});
+
+/* RESPONSIVE */
+$break-small: 520px;
+$break-middle: 1000px;
+$break-large: 1524px;
+
+
+/* Padding */
+$spacing_large: 10px;
+$spacing_medium: 10px;
+$spacing_small: 10px;
+$hauteur_de_post: 400px;
+$padding_button: 3px;
+
+/* Post_home */
+$hauteur_de_post_home: 400px;
+$hauteur_de_post_home_middle: 600px;
+$hauteur_de_post_home_small: 400px;
+
+/* Border */
+$border: 1px;
+
+/* Couleur */
+$black: black;
+$my_color: red;
+$red: red;
+$my_color_transpa: rgba(117, 190, 218, 0.5);
+
+/* Typo*/
+$font_size_global: 1em;
+$font_size_title: calc(#{$font_size_global} * 3);
+$font_size_subtitle: calc(#{$font_size_global} * 2);
+$font_size_title_post: calc(#{$font_size_global} * 1.2);
+
+$bold: bold;

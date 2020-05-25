@@ -1,0 +1,127 @@
+@import "vars";
+
+
+@mixin global_border {
+  box-sizing:border-box;  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@mixin mixin_border_top { border-top: $border solid black; @include global_border;}
+@mixin mixin_border_bottom {border-bottom: $border solid black; @include global_border;}
+@mixin mixin_border_right {border-right: $border solid black; @include global_border;}
+@mixin mixin_border_left {border-left: $border solid black; @include global_border;}
+@mixin mixin_border {border: $border solid black; @include global_border;}
+
+
+@mixin button {
+  padding-left: $spacing_large;
+  padding-right: $spacing_large;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  display: inline-block;
+  float: left;
+  background-color: $red;
+  color: white;
+  text-transform: lowercase;
+}
+@mixin button_hover {
+    background-color: blue !important;
+    cursor: pointer;
+}
+@mixin button_checked {
+    background-color: pink !important;
+}
+
+@mixin fadein {
+animation: fadein 1s;
+ -moz-animation: fadein 1s; /* Firefox */
+ -webkit-animation: fadein 1s; /* Safari and Chrome */
+ -o-animation: fadein 1s; /* Opera */
+}
+@mixin fadeout {
+animation: fadeout 1s;
+ -moz-animation: fadeout 1s; /* Firefox */
+ -webkit-animation: fadeout 1s; /* Safari and Chrome */
+ -o-animation: fadeout 1s; /* Opera */
+}
+
+
+@mixin link {
+  text-decoration: none;
+  color: $red;
+}
+@mixin linkover {
+  text-decoration: none;
+  color: $black;
+}
+@mixin texte_courant {
+  font-size: $font_size_global;
+  line-height: 1.3em;
+}
+
+@mixin p {
+  display: block;
+  margin-bottom: calc(#{$spacing_large} / 1.5) ;
+    @include fadein;
+}
+
+@mixin em {
+  font-style: italic;
+}
+
+@mixin blockquote {
+  @include mixin_border_left;
+    padding-left: $spacing_large;
+      margin-bottom: calc(#{$spacing_large} / 1.5) ;
+}
+@mixin ul {
+  list-style: none;
+  margin-left: 0.7em;
+  @include fadein;
+}
+@mixin ol {
+  counter-reset: number;
+  list-style-type: none;
+  margin-left: 0.7em;
+  @include fadein;
+}
+@mixin li {
+  padding-bottom:  calc(#{$spacing_large} / 1.5) ;
+}
+
+@mixin ol_li_before {
+  counter-increment: number;
+  content: counter(number)"\a0";
+  color: $red;
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.7em;
+}
+
+@mixin ul_li_before {
+content: "\2022";
+font-weight: bold;
+color: $red;
+
+display: inline-block;
+width: 1em;
+margin-left: -0.7em;
+margin-top:2px;
+}
+
+@mixin h2 {
+  font-size: $font_size_title_post;
+   text-transform: uppercase;
+     @include fadein;
+}
+
+@mixin h_texte {
+  font-size: $font_size_global;
+   font-weight: bold;
+   text-transform: uppercase;
+     margin-bottom: calc(#{$spacing_large} / 1.5) ;
+      @include fadein;
+}

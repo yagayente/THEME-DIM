@@ -1,0 +1,173 @@
+@import "vars";
+@import "_mixin.scss";
+
+@mixin global_grid {
+display: grid;
+width: 100%;
+grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;
+grid-row-gap: $gap_row;
+grid-column-gap: $gap_colonne;
+}
+
+@mixin global_grid_without_row {
+display: grid;
+width: 100%;
+grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;
+}
+
+
+@mixin respond-to($media) {
+  @if $media == small-screens {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+@mixin respond-to-bis ($media) {
+  @if $media == middle-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-middle - 1) { @content; }
+  }
+}
+
+@mixin main_block_de_base_gauche {
+  @include respond-to(wide-screens) {
+    grid-column-start: 2;  grid-column-end: 7;
+    }
+  @include respond-to(medium-screens) {
+    grid-column-start: 2; grid-column-end: 5;
+    }
+  @include respond-to(small-screens){
+    grid-column-start: 2; grid-column-end: 7;
+    }
+}
+
+@mixin main_block_de_base_droite {
+  @include respond-to(wide-screens) {
+    grid-column-start: 7;  grid-column-end: 17;
+    }
+  @include respond-to(medium-screens) {
+    grid-column-start: 5; grid-column-end: 11;
+    }
+  @include respond-to(small-screens){
+    grid-column-start: 2; grid-column-end: 7;
+    }
+}
+
+
+.structure_de_page {
+  @include global_grid;
+  @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
+}
+.structure_de_page_2 {
+  @include global_grid;
+  @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
+}
+.structure_de_page_menu {
+  @include global_grid;
+  @include mixin_border_bottom;
+  @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small; border-bottom: none;}
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
+}
+
+.structure_de_page_footer {
+  @include global_grid;
+  @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
+}
+
+.structure_de_page_simple {
+  @include global_grid;
+  @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
+}
+.structure_de_page_fullarticle {
+    @include mixin_border_left;
+    min-height: 100vh;
+  top: calc(#{$hauteurderow_large} * 2);
+  right: 0;
+  position: absolute;
+  display: grid;
+  @include respond-to(small-screens){
+    width: calc((#{$valeurde_unecolonne_small} * 5) +  #{$margeexterieur_small} +  #{$margeexterieur_small});
+    grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_small;
+    z-index: 9999;
+    border-left: none;
+
+  }
+  @include respond-to(medium-screens) {
+    width: calc((#{$valeurde_unecolonne_medium} * 6) +  #{$margeexterieur_medium});
+    grid-template-columns: repeat(6, 1fr) $margeexterieur_medium;
+  }
+  @include respond-to(wide-screens) {
+    width: calc((#{$valeurde_unecolonne_large} * 10) +  #{$margeexterieur_large});
+    grid-template-columns: repeat(10, 1fr) $margeexterieur_large;
+}
+}
+
+.structure_de_page_recherche {
+  top: calc(#{$hauteurderow_large} * 2);
+  right: 0;
+  display: grid;
+  @include respond-to(small-screens){
+    width: 100%;
+    grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_small;
+    z-index: 9999;
+  }
+  @include respond-to(medium-screens) {
+    width: 66.6666%;
+  }
+  @include respond-to(wide-screens) {
+    width: 65%;
+}
+}
+
+.accordionContent {
+display: grid;
+  @include respond-to(small-screens){
+    grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_small;
+    z-index: 9999;
+  }
+  @include respond-to(medium-screens) {
+    grid-template-columns: repeat(6, 1fr) $margeexterieur_medium;
+  }
+  @include respond-to(wide-screens) {
+    grid-template-columns: repeat(10, 1fr) $margeexterieur_large;
+}
+}
+
+
+
+
+.grille_dev{
+  display: $showhide_grid !important;
+  position: fixed;
+  z-index: 9999;
+  @include global_grid;
+  @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}
+  @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
+}
+
+.grille_dev .box {
+  box-sizing:border-box;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  padding-left: calc($size_border_grid * 2); /* le border x2 */
+  padding-right: calc($size_border_grid * 3);
+  box-shadow: 0 0 0 $size_border_grid $grid_color;
+  margin-bottom: $size_border_grid;
+  text-align: center;
+  opacity: $grid_opacity;
+  height: 100vh;
+  z-index: -999;
+}

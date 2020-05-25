@@ -1,0 +1,14 @@
+@import "vars";
+@import "_mixin.scss";
+@import "grid";
+
+.structure_de_page_simple {
+  background-color: pink;
+}
+.filtrage{
+  background-color: gray;
+  @include main_block_de_base_gauche;
+}
+.result{
+  @include main_block_de_base_droite;
+}

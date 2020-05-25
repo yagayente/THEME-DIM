@@ -1,0 +1,49 @@
+@import "vars";
+/*Formulaire*/
+
+.message_was_send {width: 100%; background-color: green; color: white; padding-top: 20px; padding-bottom: 20px;}
+
+textarea, select, input { outline: none; border: 0px; font-family: "Times New Roman", Times, serif;}
+
+input[type=text] {
+    width: 100%;
+    font-size: 100%; line-height: 200%;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    font-size: 100%; line-height: 200%;
+    text-align: left;
+
+}
+.achanger {
+  border: 1px solid blue;
+}
+
+
+
+.erreur_design{
+  border: 1px solid red;
+}
+
+
+
+textarea {
+  box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    font-size: 100%;
+    padding-top: 10px;
+}
+
+.error {
+  background-color: pink;
+}
+
+
+
+
+.display_message {
+  background-color: red;
+ }
