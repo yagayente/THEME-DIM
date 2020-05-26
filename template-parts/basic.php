@@ -51,8 +51,9 @@ $(document).ready(function() {
 
 });</script>
 	<div class="basic">
-					<h3><?php the_title(); ?>
-					</h3>
+					<h2>
+						<?php the_title(); ?>
+					</h2>
 
 
 						<div id="wrapper">
@@ -60,11 +61,11 @@ $(document).ready(function() {
 						if( have_rows('le_dim') ):
  						while ( have_rows('le_dim') ) : the_row();
 						?>
-										<div class="accordionButton"><?php the_sub_field('titre');	?></div>
+										<div class="accordionButton"><h3><?php the_sub_field('titre');	?></h3></div>
 										<div class="accordionContent">
 											<div class="texte">
 												<div class="formatingtext">
-									
+
 													<?php	the_sub_field('content');	?>
 												</div>
 											</div>

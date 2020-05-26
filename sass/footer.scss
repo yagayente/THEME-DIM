@@ -93,6 +93,7 @@ height: 100%;
 
 .structure_de_page_articlefooter .logo4 {
   @include fadein;
+  @include typo_simple;
   float: left;
   width: 33.3333%;
   @include respond-to(wide-screens) {

@@ -15,6 +15,8 @@
 }
 .prez_gauche .stickyprez .info_contact {
   @include fadein;
+  @include typo_simple;
+  color: $red;
   @include respond-to(wide-screens){
     padding: $spacing_large $spacing_large $spacing_large 16%;
   }
@@ -41,7 +43,7 @@ padding: $spacing_large;
 @include mixin_border_bottom;
 }
 .header_contact h2 {
-font-size: $font_size_title;
+  @include h2;
   @include fadein;
 }
 div.contact_fields {
@@ -81,6 +83,8 @@ div.wpcf7 {
 
 .accept {
     @include fadein;
+    @include typo_simple;
+    color: $red;
   width: 100%;
   padding: $spacing_large 0px $spacing_large 0px;
 }
@@ -109,6 +113,7 @@ div.wpcf7-response-output {
 /* Custom CF7 Loader */
 div.wpcf7 .ajax-loader {
 background-image: unset !important;
+
 }
 
 div.wpcf7  .wpcf7-not-valid-tip {
@@ -155,6 +160,8 @@ div.wpcf7 label input.wpcf7-form-control{
   width: 100% !important;
     line-height: 100% !important;
     font-size: $font_size_global;
+    @include typo_simple;
+    color: $red;
 }
 input[type=submit] {
   width: unset !important;
@@ -176,10 +183,9 @@ width: 100% !important;
 .wpcf7 input[type="submit"],
 .wpcf7 input[type="button"] {
 @include button;
-padding-top: unset;
+
 width: 80px;
 text-align: center;
-padding-bottom: unset;
 }
 .wpcf7 input[type="submit"]:hover {
   @include button_hover;

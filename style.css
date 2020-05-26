@@ -747,6 +747,9 @@ Version: 1.1
 }
 
 .Menu_général .Menu_général_droite .menu_search input[type=text] {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
   float: left;
   line-height: 60px;
   /* PB sur iE */
@@ -1915,7 +1918,6 @@ body.home .row {
   font-family: "BioRhyme", serif;
   font-weight: 200;
   font-size: calc(1em * 2.2);
-  text-transform: uppercase;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -1944,7 +1946,7 @@ body.home .row {
   padding-bottom: calc(10px / 2);
   text-decoration: none !important;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: calc(1em / 1.1);
   line-height: calc(1em * 1.2);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
@@ -1964,7 +1966,7 @@ body.home .row {
   -o-animation: fadein 1s;
   /* Opera */
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: calc(1em / 1.1);
   line-height: calc(1em * 1.2);
 }
 
@@ -4567,7 +4569,6 @@ picture.background_picture img {
   top: 0;
   z-index: 8888;
   background-color: white;
-  font-size: calc(1em * 3);
 }
 @media only screen and (min-width: 1524px) {
   .article_complet .entryheaderprojet {
@@ -4612,6 +4613,19 @@ picture.background_picture img {
   }
 }
 
+.entryheaderprojet .title_project h2 {
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
+  font-size: calc(1em * 3);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
+}
+
 .entryheaderprojet a {
   animation: fadein 1s;
   -moz-animation: fadein 1s;
@@ -4641,6 +4655,9 @@ picture.background_picture img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
 }
 @media only screen and (min-width: 1524px) {
   .entryheaderprojet p.time {
@@ -5131,6 +5148,10 @@ ul.slides li.slide {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
+  color: red;
 }
 @media only screen and (min-width: 1524px) {
   .prez_gauche .stickyprez .info_contact {
@@ -5170,7 +5191,16 @@ ul.slides li.slide {
 }
 
 .header_contact h2 {
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
   font-size: calc(1em * 3);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -5232,6 +5262,10 @@ div.contact_fields div.wpcf7 {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
+  color: red;
   width: 100%;
   padding: 10px 0px 10px 0px;
 }
@@ -5334,6 +5368,10 @@ div.wpcf7 label input.wpcf7-form-control {
   width: 100% !important;
   line-height: 100% !important;
   font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
+  color: red;
 }
 
 input[type=submit] {
@@ -5360,6 +5398,9 @@ input[type=submit] {
 
 .wpcf7 input[type=submit],
 .wpcf7 input[type=button] {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -5371,10 +5412,8 @@ input[type=submit] {
   background-color: red;
   color: white;
   text-transform: lowercase;
-  padding-top: unset;
   width: 80px;
   text-align: center;
-  padding-bottom: unset;
 }
 
 .wpcf7 input[type=submit]:hover {
@@ -5947,7 +5986,7 @@ div.stickyprez {
   background-blend-mode: normal;
 }
 
-.prez_droite .basic h3 {
+.prez_droite .basic h2 {
   width: 100%;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
@@ -5956,7 +5995,16 @@ div.stickyprez {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
   font-size: calc(1em * 3);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -5984,6 +6032,19 @@ DESCRIPTION: This document contains the structural formatting files for the acco
   display: inline-block;
 }
 
+.accordionButton h3 {
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
+  font-size: calc(1em * 2.2);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
+}
+
 .accordionButton {
   animation: fadein 1s;
   -moz-animation: fadein 1s;
@@ -5994,7 +6055,6 @@ DESCRIPTION: This document contains the structural formatting files for the acco
   /* Opera */
   width: 100%;
   background-color: white;
-  font-size: calc(1em * 2);
   float: left;
   _float: none;
   /* Float works in all browsers but IE6 */
@@ -6050,8 +6110,9 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 }
 
 .accordionContent .texte {
-  font-size: 1em;
-  line-height: 1.3em;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent .texte {
@@ -6632,6 +6693,16 @@ input.sf-input-radio {
 }
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header h3 {
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
+  font-size: calc(1em * 2.2);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -6664,6 +6735,9 @@ input.sf-input-radio {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
   border-top: 1px solid black;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6691,6 +6765,9 @@ input.sf-input-radio {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
 }
 
 .structure_de_page_recherche .search-filter-results article.post {
@@ -6836,6 +6913,9 @@ input.sf-input-checkbox {
 }
 
 .searchandfilter li[data-sf-field-input-type=checkbox] label, .searchandfilter li[data-sf-field-input-type=radio] label, .searchandfilter li[data-sf-field-input-type=range-radio] label, .searchandfilter li[data-sf-field-input-type=range-checkbox] label {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -6882,6 +6962,9 @@ ul.post-categories {
 }
 
 ul.post-categories li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -7323,6 +7406,9 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1em / 1.1);
+  line-height: calc(1em * 1.2);
   float: left;
   width: 33.3333%;
 }

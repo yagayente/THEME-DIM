@@ -220,6 +220,7 @@ article.projets header.entry-header .subwhite{
 .structure_de_page_recherche
 .search-filter-results
 article.projets header.entry-header h3 {
+  @include h3;
   @include fadein;
 display: inline-block;
 width: 100%;
@@ -247,6 +248,7 @@ article.projets header.entry-header ul.post-categories{
 .search-filter-results
 article.projets header.entry-header p.timeit {
   @include fadein;
+  @include typo_simple;
   @include mixin_border_top;
   @include mixin_border_bottom;
   padding-top: calc(#{$spacing_large} / 2);
@@ -264,6 +266,7 @@ article.projets header.entry-header p.content_preview {
 .search-filter-results
 article.projets header.entry-header p{
     @include fadein;
+    @include typo_simple;
 }
 
 

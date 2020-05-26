@@ -14,6 +14,7 @@
 
 
 @mixin button {
+  @include typo_simple;
   padding-left: $spacing_large;
   padding-right: $spacing_large;
   padding-top: 7px;
@@ -57,8 +58,9 @@ animation: fadeout 1s;
   color: $black;
 }
 @mixin texte_courant {
-  font-size: $font_size_global;
-  line-height: 1.3em;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(#{$font_size_global} / 1.1);
+  line-height: calc(#{$font_size_global} * 1.2);
 }
 
 @mixin p {
@@ -112,24 +114,25 @@ margin-left: -0.7em;
 margin-top:2px;
 }
 
+
 @mixin h2 {
-  font-size: $font_size_title_post;
-   text-transform: uppercase;
-     @include fadein;
+  font-family: 'BioRhyme', serif;
+  font-weight: 200;
+  font-size: calc(#{$font_size_global} * 3) ;
+  @include fadein;
 }
 
 @mixin h3 {
   font-family: 'BioRhyme', serif;
   font-weight: 200;
   font-size: calc(#{$font_size_global} * 2.2) ;
-  text-transform: uppercase;
   @include fadein;
 }
 
 
 @mixin typo_simple {
   font-family: "Open Sans", sans-serif;
-  font-size: $font_size_global;
+  font-size: calc(#{$font_size_global} / 1.1);
   line-height: calc(#{$font_size_global} * 1.2);
 }
 
@@ -139,4 +142,10 @@ margin-top:2px;
    text-transform: uppercase;
      margin-bottom: calc(#{$spacing_large} / 1.5) ;
       @include fadein;
+}
+
+@mixin typo_date {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(#{$font_size_global} / 1.1);
+  line-height: calc(#{$font_size_global} * 1.2);
 }

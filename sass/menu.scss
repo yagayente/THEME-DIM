@@ -133,6 +133,7 @@ font-size: 0px;
   line-height: 60px;
 }
 .Menu_général .Menu_général_droite .menu_search input[type=text] {
+    @include typo_simple;
     float: left;
     line-height: 60px; /* PB sur iE */
     height:60px;       /* iE fix */

@@ -12,11 +12,9 @@
 
 	<header class="entry-header">
 		<div class="subwhite">
-					<h3>
-					<p class="bar" rel="<?php the_ID(); ?>" title="<?php the_title(); ?>">
-						<?php the_title(); ?>
-					</p>
-					</h3>
+			<h3 class="bar" rel="<?php the_ID(); ?>" title="<?php the_title(); ?>">
+				<?php the_title(); ?>
+			</h3>
 
 						<p class="timeit"><?php the_time('j F Y'); ?></p>
 						<p class="content_preview"><?php the_excerpt(); ?></p>

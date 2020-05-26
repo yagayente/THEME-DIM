@@ -10,10 +10,8 @@
 
 	<header class="entry-header">
 		<div class="subwhite">
-					<h3>
-					<p class="bar" rel="<?php the_ID(); ?>" title="<?php the_title(); ?>">
+					<h3 class="bar" rel="<?php the_ID(); ?>" title="<?php the_title(); ?>">
 						<?php the_title(); ?>
-					</p>
 					</h3>
 
 

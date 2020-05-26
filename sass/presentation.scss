@@ -193,10 +193,10 @@ div.stickyprez {
 
 
 
-.prez_droite .basic h3 {
+.prez_droite .basic h2 {
   width: 100%;
   @include fadein;
-  font-size: $font_size_title;
+  @include h2;
   padding-top: $spacing_large;
   padding-bottom: $spacing_large;
   padding-left:  $spacing_large;
@@ -237,13 +237,14 @@ div.stickyprez {
     display: inline-block;
 
   	}
-
+  .accordionButton h3 {
+    @include h3;
+  }
   .accordionButton {
     @include fadein;
   	width: 100%;
     background-color: white;
-    font-size: $font_size_subtitle;
-  	float: left;
+    float: left;
   	_float: none;  /* Float works in all browsers but IE6 */
   	border-bottom: 1px solid #FFFFFF;
   	cursor: pointer;
