@@ -136,7 +136,7 @@ grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr)
 .accordionContent {
 display: grid;
   @include respond-to(small-screens){
-    grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_small;
+    grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_large;
     z-index: 9999;
   }
   @include respond-to(medium-screens) {

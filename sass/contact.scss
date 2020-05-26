@@ -176,6 +176,7 @@ width: 100% !important;
 }
 .form-box textarea, .wpcf7 .wpcf7-textarea {
     border: medium none;
+    @include typo_simple;
     display: block;
     min-height: 1em; //REDUCE THIS
 }

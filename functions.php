@@ -38,6 +38,10 @@ function people_init() {
 add_action( 'init', 'people_init' );
 
 
+
+
+
+
  //*  THEME SUPPORT
 add_theme_support('menus');
 register_nav_menus(

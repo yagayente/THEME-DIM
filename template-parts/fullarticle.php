@@ -52,12 +52,12 @@ get_header(); ?>
                   </h2>
                 </div>
 
-                <p class="time"><?php the_time('j F Y'); ?></p>
+                <p class="time"><?php the_time('d - m - Y'); ?></p>
 
               </div><!-- .entry-header -->
 
               <div class="contenu_article">
-                  <?php the_category( '' ); ?>
+									<?php the_category( '' ); ?>
 
                     <div class="formatingtext">
                         <?php the_content(); ?>

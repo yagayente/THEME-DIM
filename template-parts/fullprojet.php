@@ -42,136 +42,122 @@ get_header(); ?>
 				 <div class="prez_droite">
 
            <div class="article_complet">
-            <div class="entryheaderprojet" id="entryheaderprojet">
-                <div class="title_project">
-                  <h2>
-                <a href="<?php the_permalink(); ?>" class="bar" rel="<?php the_ID(); ?>" title="<?php the_title(); ?>">
-                  <?php the_title(); ?></a>
-                </h2>
-              </div>
-                <p class="time"><?php the_time('j F Y'); ?></p>
 
-              </div><!-- .entry-header -->
-
-
-            <div class="entry-content" >
-              <div id="espaceblancprojets">&nbsp</div>
-                <?php the_category( '' ); ?>
-
-                <div class="formatingtext">
-                      <h4>Le projet</h4><!-- A traduire -->
-
-                      <?php the_content(); ?>
-                        <br>
-                      <h4>Les Membres</h4><!-- A traduire -->
-                </div>
-
-          <p class="bolder"><?php the_field('responsable_projet_-_appelation'); ?></p>
-
-          <div class="leader">
-
-                  <?php $post_objects = get_field('Responsable');
-                  if( $post_objects ): ?>
-                     <ul>
-                     <?php foreach( $post_objects as $post): ?>
-                         <?php setup_postdata($post); ?>
-                         <li>
-                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                             <?php the_field('a_propos_du_membre'); ?>
-                         </li>
-                     <?php endforeach; ?>
-                     </ul>
-                     <?php wp_reset_postdata();?>
-                   <?php endif;?>
-          </div>
+									  		<div class="entryheaderprojet" id="entryheaderprojet">
+				                			<div class="title_project">
+									                  <h2><a href="<?php the_permalink(); ?>" class="bar" rel="<?php the_ID(); ?>" title="<?php the_title(); ?>">
+									                  <?php the_title(); ?></a>
+									                	</h2>
+				              				</div>
+				                <?php the_category( '' ); ?>
+										
+				              	</div><!-- .entry-header -->
 
 
+  			<div class="entry-content">
+
+												<h3>Le projet</h3><!-- A traduire -->
+							                <div class="formatingtext">
+							                <?php the_content(); ?>
+							                </div>
+												<h3>Les Membres</h3><!-- A traduire -->
+
+							<div class="formatingtext">
+												<span class="bolder">
+												<?php the_field('responsable_projet_-_appelation'); ?>
+												</span>
+
+							          <div class="leader">
+							                  <?php $post_objects = get_field('Responsable');
+							                  if( $post_objects ): ?>
+
+							                     <?php foreach( $post_objects as $post): ?>
+							                         <?php setup_postdata($post); ?>
+
+							                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+							                             <span class="subperson"><?php the_field('a_propos_du_membre'); ?></span>
+
+							                     <?php endforeach; ?>
+
+							                     <?php wp_reset_postdata();?>
+							                   <?php endif;?>
+							          </div>
 
 
+      									<span class="bolder"><?php the_field('membres_du_projet_-_appelation'); ?></span>
 
-          <p class="bolder"><?php the_field('membres_du_projet_-_appelation'); ?></p>
+												<div class="membres">
+									              <?php $post_objects = get_field('auteur');
+									              if( $post_objects ): ?>
 
-          <div class="membres">
-              <?php $post_objects = get_field('auteur');
-              if( $post_objects ): ?>
-                 <ul>
-                 <?php foreach( $post_objects as $post): ?>
-                     <?php setup_postdata($post); ?>
-                     <li class="members_case">
-                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-                         <?php the_field('a_propos_du_membre'); ?>
-                     </li>
-                 <?php endforeach; ?>
+									                 <?php foreach( $post_objects as $post): ?>
+									                     <?php setup_postdata($post); ?>
+									                     <div class="members_case">
+									                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+									                         <span class="subperson"><?php the_field('a_propos_du_membre'); ?></span>
+									                     </div>
+									                 <?php endforeach; ?>
 
-                 <?php wp_reset_postdata();?>
-               <?php endif;?>
-
+									                 <?php wp_reset_postdata();?>
+									               <?php endif;?>
 
 
+									          <?php if( have_rows('membres_non_enregistre') ): ?>
 
-          <?php if( have_rows('membres_non_enregistre') ): ?>
+									            <?php while( have_rows('membres_non_enregistre') ): the_row();
+									              $content = get_sub_field('nom_du_membre');
+									              $content2 = get_sub_field('texte_de_presentation');  ?>
 
-            <?php while( have_rows('membres_non_enregistre') ): the_row();
-              $content = get_sub_field('nom_du_membre');
-              $content2 = get_sub_field('texte_de_presentation');  ?>
+															                <div class="members_case">
+															                <?php if( $content ): ?>
+															                <span class="nameperson"><?php echo $content; ?></span><br>
+															                <?php endif; ?>
 
-                <li class="members_case">
-                <?php if( $content ): ?>
-                <?php echo $content; ?><br>
-                <?php endif; ?>
-
-                <?php if( $content2 ): ?>
-                <?php echo $content2; ?>
-                <?php endif; ?>
-              </li>
-            <?php endwhile; ?>
-
-
-          <?php endif; ?>
-
-          </ul>
-          </div>
+															                <?php if( $content2 ): ?>
+															                <span class="subperson"><?php echo $content2; ?></span>
+															                <?php endif; ?>
+															              </div>
+									            <?php endwhile; ?>
 
 
+									          <?php endif; ?>
 
+									      </div><!-- membre end -->
+  					</div><!-- formating texte -->
 
+									<div class="details_bellow">
 
+									                <?php if( have_rows('detail') ): ?>
+									                  <ul class="slides">
+									                  <?php while( have_rows('detail') ): the_row();
+									                    $content = get_sub_field('signe');
+									                    $content2 = get_sub_field('detail_inside');  ?>
 
-                  <br>
+									                    <li class="slide">
+									                      <?php if( $content ): ?>
+									                      <div class="left_span"><?php echo $content; ?></div>
+									                      <?php endif; ?>
 
-                <?php if( have_rows('detail') ): ?>
-                  <ul class="slides">
-                  <?php while( have_rows('detail') ): the_row();
-                    $content = get_sub_field('signe');
-                    $content2 = get_sub_field('detail_inside');  ?>
+									                      <?php if( $content2 ): ?>
+									                      <div class="right_span"><?php echo $content2; ?></div>
+									                      <?php endif; ?>
+									                    </li>
+									                  <?php endwhile; ?>
+									                  </ul>
 
-                    <li class="slide">
-                      <?php if( $content ): ?>
-                      <div class="left_span"><?php echo $content; ?></div>
-                      <?php endif; ?>
+									                <?php endif; ?>
 
-                      <?php if( $content2 ): ?>
-                      <div class="right_span"><?php echo $content2; ?></div>
-                      <?php endif; ?>
-                    </li>
-                  <?php endwhile; ?>
-                  </ul>
-
-                <?php endif; ?>
-
-              </div>
+									</div><!-- details bellow -->
 
 
 
-              <div class="footer_post_structure">
+			              <div class="footer_post_structure">
+			                  <?php
+			                  get_footer(); ?>
+			              </div><!-- footer_post_structure -->
 
-                  <?php
-                  get_footer(); ?>
-
-              </div>
-
-
-          </div>
-				 	</div>
+					</div><!-- entry content -->
+				</div><!-- Article complet -->
+				</div><!-- Prez droite -->
 
 </div><!-- Row -->

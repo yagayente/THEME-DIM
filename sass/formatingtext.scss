@@ -55,6 +55,7 @@
   @include em;
 }
 .formatingtext blockquote cite {
+	@include p;
   text-transform: uppercase;
   font-size: 80%;
 }

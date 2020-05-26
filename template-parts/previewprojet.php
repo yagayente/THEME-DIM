@@ -16,7 +16,7 @@
 				<?php the_title(); ?>
 			</h3>
 
-						<p class="timeit"><?php the_time('j F Y'); ?></p>
+						<p class="timeit"><?php the_time('d - m - Y'); ?></p>
 						<p class="content_preview"><?php the_excerpt(); ?></p>
 			</div>
 </a>

@@ -188,7 +188,12 @@ height: 100vh;
       }
 
 .entryheaderprojet .title_project{
-    padding: $spacing_large;
+    padding: $spacing_large ;
+
+    @include respond-to(wide-screens) {
+        padding: $spacing_large 10% $spacing_large $spacing_large;
+    }
+
     @include respond-to(small-screens) {
       @include mixin_border_top;
     }
@@ -201,7 +206,6 @@ height: 100vh;
 .entryheaderprojet a {
     @include fadein;
     @include respond-to(wide-screens) {
-      padding-right: $margeexterieur_large;
     }
   }
 .entryheaderprojet p.time {
@@ -231,10 +235,16 @@ height: 100vh;
     }
 }
 
-.article_complet ul.post-categories {
+.article_complet .entryheaderprojet ul.post-categories {
   width: 100%;
   float: left;
+  background-color: white;
+  padding-top: $spacing_large;
+  padding-left: $spacing_large;
+  padding-bottom: calc(#{$spacing_large} - 3px);
   @include fadein;
+  @include mixin_border_top;
+  @include mixin_border_bottom;
 }
 
 .article_complet .time_article {
@@ -270,38 +280,63 @@ background-color: pink;
 
 .article_complet .entry-content{
 min-height: 50vh;
-@include respond-to(wide-screens) {
-    grid-column-start: 1;  grid-column-end: 12;
+
+@include respond-to(small-screens){
+    background-color: white;
+  }
+}
+
+.article_complet .entry-content h3 {
+  @include h3;
+  @include mixin_border_bottom;
+  width: 100%;
+  display: inline-block;
+  padding-top: $spacing_large;
+  padding-bottom: $spacing_large;
+  @include respond-to(wide-screens) {
     padding-right: $margeexterieur_large;
     padding-left: $spacing_large;
+    }
+    @include respond-to(medium-screens) {
+    padding-left: $spacing_medium;
+    padding-right: $valeurde_unecolonne_medium;
   }
-  @include respond-to(medium-screens) {
-  grid-column-start: 5;  grid-column-end: 6;
-  padding-left: $spacing_medium;
-      padding-right: $valeurde_unecolonne_medium;
+  @include respond-to(small-screens){
+      padding-left: $spacing_small;
+      padding-right: $spacing_small;
+    }
 }
-@include respond-to(small-screens){
-    grid-column-start: 1;  grid-column-end: 9;
-    background-color: white;
-    padding-left: $spacing_small;
-    padding-right: $spacing_small;
+.article_complet .entry-content .formatingtext, .article_complet .entry-content .details_bellow{
+  padding-top: $spacing_large;
+    padding-bottom: $spacing_large;
+  @include respond-to(wide-screens) {
+    padding-right: calc(8 * #{$margeexterieur_large});
+    padding-left: $spacing_large;
+    }
+    @include respond-to(medium-screens) {
+    padding-left: $spacing_medium;
+    padding-right: $valeurde_unecolonne_medium;
   }
+  @include respond-to(small-screens){
+      padding-left: $spacing_small;
+      padding-right: $spacing_small;
+    }
 }
-
-.article_complet .entry-content h4 {
-  font-size: $font_size_subtitle;
+.article_complet .entry-content .details_bellow {
+  @include mixin_border_top;
+  display: block;
 }
-
 .leader  {
   margin-bottom: $spacing_large;
 }
 
 .bolder {
-font-weight: $bold;
 margin-bottom: $spacing_large;
+@include font_titrage;
+font-weight: 300;
 }
 
-li.members_case {
+.members_case {
   margin-bottom: $spacing_large;
 }
 
@@ -310,16 +345,28 @@ li.members_case {
   column-width: 100px;
 }
 
+.nameperson {
+  @include font_titrage;
+}
+.subperson {
+  @include font_courant;
+}
 ul.slides {
   color: $my_color;
+  display: inline-block;
+  @include font_titrage;
+}
+li.slide {
+    margin-bottom: calc(#{$spacing_large} / 3);
 }
 ul.slides li.slide {
   display: inline-block;
-  margin-bottom: $spacing_large;
+  width: 100%;
+  padding-bottom: $spacing_large;
 }
 .left_span{
   float: left;
-  width:calc(#{$spacing_large} * 2);
+  width: $spacing_large;
 }
 .right_span{
   float: left;

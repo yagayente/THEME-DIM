@@ -120,9 +120,10 @@ height: 100%;
 }
 
 .footer_post_structure {
+  width: 100%;
 display: grid;
 padding-bottom: 10vh;
-padding-top: calc(#{$spacing_large} * 2);
+padding-top: $spacing_large;
 padding-left: $spacing_large;
 padding-right: $spacing_large;
 background-color: white;
@@ -172,6 +173,7 @@ background-color: white;
 }
 
 .footer_post_structure .logo4 {
+  @include p;
   padding-top:  calc(#{$spacing_large} * 2);
   @include respond-to(wide-screens) {
     grid-column-start: 1;  grid-column-end: 10;

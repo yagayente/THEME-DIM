@@ -15,8 +15,8 @@
 
 @mixin button {
   @include typo_simple;
-  padding-left: $spacing_large;
-  padding-right: $spacing_large;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-right: 3px;
@@ -48,8 +48,14 @@ animation: fadeout 1s;
  -o-animation: fadeout 1s; /* Opera */
 }
 
+ /* Parametre mixin */
+@mixin font_courant {font-family: "Open Sans", sans-serif;}
+@mixin font_courant_tailles {font-size: calc(#{$font_size_global} / 1.1); line-height: calc(#{$font_size_global} * 1.5);}
+@mixin font_titrage {font-family: 'BioRhyme', serif;}
+
 
 @mixin link {
+  @include font_titrage;
   text-decoration: none;
   color: $red;
 }
@@ -58,45 +64,53 @@ animation: fadeout 1s;
   color: $black;
 }
 @mixin texte_courant {
-  font-family: "Open Sans", sans-serif;
+  @include font_courant;
   font-size: calc(#{$font_size_global} / 1.1);
   line-height: calc(#{$font_size_global} * 1.2);
 }
 
 @mixin p {
+  @include font_courant;
+  @include font_courant_tailles;
+  @include fadein;
   display: block;
   margin-bottom: calc(#{$spacing_large} / 1.5) ;
-    @include fadein;
 }
 
 @mixin em {
+  @include font_courant;
+  @include font_courant_tailles;
   font-style: italic;
 }
 
 @mixin blockquote {
   @include mixin_border_left;
-    padding-left: $spacing_large;
-      margin-bottom: calc(#{$spacing_large} / 1.5) ;
+  padding-left: $spacing_large;
+  margin-bottom: calc(#{$spacing_large} / 1.5) ;
 }
 @mixin ul {
+  @include font_courant;
+  @include font_courant_tailles;
   list-style: none;
   margin-left: 0.7em;
-  @include fadein;
 }
 @mixin ol {
+  @include font_courant;
+  @include font_courant_tailles;
+  @include fadein;
   counter-reset: number;
   list-style-type: none;
   margin-left: 0.7em;
-  @include fadein;
 }
 @mixin li {
   padding-bottom:  calc(#{$spacing_large} / 1.5) ;
 }
 
 @mixin ol_li_before {
+  @include font_titrage;
+  line-height: 0.1em;
   counter-increment: number;
   content: counter(number)"\a0";
-  color: $red;
   position: absolute;
   display: inline-block;
   width: 1em;
@@ -106,7 +120,6 @@ animation: fadeout 1s;
 @mixin ul_li_before {
 content: "\2022";
 font-weight: bold;
-color: $red;
 
 display: inline-block;
 width: 1em;
@@ -137,8 +150,9 @@ margin-top:2px;
 }
 
 @mixin h_texte {
-  font-size: $font_size_global;
-   font-weight: bold;
+  @include font_titrage;
+  @include font_courant_tailles;
+   font-weight: 700;
    text-transform: uppercase;
      margin-bottom: calc(#{$spacing_large} / 1.5) ;
       @include fadein;
@@ -146,6 +160,7 @@ margin-top:2px;
 
 @mixin typo_date {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(#{$font_size_global} / 1.1);
+  font-weight: 700;
+  font-size: calc(#{$font_size_global} * 1.2);
   line-height: calc(#{$font_size_global} * 1.2);
 }

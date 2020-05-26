@@ -159,6 +159,9 @@ position: -webkit-sticky;
    position: relative;
   float: left;
   background-color: white;
+  @include respond-to(medium-screens){
+        height: $hauteur_de_post_home_middle;
+    }
   @include respond-to(small-screens){
         width: 100%;
     }
@@ -225,7 +228,6 @@ article.projets header.entry-header h3 {
 display: inline-block;
 width: 100%;
 font-size: $font_size_subtitle;
-padding-top: calc(#{$spacing_large} / 2);
 padding-bottom: calc(#{$spacing_large} / 2);
 
 }
@@ -289,7 +291,7 @@ article.projets header.entry-header p{
   z-index: 3!important;
   bottom: 0px;
   position: absolute;
-  height: 70%;
+  height: 85%;
   width: 100%;
     @include respond-to(wide-screens) {
     }
