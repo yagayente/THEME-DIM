@@ -4,6 +4,7 @@
 
 /*MENU 2 : GRAND ECRAN*/
 .Menu_général {
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   height: 120px;
   display: inline-block;
@@ -50,6 +51,7 @@
 }
 .Menu_général_gauche .logo_area a{
   @include link;
+  font-family: 'BioRhyme', serif;
 }
 .Menu_général_gauche .logo_area a:hover{
   @include linkover;
@@ -168,6 +170,8 @@ font-size: 0px;
 
 .Menu_général ul#Menu_principal li a{
     @include link;
+    text-transform: uppercase;
+    font-size: $font_size_global;
     padding-right: $spacing_large;
 }
 

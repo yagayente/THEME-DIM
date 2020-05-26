@@ -118,6 +118,21 @@ margin-top:2px;
      @include fadein;
 }
 
+@mixin h3 {
+  font-family: 'BioRhyme', serif;
+  font-weight: 200;
+  font-size: calc(#{$font_size_global} * 2.2) ;
+  text-transform: uppercase;
+  @include fadein;
+}
+
+
+@mixin typo_simple {
+  font-family: "Open Sans", sans-serif;
+  font-size: $font_size_global;
+  line-height: calc(#{$font_size_global} * 1.2);
+}
+
 @mixin h_texte {
   font-size: $font_size_global;
    font-weight: bold;

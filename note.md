@@ -6,7 +6,8 @@ sass --watch ./sass/style.scss:style.css
 
 calc(100% - #{$body_padding});
 
-
+font-family: 'Open Sans', sans-serif;
+font-family: 'BioRhyme', serif;
 
 2 - Faire les h1 h2 h3 etc.
 3 - background image en responsive

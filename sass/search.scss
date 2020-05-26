@@ -31,8 +31,6 @@
   @include linkover;
 }
 
-#colonne .search-filter-results article .article_search_images img:hover  article a {
-    }
 
     #colonne .search-filter-results article:hover .article_search_images img{
       -webkit-filter: none;
@@ -213,6 +211,7 @@ article.projets header.entry-header .subwhite {
 article.projets header.entry-header .subwhite{
   background-color: white;
   overflow-x: hidden;
+  z-index: 8888;
   display: inline-block;
   width: 100%;
 }
@@ -301,17 +300,33 @@ article.projets header.entry-header p{
       height: 50vh;
     }
 }
+
+@supports not (-ms-high-contrast: none) { /* Non-IE styles here */
 .article_search_images img {
-  min-height: 100%; /* iE hack */
-  min-width: 102%; /* iE hack */
-  position: absolute; /* iE hack */
-  top: 50%; /* iE hack */
-  left: 50%; /* iE hack */
-  transform: translateX(-50%) translateY(-50%); /* iE hack */
-  z-index: 1;
+     object-fit: cover;
+     height: 100%;
+     width: 102%;
+     object-position: 50% 50%;
+   }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE styles here */
+  .article_search_images img {
+    height: none;
+    width: none;
+    object-position: none;
+    object-fit: none;
+    min-height: 100%;
+    min-width: 102%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
 
 .article_search_images img {
+    z-index: 7777;
     cursor: crosshair;
     -webkit-filter: url(#traitement_couleur_1);
     -moz-filter: url(#traitement_couleur_1);
@@ -319,12 +334,6 @@ article.projets header.entry-header p{
     -ms-filter: url(#traitement_couleur_1);
     filter: url(#traitement_couleur_1);
   }
-.article_search_images img:hover{
-  -webkit-filter: none;
-   filter: none;
-   background-blend-mode: normal;
-  }
-
 
 
 
@@ -351,7 +360,6 @@ article.projets header.entry-header p{
 
 .illustrations_article {
   @include fadein;
-  z-index: 3!important;
     display: block;
     position: absolute;
    bottom: 0;
@@ -375,15 +383,8 @@ article.projets header.entry-header p{
     filter: url(#traitement_couleur_1);
 
   }
-.illustrations_article:hover {
-  -webkit-filter: none;
-   filter: none;
-   background-blend-mode: normal;
-  }
-
 
 .illustrations_grande {
-  z-index: 3!important;
     display: block;
     position: absolute;
    bottom: 0;

@@ -8,15 +8,9 @@
 <meta name="keywords" content="<?php the_field('mots_clefs', 'options'); ?>">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link href="<?php the_field('favicon', 'options'); ?>" rel="shortcut icon" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
-
-<!--[if IE]>
-<style>
-html body {
-background-color: red;
-}
-</style>
-<![endif]-->
 
 
 <script type="javascript">
