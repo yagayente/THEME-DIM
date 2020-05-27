@@ -14,6 +14,7 @@ $size_border_grid: 0.04em;
 /* LARGE */
 /* valeur de 1  col large = 6 */
 $margeexterieur_large: 5%;
+$margeexterieur_largedouble: 10%;
 $nombredecolonne_large: 15;
 $hauteurderow_large: 60px;
 $valeurde_unecolonne_large: calc((100% - (#{$margeexterieur_large} * 2)) / #{$nombredecolonne_large});
@@ -35,9 +36,9 @@ $break-large: 1524px;
 
 
 /* Padding */
-$spacing_large: 18px;
-$spacing_medium: 18px;
-$spacing_small: 18px;
+$spacing_large: 25px;
+$spacing_medium: 25px;
+$spacing_small: 25px;
 $hauteur_de_post: 400px;
 $padding_button: 3px;
 
@@ -52,7 +53,8 @@ $border: 1.2px;
 /* Couleur */
 $black: black;
 $my_color: red;
-$red: red;
+$red: #EA6F51;
+$rose: pink;
 $my_color_transpa: rgba(117, 190, 218, 0.5);
 
 /* Typo*/

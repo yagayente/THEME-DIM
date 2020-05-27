@@ -38,7 +38,7 @@
 
 .prez_droite {
   float: right;
-
+  @include espace;
   @include mixin_border_left;
   @include respond-to(wide-screens) {
     width: 65%;
@@ -262,11 +262,13 @@ div.stickyprez {
       padding-left: $spacing_large;
       padding-top: $spacing_large;
       padding-bottom: $spacing_large;
+      padding-right: $margeexterieur_largedouble;
     }
     @include respond-to(medium-screens) {
       padding-left: $spacing_medium;
       padding-top: $spacing_medium;
       padding-bottom: $spacing_medium;
+      padding-right: $margeexterieur_largedouble;
     }
     @include respond-to(small-screens) {
       padding-left: none;

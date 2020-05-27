@@ -20,9 +20,11 @@
 @import "_mixin.scss";
 
 body {
+  $font_size_global: 1em;
   height: auto;
   overflow-x: hidden; //horizontal
 }
+
 .breadcrumb {display: none;}
 
 

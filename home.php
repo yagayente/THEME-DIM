@@ -32,21 +32,20 @@ get_header();
         if( $images ): ?>
                     <svg version="1.1" width="0" height="0" class="filter-rot">
 
-                          <filter id="traitement_couleur_1">
-                           <feColorMatrix type="matrix"
-                              values=".33 .33 .33 0 0
-                                      .33 .33 .33 0 0
-                                      .33 .33 .33 0 0
-                                      0 0 0 1 0" >
-                            </feColorMatrix>
-                            <feComponentTransfer color-interpolation-filters="sRGB">
-                              <feFuncR type="table" tableValues="0.84 1"/>
-                              <feFuncG type="table" tableValues="0 1"/>
-                              <feFuncB type="table" tableValues="0.06 0.78"/>
-                              <feFuncA type="table" tableValues="0 1"/>
-                            </feComponentTransfer>
-                           </filter>
-
+											<filter id="traitement_couleur_1" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feColorMatrix type="matrix" values=".33 .33 .33 0 0
+											            .33 .33 .33 0 0
+											            .33 .33 .33 0 0
+											            0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+											<feComponentTransfer in="colormatrix" result="componentTransfer">
+											    <feFuncR type="table" tableValues="0.85 1"/>
+											<feFuncG type="table" tableValues="0.29 0.97"/>
+											<feFuncB type="table" tableValues="0.12 0.97"/>
+											<feFuncA type="table" tableValues="0 1"/>
+											  </feComponentTransfer>
+											<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+											</filter>
+                        
                     </svg>
 
 

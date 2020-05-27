@@ -6,11 +6,11 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-@mixin mixin_border_top { border-top: $border solid black; @include global_border;}
-@mixin mixin_border_bottom {border-bottom: $border solid black; @include global_border;}
-@mixin mixin_border_right {border-right: $border solid black; @include global_border;}
-@mixin mixin_border_left {border-left: $border solid black; @include global_border;}
-@mixin mixin_border {border: $border solid black; @include global_border;}
+@mixin mixin_border_top { border-top: $border solid $red; @include global_border;}
+@mixin mixin_border_bottom {border-bottom: $border solid $red; @include global_border;}
+@mixin mixin_border_right {border-right: $border solid $red; @include global_border;}
+@mixin mixin_border_left {border-left: $border solid $red; @include global_border;}
+@mixin mixin_border {border: $border solid $red; @include global_border;}
 
 
 @mixin button {
@@ -19,20 +19,45 @@
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
-  margin-right: 3px;
-  margin-bottom: 3px;
+  margin-left: 7px;
+  margin-bottom: 7px;
   display: inline-block;
   float: left;
   background-color: $red;
   color: white;
   text-transform: lowercase;
 }
+
+@mixin button2 {
+  @include typo_simple;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-left: 7px;
+  margin-bottom: 7px;
+  display: inline-block;
+  float: left;
+  background-color: white;
+  border: 1px solid $red;
+  color: $red;
+  text-transform: lowercase;
+}
 @mixin button_hover {
-    background-color: blue !important;
+    background-color: $rose !important;
+    color: white !important;
+    border-color:  $rose !important;
     cursor: pointer;
 }
 @mixin button_checked {
-    background-color: pink !important;
+    background-color: $rose !important;
+    border-color: $rose !important;
+    color: white !important;
+}
+@mixin button_checked2 {
+    background-color: white !important;
+    border-color: $rose !important;
+    color: $rose !important;
 }
 
 @mixin fadein {
@@ -50,7 +75,7 @@ animation: fadeout 1s;
 
  /* Parametre mixin */
 @mixin font_courant {font-family: "Open Sans", sans-serif;}
-@mixin font_courant_tailles {font-size: calc(#{$font_size_global} / 1.1); line-height: calc(#{$font_size_global} * 1.5);}
+@mixin font_courant_tailles {font-size: calc(#{$font_size_global} * 1.1); line-height: calc(#{$font_size_global} * 1.5);}
 @mixin font_titrage {font-family: 'BioRhyme', serif;}
 
 
@@ -59,9 +84,20 @@ animation: fadeout 1s;
   text-decoration: none;
   color: $red;
 }
+
 @mixin linkover {
   text-decoration: none;
   color: $black;
+}
+
+@mixin link_noir {
+  @include font_courant;
+  text-decoration: none;
+  color: $black;
+}
+@mixin link_noir_over {
+  text-decoration: none;
+  color: $red;
 }
 @mixin texte_courant {
   @include font_courant;
@@ -72,6 +108,7 @@ animation: fadeout 1s;
 @mixin p {
   @include font_courant;
   @include font_courant_tailles;
+  line-height: calc(#{$font_size_global} * 2);
   @include fadein;
   display: block;
   margin-bottom: calc(#{$spacing_large} / 1.5) ;
@@ -139,6 +176,7 @@ margin-top:2px;
   font-family: 'BioRhyme', serif;
   font-weight: 200;
   font-size: calc(#{$font_size_global} * 2.2) ;
+  line-height: calc(#{$font_size_global} * 1.2) ;
   @include fadein;
 }
 
@@ -163,4 +201,8 @@ margin-top:2px;
   font-weight: 700;
   font-size: calc(#{$font_size_global} * 1.2);
   line-height: calc(#{$font_size_global} * 1.2);
+}
+
+@mixin espace {
+  padding-bottom: 20vh;
 }

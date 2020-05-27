@@ -19,10 +19,10 @@ get_header(); ?>
 
 			 <div class="structure_de_page_recherche" id="colonne">
 				   <?php echo do_shortcode('[searchandfilter id="264" show="results"]'); ?>
+
 			</div>
 
 </div>
-
 
 <div class="structure_de_page_articlefooter">
     <?php

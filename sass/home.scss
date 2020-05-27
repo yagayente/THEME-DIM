@@ -199,6 +199,7 @@ body.home .row {
 .structure_de_page_recherche .intro .screen #norm{
 display: block;
 font-size: calc( #{$font_size_global} * 2);
+line-height: calc( #{$font_size_global} * 1.2);
 font-family: 'BioRhyme', serif;
 font-weight: 200;
 color: $red;
@@ -285,12 +286,11 @@ display: none;
 .structure_de_page_recherche .intro {
     @include mixin_border_left;
     @include respond-to(wide-screens) {
-      padding: $spacing_large;
+      padding: $spacing_large $margeexterieur_largedouble $spacing_large $spacing_large;
   }
 
     @include respond-to(medium-screens) {
-      grid-column-start: 1;  grid-column-end: 7;
-      padding: $spacing_medium;
+        padding: $spacing_medium $margeexterieur_largedouble $spacing_medium $spacing_medium;
 }
     @include respond-to(small-screens){
 
@@ -324,6 +324,7 @@ display: none;
 .display_article {
   @include mixin_border_top;
   width: 100%;
+  display: inline-block;
   @include respond-to(wide-screens) {
     padding-left: $margeexterieur_large;
       padding-right: $margeexterieur_large;
@@ -439,7 +440,6 @@ min-height: 200px;
   @include h3;
   display: inline-block;
   width: 100%;
-  padding-top: calc(#{$spacing_large} / 2);
   padding-bottom: calc(#{$spacing_large} / 2);
 }
 .display_article article header.entry-header-home .subwhite p.timeit {
@@ -448,6 +448,7 @@ min-height: 200px;
   padding-top: calc(#{$spacing_large} / 2);
   padding-bottom: calc(#{$spacing_large} / 2);
   text-decoration: none !important;
+  font-weight: 700;
   @include typo_simple;
   @include fadein;
 }

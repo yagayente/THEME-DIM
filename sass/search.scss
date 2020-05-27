@@ -82,6 +82,8 @@
 
 div.sticky {
   @include fadein;
+  text-align: right;
+  padding-right: $spacing_large;
 position: -webkit-sticky;
   position: sticky;
   top:0;
@@ -99,12 +101,64 @@ position: -webkit-sticky;
   }
 }
 
+.searchandfilter ul li {
+    float: right;
+}
+
+.searchandfilter ul li.sf-field-category {
+  width: 100%;
+}
+.searchandfilter ul li.sf-field-post_type {
+    width: 100%;
+}
+.searchandfilter ul li.sf-field-sort_order {
+  width: 100%;
+}
+.searchandfilter ul li.sf-field-category ul li label {
+  @include button;
+}
+.searchandfilter ul li.sf-field-category input:checked + label {
+  @include button_checked;
+}
+
+.searchandfilter ul li.sf-field-category ul li label:hover, input:focus + label {
+  @include button_hover;
+}
+
+.searchandfilter ul li.sf-field-post_type ul li label {
+  @include button2;
+}
+
+.searchandfilter ul li.sf-field-post_type ul li input:checked + label {
+  @include button_checked2;
+}
+
+a.search-filter-reset {
+  @include link;
+  margin-top: $spacing_large;
+  display: block;
+}
+
+.searchandfilter ul li ul li label.sf-label-radio {
+  background-color: white;
+  color: $red;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.searchandfilter ul li ul li label.sf-label-radio:hover {
+  color: $black;
+}
+
+
 .searchandfilter ul {
     display: block;
 }
 
 .searchandfilter ul>li[data-sf-field-input-type=radio] label, .searchandfilter li[data-sf-field-input-type=radio] label, .searchandfilter li[data-sf-field-input-type=range-radio] label, .searchandfilter li[data-sf-field-input-type=range-radio] label {
   border: none;
+  @include typo_simple;
 }
 
 .searchandfilter ul>li[data-sf-field-input-type=radio] input:checked + label {
@@ -122,6 +176,8 @@ position: -webkit-sticky;
 .searchandfilter h4 {
   display: inline-block;
   width: 100%;
+  @include font_courant;
+  color: $red;
   padding: $spacing_large 0 $spacing_large !important;
 }
 .searchandfilter ul > li[data-sf-field-input-type=checkbox] ul {
@@ -130,12 +186,76 @@ position: -webkit-sticky;
 }
 
 
+
+
+
+.structure_de_page_simple li.sf-field-search {
+  display: none;
+}
+
+input.sf-input-checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.filtrage {
+  overflow: hidden;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.searchandfilter ul li ul li ul {
+  margin: 0;
+}
+
+label {
+  text-transform: uppercase;
+  border: 1px solid black;
+  float: left;
+  width: auto;
+  position: relative;
+  margin-right: 10px;
+  color: black;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, box-shadow .2s;
+}
+
+input:checked + label::before {
+  color: #fff;
+}
+
+ul.post-categories {
+  width: 100%;
+  float: left;
+
+}
+ul.post-categories li a {
+  @include button;
+  text-decoration: none;
+
+}
+ul.post-categories li a:hover {
+  @include button_hover;
+}
+
+
+
+
+
+
+
+
+
+
 .structure_de_page_recherche {
     float: right;
 
 }
 .structure_de_page_recherche .search-filter-results {
   @include mixin_border_left;
+  @include espace;
   @include respond-to(wide-screens) {
     grid-template-columns: repeat(10, 1fr) $margeexterieur_large;
     grid-column-start: 1;  grid-column-end: 11;
@@ -418,67 +538,3 @@ article.projets header.entry-header p{
    filter: none;
    background-blend-mode: normal;
   }
-
-
-
-
-
-
-.structure_de_page_simple li.sf-field-search {
-  display: none;
-}
-
-input.sf-input-checkbox {
-  position: absolute;
-  left: -9999px;
-}
-
-.filtrage {
-  overflow: hidden;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-.searchandfilter li[data-sf-field-input-type=checkbox] label, .searchandfilter li[data-sf-field-input-type=radio] label, .searchandfilter li[data-sf-field-input-type=range-radio] label, .searchandfilter li[data-sf-field-input-type=range-checkbox] label {
-  @include button;
-
-}
-
-
-label {
-  text-transform: uppercase;
-  border: 1px solid black;
-  float: left;
-  width: auto;
-  position: relative;
-  margin-right: 10px;
-  color: black;
-  white-space: nowrap;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color .2s, box-shadow .2s;
-}
-label:hover, input:focus + label {
-  @include button_hover;
-}
-input:checked + label {
-  @include button_checked;
-}
-
-input:checked + label::before {
-  color: #fff;
-}
-
-ul.post-categories {
-  width: 100%;
-  float: left;
-
-}
-ul.post-categories li a {
-  @include button;
-  text-decoration: none;
-
-}
-ul.post-categories li a:hover {
-  @include button_hover;
-}

@@ -50,11 +50,11 @@
   display: block;
 }
 .Menu_général_gauche .logo_area a{
-  @include link;
-  font-family: 'BioRhyme', serif;
+  @include link_noir;
+  font-family: 'BioRhyme', serif !important;
 }
 .Menu_général_gauche .logo_area a:hover{
-  @include linkover;
+  @include link_noir_over;
 }
 .Menu_général_gauche .logo_area .block_image_logo {
   width: 50%;
@@ -118,7 +118,9 @@ font-size: 0px;
 .Menu_général .Menu_général_droite .menu_search  li.sf-field-category{
   display: none;
 }
-
+.Menu_général .Menu_général_droite .menu_search  li.sf-field-reset{
+  display: none;
+}
 /*MENU 2 : PARTI DROITE*/
 .Menu_général_droite .menu_search {
   width: 83.3333%;
@@ -146,6 +148,7 @@ font-size: 0px;
 }
 .Menu_général .Menu_général_droite .language ul li {
   display: inline-block;
+    font-size: 0.8em;
   line-height: 60px;/* iE fix */
   height:60px;/* iE fix */
 }
@@ -153,9 +156,11 @@ font-size: 0px;
   content: " /";
 }
 .Menu_général .Menu_général_droite .language ul li a{
-  @include link;
+  @include link_noir;
 }
-
+.Menu_général .Menu_général_droite .language ul li a:hover {
+  @include link_noir_over;
+}
 .Menu_général ul#Menu_principal {
   display: block;
   overflow: hidden;
@@ -170,13 +175,16 @@ font-size: 0px;
 }
 
 .Menu_général ul#Menu_principal li a{
-    @include link;
+    color: $black;
+    text-decoration: none;
     text-transform: uppercase;
-    font-size: $font_size_global;
+    font-size: 0.8em;
     padding-right: $spacing_large;
 }
 
-
+.Menu_général ul#Menu_principal li a:hover {
+  @include link_noir_over;
+}
 
 
 

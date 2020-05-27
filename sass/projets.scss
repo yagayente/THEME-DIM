@@ -188,7 +188,7 @@ height: 100vh;
       }
 
 .entryheaderprojet .title_project{
-    padding: $spacing_large ;
+    padding: $spacing_large $margeexterieur_largedouble $spacing_large $spacing_large;
 
     @include respond-to(wide-screens) {
         padding: $spacing_large 10% $spacing_large $spacing_large;
@@ -242,6 +242,7 @@ height: 100vh;
   padding-top: $spacing_large;
   padding-left: $spacing_large;
   padding-bottom: calc(#{$spacing_large} - 3px);
+  padding-right: $margeexterieur_largedouble;
   @include fadein;
   @include mixin_border_top;
   @include mixin_border_bottom;
