@@ -15,7 +15,8 @@
 }
 .prez_gauche .stickyprez .info_contact {
   @include fadein;
-  @include typo_simple;
+  @include abstract;
+  text-align: right;
   color: $red;
   @include respond-to(wide-screens){
     padding: $spacing_large $spacing_large $spacing_large 16%;
@@ -83,7 +84,7 @@ div.wpcf7 {
 
 .accept {
     @include fadein;
-    @include typo_simple;
+    @include abstract;
     color: $red;
   width: 100%;
   padding: $spacing_large 0px $spacing_large 0px;
@@ -158,9 +159,7 @@ div.wpcf7 label.cent {
 
 div.wpcf7 label input.wpcf7-form-control{
   width: 100% !important;
-    line-height: 100% !important;
-    font-size: $font_size_global;
-    @include typo_simple;
+    @include abstract;
     color: $red;
 }
 input[type=submit] {
@@ -176,7 +175,7 @@ width: 100% !important;
 }
 .form-box textarea, .wpcf7 .wpcf7-textarea {
     border: medium none;
-    @include typo_simple;
+    @include abstract;
     display: block;
     min-height: 1em; //REDUCE THIS
 }

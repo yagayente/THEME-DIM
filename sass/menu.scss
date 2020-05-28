@@ -15,6 +15,11 @@
   }
 }
 
+.Menu_général .searchandfilter ul {
+    display: inline-block;
+}
+
+
 .Menu_général label:hover, input:focus + label {
   background-color: transparent !important; /* iE*/
 }
@@ -47,7 +52,7 @@
 /*MENU 2 : PARTI GAUCHE*/
 .Menu_général_gauche .logo_area{
   width:100%;
-  display: block;
+  display: inline-block;
 }
 .Menu_général_gauche .logo_area a{
   @include link_noir;
@@ -67,14 +72,16 @@
      height   : 120px;
      overflow: hidden;
      float: left;
+     @include respond-to-bis(middle-screens) {
+        width    : 40%;
+     }
 }
-.Menu_général_gauche .logo_area .block_image_logo img  {
+.Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover{
   position   : absolute;
   width      : 100px;
   margin-top: 10px;
   margin-left: 10px;
   height     : 100px;
-
   @include respond-to(medium-screens) {
     width: 70%; //your image/element width here
      height: auto; //your image/element height here
@@ -83,8 +90,13 @@
      position: absolute;
      top: 0; left: 0; bottom: 0; right: 0;
 }
-
+@include respond-to-bis(middle-screens) {
+  width: 80%; //your image/element width here
 }
+}
+img.logoprincipale {display: inline-block;z-index: map-get($z-index, logo);}
+img.logoprincipalehover {z-index: map-get($z-index, logohover);}
+.logo_area:hover img.logoprincipale {display: none}
 
 .Menu_général_gauche .logo_area .block_text_logo{
   width    : 66.6666%;
@@ -92,6 +104,10 @@
   height: 120px;
   position: relative;/* centrage vertical iE*/
   float: left;
+  @include respond-to-bis(middle-screens) {
+    display: none;
+}
+
 }
 .Menu_général_gauche .logo_area .block_text_logo .enfant_block_text_logo {
   position: absolute;/* centrage vertical iE*/
@@ -135,7 +151,7 @@ font-size: 0px;
   line-height: 60px;
 }
 .Menu_général .Menu_général_droite .menu_search input[type=text] {
-    @include typo_simple;
+    @include abstract;
     float: left;
     line-height: 60px; /* PB sur iE */
     height:60px;       /* iE fix */
@@ -178,8 +194,7 @@ font-size: 0px;
     color: $black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.8em;
-    padding-right: $spacing_large;
+    @include texte_menu;
 }
 
 .Menu_général ul#Menu_principal li a:hover {

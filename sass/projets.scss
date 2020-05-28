@@ -2,6 +2,17 @@
 @import "_mixin.scss";
 @import "grid";
 
+.categ_posttype {
+  width: 100%;
+  display: inline-block;
+  padding: $spacing_large $spacing_large 0px $spacing_large;
+}
+.postype {
+  float: left;
+}
+.postype .button {
+  @include button_posttype;
+}
 
 .row_prez .prez_gauche div.stickyprez {
   position: -webkit-sticky;
@@ -309,7 +320,7 @@ min-height: 50vh;
 }
 .article_complet .entry-content .formatingtext, .article_complet .entry-content .details_bellow{
   padding-top: $spacing_large;
-    padding-bottom: $spacing_large;
+  @include espace;
   @include respond-to(wide-screens) {
     padding-right: calc(8 * #{$margeexterieur_large});
     padding-left: $spacing_large;
@@ -353,7 +364,7 @@ font-weight: 300;
   @include font_courant;
 }
 ul.slides {
-  color: $my_color;
+  color: $red;
   display: inline-block;
   @include font_titrage;
 }
@@ -363,7 +374,7 @@ li.slide {
 ul.slides li.slide {
   display: inline-block;
   width: 100%;
-  padding-bottom: $spacing_large;
+  padding-bottom: calc(#{$spacing_large} / 3);
 }
 .left_span{
   float: left;

@@ -195,16 +195,14 @@ body.home .row {
   padding: $spacing_large;
 }
 
-
 .structure_de_page_recherche .intro .screen #norm{
 display: block;
-font-size: calc( #{$font_size_global} * 2);
-line-height: calc( #{$font_size_global} * 1.2);
+@include h3;
 font-family: 'BioRhyme', serif;
 font-weight: 200;
 color: $red;
-  @include respond-to(small-screens){
-    display: none;
+@include respond-to(small-screens){
+  display: none;
   }
 }
 
@@ -449,17 +447,16 @@ min-height: 200px;
   padding-bottom: calc(#{$spacing_large} / 2);
   text-decoration: none !important;
   font-weight: 700;
-  @include typo_simple;
+  @include abstract;
   @include fadein;
 }
 
 .display_article article header.entry-header-home .subwhite .content_preview p {
   @include fadein;
-  @include typo_simple;
+  @include abstract;
 }
 .display_article article header.entry-header-home .subwhite .content_preview {
   padding-top: calc(#{$spacing_large} / 2);
-  padding-bottom: calc(#{$spacing_large} / 2);
   @include link;
   overflow: hidden;
 }

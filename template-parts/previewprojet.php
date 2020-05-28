@@ -20,9 +20,10 @@
 						<p class="content_preview"><?php the_excerpt(); ?></p>
 			</div>
 </a>
-
-
+<div class="categ_posttype">
+<div class="postype"><span class="button">Projet</span></div>
 <?php the_category(); ?>
+</div>
 
 	</header><!-- .entry-header -->
 
@@ -44,7 +45,7 @@
 			</feComponentTransfer>
 		<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
 		</filter>
-		
+
 	</svg>
 
 

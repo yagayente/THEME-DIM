@@ -12,7 +12,7 @@
 
                       <div class="block_image_logo" id="iefix">
                       <img class="logoprincipale" <?php awesome_acf_responsive_image(get_field( 'logo_principal', 'option' ),'2-width','640px'); ?>  alt="text" />
-                      <img class="logoprincipalehover" <?php awesome_acf_responsive_image(get_field( 'logo_principal', 'option' ),'2-width','640px'); ?>  alt="text" />
+                      <img class="logoprincipalehover" <?php awesome_acf_responsive_image(get_field( 'logo_hover', 'option' ),'2-width','640px'); ?>  alt="text" />
                       </div>
 
                       <div class="block_text_logo">
@@ -36,7 +36,8 @@
     <?php
     $page = get_page_by_title('Accueil' );
     $pag1 = get_page_by_title('Home' );
-    $ids = "{$page->ID},{$pag1->ID}";
+    $pag2 = get_page_by_title('Recherche' );
+    $ids = "{$page->ID},{$pag1->ID},{$pag2->ID}";
 
     wp_nav_menu(
       array(

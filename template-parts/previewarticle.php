@@ -18,8 +18,10 @@
 				</div>
 	</a>
 
-
-<?php the_category(); ?>
+	<div class="categ_posttype">
+	<div class="postype"><span class="button">Actualités</span></div>
+	<?php the_category(); ?>
+	</div>
 
 	</header><!-- .entry-header -->
 
@@ -39,7 +41,7 @@
 			</feComponentTransfer>
 		<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
 		</filter>
-		
+
 	</svg>
 
 	<picture class="article_search_images">

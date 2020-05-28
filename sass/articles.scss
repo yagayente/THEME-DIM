@@ -3,6 +3,24 @@
 @import "_mixin.scss";
 @import "grid";
 
+.setup p.share {
+  @include abstract;
+  cursor: pointer;
+}
+.setup p:hover {
+  @include link_noir_over;
+}
+.setup p.hidden {
+  padding-top: $spacing_large;
+}
+.setup p.hidden a {
+  @include link_noir;
+    padding-right: 10px;
+}
+.setup p.hidden a:hover {
+  @include link_noir_over;
+}
+
 
 .contenu_article {
   @include respond-to(wide-screens){
@@ -14,6 +32,11 @@
   @include respond-to(small-screens){
   padding: $spacing_large $spacing_large $spacing_large $spacing_large;
   }
+}
+
+.contenu_article ul.post-categories {
+  display: inline-block;
+  width: 100%;
 }
 picture.background_picture {
   width: 800px;

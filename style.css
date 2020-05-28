@@ -19,7 +19,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -32,7 +37,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -290,7 +300,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -303,7 +318,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -317,7 +337,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -330,7 +355,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -594,6 +624,10 @@ Version: 1.1
   }
 }
 
+.Menu_général .searchandfilter ul {
+  display: inline-block;
+}
+
 .Menu_général label:hover, input:focus + label {
   background-color: transparent !important;
   /* iE*/
@@ -642,7 +676,7 @@ Version: 1.1
 /*MENU 2 : PARTI GAUCHE*/
 .Menu_général_gauche .logo_area {
   width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 .Menu_général_gauche .logo_area a {
@@ -670,8 +704,13 @@ Version: 1.1
   overflow: hidden;
   float: left;
 }
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .Menu_général_gauche .logo_area #iefix {
+    width: 40%;
+  }
+}
 
-.Menu_général_gauche .logo_area .block_image_logo img {
+.Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover {
   position: absolute;
   width: 100px;
   margin-top: 10px;
@@ -679,7 +718,7 @@ Version: 1.1
   height: 100px;
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
-  .Menu_général_gauche .logo_area .block_image_logo img {
+  .Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover {
     width: 70%;
     height: auto;
     overflow: auto;
@@ -691,6 +730,24 @@ Version: 1.1
     right: 0;
   }
 }
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover {
+    width: 80%;
+  }
+}
+
+img.logoprincipale {
+  display: inline-block;
+  z-index: 9999;
+}
+
+img.logoprincipalehover {
+  z-index: 8888;
+}
+
+.logo_area:hover img.logoprincipale {
+  display: none;
+}
 
 .Menu_général_gauche .logo_area .block_text_logo {
   width: 66.6666%;
@@ -699,6 +756,11 @@ Version: 1.1
   position: relative;
   /* centrage vertical iE*/
   float: left;
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .Menu_général_gauche .logo_area .block_text_logo {
+    display: none;
+  }
 }
 
 .Menu_général_gauche .logo_area .block_text_logo .enfant_block_text_logo {
@@ -756,8 +818,10 @@ Version: 1.1
 
 .Menu_général .Menu_général_droite .menu_search input[type=text] {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   float: left;
   line-height: 60px;
   /* PB sur iE */
@@ -819,8 +883,17 @@ Version: 1.1
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-size: 0.8125rem;
   padding-right: 25px;
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .Menu_général ul#Menu_principal li a {
+    font-size: 12px;
+    font-size: 0.75rem;
+    padding-right: 10px;
+  }
 }
 
 .Menu_général ul#Menu_principal li a:hover {
@@ -1155,7 +1228,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -1168,7 +1246,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -1182,7 +1265,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -1195,7 +1283,12 @@ Version: 1.1
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -1631,11 +1724,30 @@ body.home .row {
 
 .structure_de_page_recherche .intro .screen #norm {
   display: block;
-  font-size: calc( 1em * 2);
-  line-height: calc( 1em * 1.2);
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
+  font-family: "BioRhyme", serif;
+  font-weight: 200;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   font-family: "BioRhyme", serif;
   font-weight: 200;
   color: #EA6F51;
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .structure_de_page_recherche .intro .screen #norm {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_recherche .intro .screen #norm {
@@ -1661,7 +1773,7 @@ body.home .row {
 
 .demo {
   padding-bottom: 10px;
-  font-size: calc(1em * 1.2);
+  font-size: calc(10px * 1.2);
   font-family: "BioRhyme", serif;
   font-weight: 400;
 }
@@ -1813,19 +1925,19 @@ body.home .row {
 }
 @media only screen and (min-width: 1524px) {
   .display_article article {
-    height: 400px;
+    height: 500px;
     width: 33.3333%;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
   .display_article article {
-    height: 400px;
+    height: 500px;
     width: 33.3333%;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
   .display_article article {
-    height: 450px;
+    height: 650px;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -1941,10 +2053,12 @@ body.home .row {
 }
 
 .display_article article header.entry-header-home .subwhite h3 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  font-size: calc(1em * 2.2);
-  line-height: calc(1em * 1.2);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -1955,6 +2069,14 @@ body.home .row {
   display: inline-block;
   width: 100%;
   padding-bottom: calc(25px / 2);
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .display_article article header.entry-header-home .subwhite h3 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 
 .display_article article header.entry-header-home .subwhite p.timeit {
@@ -1973,8 +2095,10 @@ body.home .row {
   text-decoration: none !important;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -1993,13 +2117,14 @@ body.home .row {
   -o-animation: fadein 1s;
   /* Opera */
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .display_article article header.entry-header-home .subwhite .content_preview {
   padding-top: calc(25px / 2);
-  padding-bottom: calc(25px / 2);
   font-family: "BioRhyme", serif;
   text-decoration: none;
   color: #EA6F51;
@@ -2052,7 +2177,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -2065,7 +2195,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -2079,7 +2214,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -2092,7 +2232,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -2395,7 +2540,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -2408,7 +2558,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -2422,7 +2577,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -2435,7 +2595,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -2702,7 +2867,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -2715,7 +2885,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -2729,7 +2904,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -2742,7 +2922,12 @@ body.home .row {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -3401,7 +3586,12 @@ ul.Menu_principal_mobile_2 li a:hover {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -3414,7 +3604,12 @@ ul.Menu_principal_mobile_2 li a:hover {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -3428,7 +3623,12 @@ ul.Menu_principal_mobile_2 li a:hover {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -3441,7 +3641,12 @@ ul.Menu_principal_mobile_2 li a:hover {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -3687,6 +3892,36 @@ ul.Menu_principal_mobile_2 li a:hover {
   z-index: -999;
 }
 
+.setup p.share {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+
+.setup p:hover {
+  text-decoration: none;
+  color: #EA6F51;
+}
+
+.setup p.hidden {
+  padding-top: 25px;
+}
+
+.setup p.hidden a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+}
+
+.setup p.hidden a:hover {
+  text-decoration: none;
+  color: #EA6F51;
+}
+
 @media only screen and (min-width: 1524px) {
   .contenu_article {
     padding: 25px 40% 25px 25px;
@@ -3701,6 +3936,11 @@ ul.Menu_principal_mobile_2 li a:hover {
   .contenu_article {
     padding: 25px 25px 25px 25px;
   }
+}
+
+.contenu_article ul.post-categories {
+  display: inline-block;
+  width: 100%;
 }
 
 picture.background_picture {
@@ -3814,7 +4054,7 @@ picture.background_picture img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: calc(1em * 3);
+  font-size: 36px;
 }
 @media only screen and (min-width: 1524px) {
   .article_complet .entry-header {
@@ -3947,7 +4187,12 @@ picture.background_picture img {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -3960,7 +4205,12 @@ picture.background_picture img {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .components-toolbar__control[aria-label="Align left"],
 .components-toolbar__control[aria-label="Align center"],
@@ -3972,9 +4222,10 @@ picture.background_picture img {
 
 .formatingtext p {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
-  line-height: calc(1em * 2);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -3988,15 +4239,17 @@ picture.background_picture img {
 
 .formatingtext p em {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   font-style: italic;
 }
 
 .formatingtext h1, .formatingtext h2, .formatingtext h3, .formatingtext h4, .formatingtext h5 {
   font-family: "BioRhyme", serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
+  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: calc(25px / 1.5);
@@ -4025,9 +4278,10 @@ picture.background_picture img {
 
 .formatingtext blockquote p {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
-  line-height: calc(1em * 2);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -4041,8 +4295,10 @@ picture.background_picture img {
 
 .formatingtext ol {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -4072,8 +4328,10 @@ picture.background_picture img {
 
 .formatingtext ul {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   list-style: none;
   margin-left: 0.7em;
 }
@@ -4093,16 +4351,19 @@ picture.background_picture img {
 
 .formatingtext ul li em {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   font-style: italic;
 }
 
 .formatingtext blockquote cite {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
-  line-height: calc(1em * 2);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -4145,7 +4406,12 @@ picture.background_picture img {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -4158,7 +4424,12 @@ picture.background_picture img {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -4172,7 +4443,12 @@ picture.background_picture img {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -4185,7 +4461,12 @@ picture.background_picture img {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -4429,6 +4710,34 @@ picture.background_picture img {
   opacity: 0.5;
   height: 100vh;
   z-index: -999;
+}
+
+.categ_posttype {
+  width: 100%;
+  display: inline-block;
+  padding: 25px 25px 0px 25px;
+}
+
+.postype {
+  float: left;
+}
+
+.postype .button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-transform: lowercase;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  float: left;
+  margin-bottom: 7px;
+  background-color: white;
+  color: #EA6F51;
 }
 
 .row_prez .prez_gauche div.stickyprez {
@@ -4672,9 +4981,12 @@ picture.background_picture img {
 }
 
 .entryheaderprojet .title_project h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  font-size: calc(1em * 3);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -4682,6 +4994,14 @@ picture.background_picture img {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .entryheaderprojet .title_project h2 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 
 .entryheaderprojet a {
@@ -4709,8 +5029,10 @@ picture.background_picture img {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: calc(1em * 1.2);
-  line-height: calc(1em * 1.2);
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 20px;
+  line-height: 1.25rem;
 }
 @media only screen and (min-width: 1524px) {
   .entryheaderprojet p.time {
@@ -4824,10 +5146,12 @@ picture.background_picture img {
 }
 
 .article_complet .entry-content h3 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  font-size: calc(1em * 2.2);
-  line-height: calc(1em * 1.2);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -4844,6 +5168,14 @@ picture.background_picture img {
   display: inline-block;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .article_complet .entry-content h3 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 @media only screen and (min-width: 1524px) {
   .article_complet .entry-content h3 {
@@ -4866,7 +5198,7 @@ picture.background_picture img {
 
 .article_complet .entry-content .formatingtext, .article_complet .entry-content .details_bellow {
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 10vh;
 }
 @media only screen and (min-width: 1524px) {
   .article_complet .entry-content .formatingtext, .article_complet .entry-content .details_bellow {
@@ -4924,7 +5256,7 @@ picture.background_picture img {
 }
 
 ul.slides {
-  color: red;
+  color: #EA6F51;
   display: inline-block;
   font-family: "BioRhyme", serif;
 }
@@ -4936,7 +5268,7 @@ li.slide {
 ul.slides li.slide {
   display: inline-block;
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: calc(25px / 3);
 }
 
 .left_span {
@@ -4972,7 +5304,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -4985,7 +5322,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -4999,7 +5341,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -5012,7 +5359,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -5259,16 +5611,17 @@ ul.slides li.slide {
 }
 
 .basic {
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
 }
 
 .about_membre {
   width: 100%;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
-  line-height: calc(1em * 2);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -5299,7 +5652,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -5312,7 +5670,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -5326,7 +5689,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -5339,7 +5707,12 @@ ul.slides li.slide {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -5612,8 +5985,11 @@ ul.slides li.slide {
   -o-animation: fadein 1s;
   /* Opera */
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  text-align: right;
   color: #EA6F51;
 }
 @media only screen and (min-width: 1524px) {
@@ -5655,9 +6031,12 @@ ul.slides li.slide {
 }
 
 .header_contact h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  font-size: calc(1em * 3);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -5672,6 +6051,14 @@ ul.slides li.slide {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .header_contact h2 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 
 div.contact_fields {
@@ -5727,8 +6114,10 @@ div.contact_fields div.wpcf7 {
   -o-animation: fadein 1s;
   /* Opera */
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   color: #EA6F51;
   width: 100%;
   padding: 25px 0px 25px 0px;
@@ -5830,11 +6219,11 @@ div.wpcf7 label.cent {
 
 div.wpcf7 label input.wpcf7-form-control {
   width: 100% !important;
-  line-height: 100% !important;
-  font-size: 1em;
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   color: #EA6F51;
 }
 
@@ -5857,28 +6246,32 @@ input[type=submit] {
 .form-box textarea, .wpcf7 .wpcf7-textarea {
   border: medium none;
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   display: block;
   min-height: 1em;
 }
 
 .wpcf7 input[type=submit],
 .wpcf7 input[type=button] {
-  font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
+  text-transform: lowercase;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  float: left;
   margin-left: 7px;
   margin-bottom: 7px;
-  display: inline-block;
-  float: left;
   background-color: #EA6F51;
   color: white;
-  text-transform: lowercase;
   width: 80px;
   text-align: center;
 }
@@ -5902,7 +6295,12 @@ input[type=submit] {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /*Formulaire*/
 .message_was_send {
   width: 100%;
@@ -5967,7 +6365,12 @@ textarea {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -5980,7 +6383,12 @@ textarea {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -5994,7 +6402,12 @@ textarea {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -6007,7 +6420,12 @@ textarea {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -6466,9 +6884,12 @@ div.stickyprez {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  font-size: calc(1em * 3);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -6484,6 +6905,14 @@ div.stickyprez {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .prez_droite .basic h2 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 
 /***********************************************************************************************************************
@@ -6504,10 +6933,12 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 }
 
 .accordionButton h3 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  font-size: calc(1em * 2.2);
-  line-height: calc(1em * 1.2);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -6515,6 +6946,14 @@ DESCRIPTION: This document contains the structural formatting files for the acco
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .accordionButton h3 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 
 .accordionButton {
@@ -6585,8 +7024,10 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 
 .accordionContent .texte {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent .texte {
@@ -6626,7 +7067,12 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -6639,7 +7085,12 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -6653,7 +7104,12 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -6666,7 +7122,12 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -7055,20 +7516,22 @@ div.sticky {
 }
 
 .searchandfilter ul li.sf-field-category ul li label {
-  font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
+  text-transform: lowercase;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  float: left;
   margin-left: 7px;
   margin-bottom: 7px;
-  display: inline-block;
-  float: left;
   background-color: #EA6F51;
   color: white;
-  text-transform: lowercase;
 }
 
 .searchandfilter ul li.sf-field-category input:checked + label {
@@ -7085,21 +7548,23 @@ div.sticky {
 }
 
 .searchandfilter ul li.sf-field-post_type ul li label {
-  font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
+  text-transform: lowercase;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  float: left;
   margin-left: 7px;
   margin-bottom: 7px;
-  display: inline-block;
-  float: left;
   background-color: white;
   border: 1px solid #EA6F51;
   color: #EA6F51;
-  text-transform: lowercase;
 }
 
 .searchandfilter ul li.sf-field-post_type ul li input:checked + label {
@@ -7135,8 +7600,10 @@ a.search-filter-reset {
 .searchandfilter ul > li[data-sf-field-input-type=radio] label, .searchandfilter li[data-sf-field-input-type=radio] label, .searchandfilter li[data-sf-field-input-type=range-radio] label, .searchandfilter li[data-sf-field-input-type=range-radio] label {
   border: none;
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .searchandfilter ul > li[data-sf-field-input-type=radio] input:checked + label {
@@ -7154,6 +7621,10 @@ a.search-filter-reset {
   display: inline-block;
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   color: #EA6F51;
   padding: 25px 0 25px !important;
 }
@@ -7202,26 +7673,23 @@ input:checked + label::before {
   color: #fff;
 }
 
-ul.post-categories {
-  width: 100%;
-  float: left;
-}
-
 ul.post-categories li a {
-  font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
+  text-transform: lowercase;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  float: left;
   margin-left: 7px;
   margin-bottom: 7px;
-  display: inline-block;
-  float: left;
   background-color: #EA6F51;
   color: white;
-  text-transform: lowercase;
   text-decoration: none;
 }
 
@@ -7242,7 +7710,7 @@ ul.post-categories li a:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
 }
 @media only screen and (min-width: 1524px) {
   .structure_de_page_recherche .search-filter-results {
@@ -7281,7 +7749,12 @@ ul.post-categories li a:hover {
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
   .structure_de_page_recherche .search-filter-results article.projets {
-    height: 450px;
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .structure_de_page_recherche .search-filter-results article.projets {
+    height: 650px;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -7342,10 +7815,12 @@ input.sf-input-radio {
 }
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header h3 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  font-size: calc(1em * 2.2);
-  line-height: calc(1em * 1.2);
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -7362,18 +7837,20 @@ input.sf-input-radio {
   /* Opera */
   display: inline-block;
   width: 100%;
-  font-size: calc(1em * 2);
   padding-bottom: calc(25px / 2);
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .structure_de_page_recherche .search-filter-results article.projets header.entry-header h3 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
 }
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header h3 a {
   text-decoration: none;
   color: black;
-}
-
-.structure_de_page_recherche .search-filter-results article.projets header.entry-header ul.post-categories {
-  margin-top: 25px;
-  margin-left: 25px;
 }
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header p.timeit {
@@ -7385,8 +7862,10 @@ input.sf-input-radio {
   -o-animation: fadein 1s;
   /* Opera */
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   border-top: 1.2px solid #EA6F51;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -7403,7 +7882,6 @@ input.sf-input-radio {
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header p.content_preview {
   padding-top: calc(25px / 2);
-  padding-bottom: calc(25px / 2);
 }
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header p {
@@ -7415,8 +7893,10 @@ input.sf-input-radio {
   -o-animation: fadein 1s;
   /* Opera */
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .structure_de_page_recherche .search-filter-results article.post {
@@ -7556,7 +8036,12 @@ input.sf-input-radio {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -7569,7 +8054,12 @@ input.sf-input-radio {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 /* Dynamic grid */
 /* none ou grid*/
@@ -7583,7 +8073,12 @@ input.sf-input-radio {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -7596,7 +8091,12 @@ input.sf-input-radio {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
 .structure_de_page {
   display: grid;
@@ -7970,8 +8470,10 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   -o-animation: fadein 1s;
   /* Opera */
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em / 1.1);
-  line-height: calc(1em * 1.2);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   float: left;
   width: 33.3333%;
 }
@@ -8088,9 +8590,10 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 
 .footer_post_structure .logo4 {
   font-family: "Open Sans", sans-serif;
-  font-size: calc(1em * 1.1);
-  line-height: calc(1em * 1.5);
-  line-height: calc(1em * 2);
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -8154,7 +8657,12 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -8167,8 +8675,19 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 /* Post_home */
 /* Border */
 /* Couleur */
-/* Typo*/
+/* FONT SIZE*/
+/* TITLE*/
+/* TEXTE*/
+/* TEXTE ABSTRACT*/
+/* DATE POST*/
+/* MENU */
 /* Parametre mixin */
+html {
+  font-size: 62.5%;
+  /* 16*(62.5/100) = 10 =&nsp; 10px = 1rem */
+  line-height: 1.5;
+}
+
 body {
   height: auto;
   overflow-x: hidden;

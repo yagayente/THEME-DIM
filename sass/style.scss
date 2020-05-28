@@ -20,8 +20,13 @@
 @import "vars";
 @import "_mixin.scss";
 
+html {
+  font-size: 62.5%; /* 16*(62.5/100) = 10 =&nsp; 10px = 1rem */
+  line-height: 1.5;
+}
+
+
 body {
-  $font_size_global: 1em;
   height: auto;
   overflow-x: hidden; //horizontal
 }
