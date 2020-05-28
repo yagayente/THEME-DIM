@@ -19,7 +19,7 @@
 	</a>
 
 	<div class="categ_posttype">
-	<div class="postype"><span class="button">Actualités</span></div>
+	<div class="postype"><span class="button">Projet</span></div>
 	<?php the_category(); ?>
 	</div>
 

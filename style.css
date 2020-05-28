@@ -4736,6 +4736,7 @@ picture.background_picture img {
   line-height: 1.25rem;
   float: left;
   margin-bottom: 7px;
+  margin-right: 7px;
   background-color: white;
   color: #EA6F51;
 }
@@ -7673,7 +7674,7 @@ input:checked + label::before {
   color: #fff;
 }
 
-ul.post-categories li a {
+.article_complet ul.post-categories li a, .structure_de_page_recherche ul.post-categories li a {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -7686,7 +7687,7 @@ ul.post-categories li a {
   line-height: 20px;
   line-height: 1.25rem;
   float: left;
-  margin-left: 7px;
+  margin-right: 7px;
   margin-bottom: 7px;
   background-color: #EA6F51;
   color: white;
@@ -7916,7 +7917,7 @@ input.sf-input-radio {
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
   .article_search_images {
-    height: 70%;
+    height: 85%;
   }
 }
 @media only screen and (max-width: 520px) {

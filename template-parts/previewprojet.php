@@ -21,7 +21,7 @@
 			</div>
 </a>
 <div class="categ_posttype">
-<div class="postype"><span class="button">Projet</span></div>
+<div class="postype"><span class="button">Actualité</span></div>
 <?php the_category(); ?>
 </div>
 

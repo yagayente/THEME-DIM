@@ -226,10 +226,9 @@ input:checked + label::before {
   color: #fff;
 }
 
-ul.post-categories li a {
-  @include button;
+.article_complet ul.post-categories li a, .structure_de_page_recherche ul.post-categories li a{
+  @include button_inpost;
   text-decoration: none;
-
 }
 ul.post-categories li a:hover {
   @include button_hover;
@@ -406,7 +405,7 @@ article.projets header.entry-header p{
     @include respond-to(wide-screens) {
     }
     @include respond-to-bis(middle-screens) {
-      height: 70%;
+      height: 85%;
     }
     @include respond-to(small-screens){
       width: calc(#{$margeexterieur_small} + (#{$valeurde_unecolonne_small} * 5) + #{$margeexterieur_small} );
