@@ -38,7 +38,6 @@
 
 .prez_droite {
   float: right;
-  @include espace;
   @include mixin_border_left;
   @include respond-to(wide-screens) {
     width: 65%;

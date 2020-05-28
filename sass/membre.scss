@@ -1,0 +1,15 @@
+@import "vars";
+@import "_mixin.scss";
+@import "grid";
+
+.basic {
+   @include espace;
+}
+.about_membre {
+  width: 100%;
+  display: inline-block;
+  @include p;
+  margin-bottom: 0 !important;
+  @include mixin_border_bottom;
+  padding: $spacing_large $margeexterieur_largedouble $spacing_large $spacing_large;
+}

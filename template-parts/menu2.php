@@ -12,7 +12,7 @@
 
                       <div class="block_image_logo" id="iefix">
                       <img class="logoprincipale" <?php awesome_acf_responsive_image(get_field( 'logo_principal', 'option' ),'2-width','640px'); ?>  alt="text" />
-
+                      <img class="logoprincipalehover" <?php awesome_acf_responsive_image(get_field( 'logo_principal', 'option' ),'2-width','640px'); ?>  alt="text" />
                       </div>
 
                       <div class="block_text_logo">
