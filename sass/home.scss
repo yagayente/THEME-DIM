@@ -208,7 +208,6 @@ color: $red;
 
 .structure_de_page_recherche .intro .screen #mobile{
 display: none;
-@include mixin_border_bottom;
 background-color: white;
     @include respond-to(small-screens){
       display: block;
@@ -217,10 +216,8 @@ background-color: white;
     }
 }
 .demo {
-  padding-bottom: $margeexterieur_small;
-  font-size: calc(#{$font_size_global} * 1.2);
-  font-family: 'BioRhyme', serif;
-  font-weight: 400;
+  @include h3;
+  padding-bottom: $spacing_large;
 }
 .abovethetext {
     height: calc(#{$hauteurderow_large} * 4);
@@ -232,11 +229,6 @@ background-color: white;
   bottom: 0;
   height: 50%;
   width: 100%;
-  content: "";
-  background: linear-gradient(to top,
-     rgba(255,255,255, 1) 20%,
-     rgba(255,255,255, 0) 80%
-  );
   pointer-events: none; /* so the text is still selectable */
 }
 
@@ -247,28 +239,29 @@ background-color: white;
 margin-right: auto;
 left: 0;
 right: 0;
-text-align: center;
-  bottom: 20px;
+  bottom: 0;
+  padding-bottom: $margeexterieur_small;
+  background-color: white;
+  @include line-height($SMALL_line_height_title);
 }
 
 .button_text {
-  background-color: white;
-  color: red;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 15px;
+  @include font_courant;
+  @include link;
   padding-top: 5px;
   padding-bottom: 5px;
-  @include mixin_border;
+}
+
+.font_size {
+  @include h3;
+  display: inline-block;
 }
 .button_text:hover {
-  background-color: $red;
-  color: white;
+  @include linkover;
   cursor: pointer;
 }
 
 .truncate {
-
   /*BOTH of the following are required for text-overflow (overflow: hidden; and white-space: nowrap;)*/
   overflow: hidden;
   height: calc(#{$hauteurderow_large} * 4);
@@ -352,7 +345,6 @@ display: none;
           }
 
       @include respond-to(small-screens){
-        margin-bottom: 25px;
         height: $hauteur_de_post_home_small;
         width: 100%;
 
@@ -399,6 +391,17 @@ display: none;
   @include fadein;
 }
 
+.display_article article header.entry-header-home ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+.display_article article header.entry-header-home ul li {
+  @include button_inpost;
+}
+.display_article article header.entry-header-home ul li:hover {
+  @include button_hover;
+}
 .display_article article header.entry-header-home a.allpostlink {
   text-decoration: none;
     @include link;

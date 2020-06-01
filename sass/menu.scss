@@ -149,6 +149,8 @@ font-size: 0px;
   padding-left: $spacing_large;
   padding-right: $spacing_large;
   line-height: 60px;
+  @include font_glyph;
+  @include font-size(20px);
 }
 .Menu_général .Menu_général_droite .menu_search input[type=text] {
     @include abstract;
@@ -160,6 +162,9 @@ font-size: 0px;
     padding: 0 !important;
     @include respond-to(medium-screens) {
     width: 250px;
+  }
+    @include respond-to-bis(middle-screens) {
+    width: 200px;
   }
 }
 .Menu_général .Menu_général_droite .language ul li {

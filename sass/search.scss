@@ -5,7 +5,10 @@
 
 .noresult {
   width: 100%;
+  color: $red;
   @include mixin_border_bottom;
+  @include abstract;
+  @include padding;
 }
 #colonne .search-filter-results article a.allpostlink {
   width: 100%;
@@ -64,7 +67,7 @@
     /* ici l'illustration est traitée hors grille */
     float: left;
     @include respond-to(wide-screens) {
-      padding-left: $margeexterieur_large;
+      padding-left: $spacing_large;
       width: 35%;
  }
     @include respond-to(medium-screens) {
@@ -72,7 +75,7 @@
         width: 33.3333%;
     }
     @include respond-to(small-screens){
-      padding-left: $margeexterieur_small;
+      padding-left: $spacing_large;
       width: 100%;
       margin-top: 120px !important;  /* unset */
       float: none;
@@ -80,11 +83,12 @@
     }
 }
 
+
 div.sticky {
   @include fadein;
   text-align: right;
-  padding-right: $spacing_large;
-position: -webkit-sticky;
+  padding: 0 $spacing_large $spacing_large $spacing_large;
+  position: -webkit-sticky;
   position: sticky;
   top:0;
   display: inline-block;
@@ -97,14 +101,47 @@ position: -webkit-sticky;
     padding-left: $spacing_medium;
 }
   @include respond-to(small-screens){
-    padding-left: 0px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top:0px;
+    z-index: map-get($z-index, menu_allover_mobile);
+    left: 0px;
+    display: none;
+    text-align: left;
+  }
+}
+a.toggle_menu {
+    display: none;
+    padding: $spacing_large 0 5px 0;
+    right: 0px;
+  @include link;
+  cursor: pointer;
+  @include respond-to(wide-screens) {
+    display: none;
+}
+  @include respond-to(medium-screens) {
+  display: none;
+}
+  @include respond-to(small-screens){
+    display: inline-block;
   }
 }
 
+
 .searchandfilter ul li {
     float: right;
+    @include respond-to(small-screens){
+    float: left;
+    }
 }
-
+.searchandfilter ul li ul.children {
+  float: right;
+}
+.searchandfilter ul li ul li ul {
+  margin-left: 0 !important;
+}
 .searchandfilter ul li.sf-field-category {
   width: 100%;
 }
@@ -116,6 +153,10 @@ position: -webkit-sticky;
 }
 .searchandfilter ul li.sf-field-category ul li label {
   @include button;
+  @include respond-to(small-screens){
+      margin-left: 0px;
+        margin-right: 7px;
+  }
 }
 .searchandfilter ul li.sf-field-category input:checked + label {
   @include button_checked;
@@ -145,6 +186,10 @@ a.search-filter-reset {
   padding: 0;
   margin: 0;
   margin-left: 10px;
+  @include respond-to(small-screens){
+    margin-left: 0px;
+    margin-right: $spacing_large;
+  }
 }
 
 .searchandfilter ul li ul li label.sf-label-radio:hover {
@@ -170,7 +215,6 @@ a.search-filter-reset {
 
 .searchandfilter ul > li[data-sf-field-input-type=checkbox] ul {
   display: inline-block;
-  width: 100%;
 }
 
 .searchandfilter h4 {
@@ -182,10 +226,12 @@ a.search-filter-reset {
 }
 .searchandfilter ul > li[data-sf-field-input-type=checkbox] ul {
   display: inline-block;
-  width: 100%;
+
 }
 
-
+.searchandfilter ul>li>ul:not(.children) {
+    width: 100%;
+}
 
 
 
@@ -269,8 +315,8 @@ ul.post-categories li a:hover {
   width: 50%;
   height: $hauteur_de_post;
   overflow: hidden;
-    @include mixin_border_top;
-   position: relative;
+  @include mixin_border_top;
+  position: relative;
   float: left;
   background-color: white;
   @include respond-to(medium-screens){
@@ -280,6 +326,7 @@ ul.post-categories li a:hover {
         height: $hauteur_de_post_home_middle;
     }
   @include respond-to(small-screens){
+        height: $hauteur_de_post_home_small;
         width: 100%;
     }
 }
@@ -408,10 +455,10 @@ article.projets header.entry-header p{
       height: 85%;
     }
     @include respond-to(small-screens){
+      height: 100%;
       width: calc(#{$margeexterieur_small} + (#{$valeurde_unecolonne_small} * 5) + #{$margeexterieur_small} );
       top: 0px !important;  /* unset */
       display: block;
-      height: 50vh;
     }
 }
 

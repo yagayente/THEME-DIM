@@ -23,6 +23,29 @@
 @mixin font_courant {font-family: "Open Sans", sans-serif;}
 @mixin font_courant_tailles {font-size: calc(#{$font_size_global} * 1.1); line-height: calc(#{$font_size_global} * 1.5);}
 @mixin font_titrage {font-family: 'BioRhyme', serif;}
+@mixin font_glyph {font-family: 'dim-stcn-glyphsregular', serif;;}
+
+@mixin prefix($property, $value, $vendors: webkit moz ms o, $default: true) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-" + $property}: #{$value};
+    }
+  }
+  @if $default {
+    #{$property}: #{$value};
+  }
+}
+@mixin center-vertically-horizontally {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  @include prefix(transform, translateY(-50%), 'webkit' 'ms');
+}
 
 @mixin abstract {
   @include font_courant;
@@ -62,8 +85,8 @@
   margin-bottom: 7px;
   background-color: $red;
   color: white;
+  text-decoration: none;
 }
-
 @mixin button_inpost {
   @include button_shape;
   margin-right: 7px;
@@ -71,8 +94,6 @@
   background-color: $red;
   color: white;
 }
-
-
 @mixin button2 {
   @include button_shape;
   margin-left: 7px;
@@ -119,6 +140,9 @@ animation: fadeout 1s;
  -o-animation: fadeout 1s; /* Opera */
 }
 
+@mixin padding {
+  padding: $spacing_large;
+}
 
 @mixin link {
   @include font_titrage;
@@ -225,6 +249,10 @@ margin-top:2px;
   @include respond-to-bis(middle-screens) {
     @include font-size($MIDDLE_font_size_title);
     @include line-height($MIDDLE_line_height_title);
+    }
+  @include respond-to(small-screens) {
+    @include font-size($SMALL_font_size_title);
+    @include line-height($SMALL_line_height_title);
     }
 }
 

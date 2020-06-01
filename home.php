@@ -45,7 +45,7 @@ get_header();
 											  </feComponentTransfer>
 											<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
 											</filter>
-                        
+
                     </svg>
 
 
@@ -57,10 +57,10 @@ get_header();
                 <div class="intro">
 
 											<div class="screen">
-												<div id="norm">NORMAL :<?php the_field('introduction', 'option'); ?></div>
+												<div id="norm"><?php the_field('introduction', 'option'); ?></div>
 												<div id="mobile">
 													<div class="abovethetext">
-													<div class="but"><span class="button_text"><?php pll_e('lire_plus'); ?></span></div>
+													<div class="but"><span class="button_text"><?php pll_e('lire_plus'); ?></span><p class="font_size">&nbsp</p></div>
 													</div>
 
 													<section class="demo" id="demo">

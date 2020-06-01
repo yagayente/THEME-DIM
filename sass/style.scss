@@ -17,8 +17,14 @@
 @use 'search';
 @use 'footer';
 
+/* CUSTOM LINK URL */
+@use 'local';
+@use 'online';
+
+
 @import "vars";
 @import "_mixin.scss";
+
 
 html {
   font-size: 62.5%; /* 16*(62.5/100) = 10 =&nsp; 10px = 1rem */

@@ -27,7 +27,7 @@
 
       <div class="Menu_général_droite">
           <div class="menu_search">
-                  <p>O</p>
+                  <p>L</p>
                   <?php echo do_shortcode('[searchandfilter id="264"]'); ?>
           </div>
       <span class="language"><ul><?php pll_the_languages();?></ul></span>
@@ -50,8 +50,6 @@
     );
     ?>
 </div><!-- .Menu_général -->
-
-
 
 
 
@@ -90,27 +88,55 @@
 
 	<div class="containermobile">
 
-      <div class="nav-toggle">
 
-          <div class="nav-toggle-bar">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-              <rect width="100" height="5"></rect>
-              <rect y="30" width="100" height="5"></rect>
-              <rect y="60" width="100" height="5 "></rect>
-            </svg>
-          </div>
 
+
+      <div class="nav-toggle-2">
           <div class="nav-toggle-bar-2">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-              <rect width="100" height="5"></rect>
-              <rect y="30" width="100" height="5"></rect>
-              <rect y="60" width="100" height="5 "></rect>
-            </svg>
+          <p>L</p>
           </div>
-
       </div>
 
 
 
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="mobilenav">
+    <?php
+    $page = get_page_by_title('Accueil' );
+    $pag1 = get_page_by_title('Home' );
+    $pag2 = get_page_by_title('Recherche' );
+    $ids = "{$page->ID},{$pag1->ID},{$pag2->ID}";
+
+    wp_nav_menu(
+      array(
+        'theme_location' => 'header-menu',
+        'menu_id'        => 'Menu_mobile',
+        'exclude' => $ids,
+        'container' => 'ul',
+        'menu_class'=> 'Menu_mobile'
+      )
+    );
+    ?>
+      <span class="language"><ul><?php pll_the_languages();?></ul></span>
+  </div>
+  <a href="javascript:void(0)" class="icon">
+  <div class="hamburger">
+  <div class="menui top-menu"></div>
+  <div class="menui mid-menu"></div>
+  <div class="menui bottom-menu"></div>
+  </div>
+  </a>
+
 </header>

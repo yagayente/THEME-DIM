@@ -1,6 +1,6 @@
 <?php
 /**
- * Search & Filter Pro
+ * Search & Filter Pro Projet
  *
  * Sample Results Template
  *
@@ -85,7 +85,7 @@ if ( $query->have_posts() )
 else
 {
 	echo "<div class='noresult'>
-  Aucune page ne correspond à cette recherche !<br>
+  PROJET - Aucune page ne correspond à cette recherche !<br>
 Vous pouvez réinitialiser les filtres, faire une autre recherche,<br>
 ou utiliser les pages Actualités ou Projets.<br>
 Retrouvez ci-dessous l’ensemble des articles.
@@ -115,7 +115,6 @@ Retrouvez ci-dessous l’ensemble des articles.
 		if($cur_post_type == 'post')get_template_part('template-parts/previewprojet', 'previewprojet');
 	//}else{
 		//$query->the_post($prev_post_type);
-		if($cur_post_type == 'projets')get_template_part('template-parts/previewarticle', 'previewarticle');
 		//}
 	 $prev_post_type = $post->post_type;
 	}

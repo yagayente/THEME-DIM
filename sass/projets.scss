@@ -366,7 +366,6 @@ font-weight: 300;
 ul.slides {
   color: $red;
   display: inline-block;
-  @include font_titrage;
 }
 li.slide {
     margin-bottom: calc(#{$spacing_large} / 3);
@@ -377,10 +376,12 @@ ul.slides li.slide {
   padding-bottom: calc(#{$spacing_large} / 3);
 }
 .left_span{
+  @include font_glyph;
   float: left;
   width: $spacing_large;
 }
 .right_span{
+  @include font_titrage;
   float: left;
   width: calc(100% - (#{$spacing_large} * 2));
   @include respond-to(small-screens){

@@ -25,7 +25,7 @@ $nombredecolonne_medium: 9;
 $valeurde_unecolonne_medium: calc(100vw / #{$nombredecolonne_medium});
 
 /* SMALL */
-$margeexterieur_small: 10px;
+$margeexterieur_small: 5%;
 $nombredecolonne_small: 5;
 $valeurde_unecolonne_small: calc((100% - (#{$margeexterieur_small} * 2)) / #{$nombredecolonne_small});
 
@@ -50,7 +50,7 @@ $button_spacing: 10px;
 $hauteur_de_post_home: 500px;
 $hauteur_de_post_home_medium: 550px;
 $hauteur_de_post_home_middle: 650px;
-$hauteur_de_post_home_small: 400px;
+$hauteur_de_post_home_small: 500px;
 
 /* Border */
 $border: 1.2px;
@@ -69,6 +69,8 @@ $font_size_global: 10px;
   $line_height_title: ($font_size_global * 4.2);
   $MIDDLE_font_size_title: ($font_size_global * 2.6);
   $MIDDLE_line_height_title: ($font_size_global * 3);
+  $SMALL_font_size_title: ($font_size_global * 3);
+  $SMALL_line_height_title: ($font_size_global * 3.5);
 /* TEXTE*/
   $font_size_texte: ($font_size_global * 1.7);
   $line_height_texte: ($font_size_global * 2.4);
@@ -87,11 +89,12 @@ $font_size_global: 10px;
 $font_size_subtitle: calc(#{$font_size_global} * 2);
 $font_size_title_post: calc(#{$font_size_global} * 1.2);
 
-
-
 $bold: bold;
 
 $z-index: (
+  text_menu_allover_mobile : 999999,
+  menu_allover_mobile : 99999,
+  menu_mobile : 99988,
   logo : 9999,
   logohover : 8888,
   3 : 7777,
