@@ -335,7 +335,6 @@ min-height: 50vh;
     }
 }
 .article_complet .entry-content .details_bellow {
-  @include mixin_border_top;
   display: block;
 }
 .leader  {
@@ -362,6 +361,8 @@ font-weight: 300;
 }
 .subperson {
   @include font_courant;
+  display: block;
+  margin-bottom: $spacing_large;
 }
 ul.slides {
   color: $red;

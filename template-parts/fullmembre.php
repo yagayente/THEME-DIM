@@ -52,7 +52,7 @@ get_header(); ?>
 
 											<div class="about_membre">
 												<?php the_field( 'a_propos_du_membre' ); ?>
-											</div>	
+											</div>
 											 <div id="wrapper">
 											 <?php
 											 if( have_rows('presentation_membre') ):
@@ -75,10 +75,11 @@ get_header(); ?>
 											 </div>
 
 							 </div>
-							 <div class="footer_post_structure">
-					 				<?php
-					 				get_footer(); ?>
-					 		</div><!-- footer_post_structure -->
 
 </div>
 </div><!-- Row -->
+
+<div class="structure_de_page_articlefooter">
+    <?php
+    get_footer(); ?>
+</div>

@@ -37,5 +37,5 @@ jQuery(document).ready(function($) {
                         $(window).scroll(sticktothetoptwoprojets);
                         sticktothetoptwoprojets();
                     });
-    
+
 })

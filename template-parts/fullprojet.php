@@ -48,12 +48,37 @@ get_header(); ?>
 									                  <?php the_title(); ?></a>
 									                	</h2>
 				              				</div>
-				                <?php the_category( '' ); ?>
-
+				               
 				              	</div><!-- .entry-header -->
 
 
   			<div class="entry-content">
+
+					<div class="details_bellow">
+
+													<?php if( have_rows('detail') ): ?>
+														<ul class="slides">
+														<?php while( have_rows('detail') ): the_row();
+															$content = get_sub_field('signe');
+															$content2 = get_sub_field('detail_inside');  ?>
+
+															<li class="slide">
+																<?php if( $content ): ?>
+																<div class="left_span"><?php echo $content; ?></div>
+																<?php endif; ?>
+
+																<?php if( $content2 ): ?>
+																<div class="right_span"><?php echo $content2; ?></div>
+																<?php endif; ?>
+															</li>
+														<?php endwhile; ?>
+														</ul>
+
+													<?php endif; ?>
+
+					</div><!-- details bellow -->
+
+
 
 												<h3>Le projet</h3><!-- A traduire -->
 							                <div class="formatingtext">
@@ -124,39 +149,17 @@ get_header(); ?>
 									      </div><!-- membre end -->
   					</div><!-- formating texte -->
 
-									<div class="details_bellow">
-
-									                <?php if( have_rows('detail') ): ?>
-									                  <ul class="slides">
-									                  <?php while( have_rows('detail') ): the_row();
-									                    $content = get_sub_field('signe');
-									                    $content2 = get_sub_field('detail_inside');  ?>
-
-									                    <li class="slide">
-									                      <?php if( $content ): ?>
-									                      <div class="left_span"><?php echo $content; ?></div>
-									                      <?php endif; ?>
-
-									                      <?php if( $content2 ): ?>
-									                      <div class="right_span"><?php echo $content2; ?></div>
-									                      <?php endif; ?>
-									                    </li>
-									                  <?php endwhile; ?>
-									                  </ul>
-
-									                <?php endif; ?>
-
-									</div><!-- details bellow -->
 
 
 
-			              <div class="footer_post_structure">
-			                  <?php
-			                  get_footer(); ?>
-			              </div><!-- footer_post_structure -->
 
 					</div><!-- entry content -->
 				</div><!-- Article complet -->
 				</div><!-- Prez droite -->
 
 </div><!-- Row -->
+
+<div class="structure_de_page_articlefooter">
+    <?php
+    get_footer(); ?>
+</div>

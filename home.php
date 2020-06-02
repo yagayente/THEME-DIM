@@ -121,7 +121,7 @@ textHolder.addEventListener('click', toggleText2);  //to truncate at first time
 
 </script>
 
-<div class="structure_de_page_articlefooter">
+<div class="structure_de_page_articlefooterhome">
     <?php
     get_footer(); ?>
 </div>

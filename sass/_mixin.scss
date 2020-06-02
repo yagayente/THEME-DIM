@@ -54,6 +54,7 @@
 
 @mixin texte_courant {
     @include font_courant;
+    color: $black;
     @include font-size($font_size_texte);
     @include line-height($line_height_texte);}
 
@@ -147,12 +148,12 @@ animation: fadeout 1s;
 @mixin link {
   @include font_titrage;
   text-decoration: none;
-  color: $red;
+  color: $black;
 }
 
 @mixin linkover {
   text-decoration: none;
-  color: $black;
+  color: $red;
 }
 
 @mixin link_noir {

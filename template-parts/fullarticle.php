@@ -68,12 +68,14 @@ get_header(); ?>
 
               </div>
 
-              <div class="footer_post_structure">
-                  <?php
-                  get_footer(); ?>
-              </div>
+               
 
           </div>
 			</div>
 
 </div><!-- Row -->
+
+<div class="structure_de_page_articlefooter">
+    <?php
+    get_footer(); ?>
+</div>

@@ -9,25 +9,42 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
       position: relative;
     }
 }
-.structure_de_page_articlefooter {
 
-  background-color: white;
+.structure_de_page_articlefooterhome {
+background-color: white;
 padding-top: $spacing_large;
 width: 100%;
 height: calc(#{$hauteurderow_large} * 3);
 @include mixin_border_top;
 display: inline-block;
+@include respond-to(small-screens){
+    position: relative;
+  }
 }
 
-.structure_de_page_articlefooter a {
+.structure_de_page_articlefooter {
+z-index: 99999;
+position: absolute;
+background-color: white;
+padding-top: $spacing_large;
+width: 100%;
+height: calc(#{$hauteurderow_large} * 3);
+@include mixin_border_top;
+display: inline-block;
+@include respond-to(small-screens){
+    position: relative;
+  }
+}
+
+.structure_de_page_articlefooter a, .structure_de_page_articlefooterhome a {
   @include link;
 }
-.structure_de_page_articlefooter a:hover {
+.structure_de_page_articlefooter a:hover, .structure_de_page_articlefooterhome a:hover {
   @include linkover;
 }
 
 
-.structure_de_page_articlefooter .logo1 {
+.structure_de_page_articlefooter .logo1, .structure_de_page_articlefooterhome .logo1 {
   height: $hauteurderow_large;
   @include fadein;
   float: left;
@@ -44,7 +61,7 @@ display: inline-block;
   }
 }
 
-.structure_de_page_articlefooter .boxlogo {
+.structure_de_page_articlefooter .boxlogo, .structure_de_page_articlefooterhome .boxlogo{
 
 width: 100%;
 height: 100%;
@@ -58,13 +75,17 @@ height: 100%;
 }
 
 
-.structure_de_page_articlefooter .logo1 img, .structure_de_page_articlefooter .logo2 img{
+.structure_de_page_articlefooter .logo1 img, .structure_de_page_articlefooter .logo2 img,
+.structure_de_page_articlefooterhome .logo1 img, .structure_de_page_articlefooterhome .logo2 img
+
+{
   position: absolute;
   left: 0;
   top: 50%;
   transform: translate(0%, -50%);
 }
-.structure_de_page_articlefooter.logo2 img {
+
+.structure_de_page_articlefooter.logo2 img, .structure_de_page_articlefooterhome .logo2 img {
 
   @include respond-to(small-screens){
     left: unset;
@@ -74,7 +95,7 @@ height: 100%;
 }
 
 
-.structure_de_page_articlefooter .logo2 {
+.structure_de_page_articlefooter .logo2, .structure_de_page_articlefooterhome .logo2 {
   height: $hauteurderow_large;
   @include fadein;
       float: left;
@@ -91,7 +112,7 @@ height: 100%;
 
 }
 
-.structure_de_page_articlefooter .logo4 {
+.structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
   @include fadein;
   @include abstract;
   float: left;

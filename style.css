@@ -682,7 +682,7 @@ Version: 1.1
 .Menu_général_gauche .logo_area a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  color: black;
+  color: #333333;
   font-family: "BioRhyme", serif !important;
 }
 
@@ -862,7 +862,7 @@ img.logoprincipalehover {
 .Menu_général .Menu_général_droite .language ul li a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 .Menu_général .Menu_général_droite .language ul li a:hover {
@@ -888,7 +888,7 @@ img.logoprincipalehover {
 }
 
 .Menu_général ul#Menu_principal li a {
-  color: black;
+  color: #333333;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -938,12 +938,12 @@ img.logoprincipalehover {
 .structure_de_page_menu .home_button .identite a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 .structure_de_page_menu .home_button .identite a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .structure_de_page_menu .home_button .identite .main_site {
@@ -1146,7 +1146,7 @@ img.logoprincipalehover {
 .structure_de_page_menu .blockrecherche .language ul li a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 .structure_de_page_menu .blockrecherche .recherchebarre li.sf-field-sort_order {
@@ -1219,7 +1219,7 @@ img.logoprincipalehover {
   display: inline-block;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -1551,12 +1551,12 @@ img.logoprincipalehover {
 
 .display_article article:hover .entry-header-home a.allpostlink {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .display_article article:hover .entry-header-home p {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .article_home_images {
@@ -1747,7 +1747,7 @@ body.home .row {
   /* Opera */
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  color: #EA6F51;
+  color: #333333;
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
   .structure_de_page_recherche .intro .screen #norm {
@@ -1848,7 +1848,7 @@ body.home .row {
   font-family: "Open Sans", sans-serif;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -1888,7 +1888,7 @@ body.home .row {
 
 .button_text:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
   cursor: pointer;
 }
 
@@ -2106,18 +2106,18 @@ body.home .row {
   text-decoration: none;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
   overflow: hidden;
 }
 
 .display_article article header.entry-header-home a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .display_article article header.entry-header-home a:hover .content_preview {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .display_article article:hover .illustration_post {
@@ -2131,7 +2131,7 @@ body.home .row {
 }
 @media only screen and (min-width: 1524px) {
   .display_article article header.entry-header-home .subwhite {
-    padding: 25px;
+    padding: 25px 5% 25px 5%;
     min-height: 200px;
   }
 }
@@ -2230,7 +2230,7 @@ body.home .row {
   padding-top: calc(25px / 2);
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
   overflow: hidden;
 }
 
@@ -3286,7 +3286,7 @@ a.icon_2 {
   display: none;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 @media only screen and (min-width: 1524px) {
   a.icon_2 {
@@ -3563,12 +3563,12 @@ ul.Menu_principal_mobile li a {
   text-transform: uppercase;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 ul.Menu_principal_mobile li a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 ul.Menu_principal_mobile li {
@@ -3648,12 +3648,12 @@ ul.Menu_principal_mobile li a {
   text-transform: uppercase;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 ul.Menu_principal_mobile li a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 ul.Menu_principal_mobile li {
@@ -3687,12 +3687,12 @@ ul.Menu_principal_mobile_2 li {
 ul.Menu_principal_mobile_2 li a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 ul.Menu_principal_mobile_2 li a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 /* FIN SLIDE MENU */
@@ -3765,7 +3765,7 @@ ul.Menu_principal_mobile_2 li a:hover {
   text-align: left;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 .logo_site .boxlogo_site .box_mobile_logo {
@@ -4193,7 +4193,7 @@ ul.Menu_principal_mobile_2 li a:hover {
 .setup p.hidden a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  color: black;
+  color: #333333;
   padding-right: 10px;
 }
 
@@ -4325,7 +4325,7 @@ picture.background_picture img {
 
 .article_complet a {
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 .article_complet .entry-header {
@@ -4502,6 +4502,7 @@ picture.background_picture img {
 
 .formatingtext p {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -4519,6 +4520,7 @@ picture.background_picture img {
 
 .formatingtext p em {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -4558,6 +4560,7 @@ picture.background_picture img {
 
 .formatingtext blockquote p {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -4575,6 +4578,7 @@ picture.background_picture img {
 
 .formatingtext ol {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -4608,6 +4612,7 @@ picture.background_picture img {
 
 .formatingtext ul {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -4631,6 +4636,7 @@ picture.background_picture img {
 
 .formatingtext ul li em {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -4640,6 +4646,7 @@ picture.background_picture img {
 
 .formatingtext blockquote cite {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -4660,18 +4667,18 @@ picture.background_picture img {
 .formatingtext blockquote cite a, .article_complet ul li a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 .formatingtext blockquote cite a:hover, .article_complet ul li a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .formatingtext a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 /* Dynamic grid */
@@ -5195,7 +5202,7 @@ picture.background_picture img {
 
 .article_complet a {
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 .article_complet .entryheaderprojet {
@@ -5509,11 +5516,6 @@ picture.background_picture img {
 }
 
 .article_complet .entry-content .details_bellow {
-  border-top: 1.2px solid #EA6F51;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   display: block;
 }
 
@@ -5542,6 +5544,8 @@ picture.background_picture img {
 
 .subperson {
   font-family: "Open Sans", sans-serif;
+  display: block;
+  margin-bottom: 25px;
 }
 
 ul.slides {
@@ -5579,7 +5583,7 @@ ul.slides li.slide {
 .structure_de_page_articlefooter a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 /* Dynamic grid */
@@ -5902,12 +5906,14 @@ ul.slides li.slide {
 
 .basic {
   padding-bottom: 10vh;
+  min-height: 90vh;
 }
 
 .about_membre {
   width: 100%;
   display: inline-block;
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -6302,12 +6308,12 @@ ul.slides li.slide {
 .prez_gauche .stickyprez .info_contact a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 .prez_gauche .stickyprez .info_contact a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .header_contact {
@@ -7323,6 +7329,7 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 
 .accordionContent .texte {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -7675,6 +7682,7 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 .noresult {
   width: 100%;
   color: #EA6F51;
+  display: inline-block;
   border-bottom: 1.2px solid #EA6F51;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -7693,12 +7701,12 @@ DESCRIPTION: This document contains the structural formatting files for the acco
   height: 100%;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 #colonne .search-filter-results article a.allpostlink:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 #colonne .search-filter-results article:hover .article_search_images img {
@@ -7710,12 +7718,12 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 
 #colonne .search-filter-results article:hover a.allpostlink {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 #colonne .search-filter-results article .article_search_images:hover a.allpostlink {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 #colonne .search-filter-results article:hover .article_search_images img {
@@ -7819,7 +7827,7 @@ a.toggle_menu {
   right: 0px;
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
   cursor: pointer;
 }
 @media only screen and (min-width: 1524px) {
@@ -7838,12 +7846,20 @@ a.toggle_menu {
   }
 }
 
+#stick .searchandfilter ul li.sf-field-sort_order {
+  margin-top: 20px !important;
+}
+
+.searchandfilter h4 {
+  padding: 0 0 25px 0 !important;
+}
+
 .searchandfilter ul li {
   float: right;
 }
 @media only screen and (max-width: 520px) {
   .searchandfilter ul li {
-    float: left;
+    float: right;
   }
 }
 
@@ -7885,12 +7901,6 @@ a.toggle_menu {
   background-color: #EA6F51;
   color: white;
   text-decoration: none;
-}
-@media only screen and (max-width: 520px) {
-  .searchandfilter ul li.sf-field-category ul li label {
-    margin-left: 0px;
-    margin-right: 7px;
-  }
 }
 
 .searchandfilter ul li.sf-field-category input:checked + label {
@@ -7935,27 +7945,20 @@ a.toggle_menu {
 a.search-filter-reset {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
   margin-top: 25px;
   display: block;
 }
 
 .searchandfilter ul li ul li label.sf-label-radio {
-  background-color: white;
   color: #EA6F51;
   padding: 0;
   margin: 0;
   margin-left: 10px;
 }
-@media only screen and (max-width: 520px) {
-  .searchandfilter ul li ul li label.sf-label-radio {
-    margin-left: 0px;
-    margin-right: 25px;
-  }
-}
 
 .searchandfilter ul li ul li label.sf-label-radio:hover {
-  color: black;
+  color: #333333;
 }
 
 .searchandfilter ul {
@@ -7983,14 +7986,13 @@ a.search-filter-reset {
 
 .searchandfilter h4 {
   display: inline-block;
-  width: 100%;
+  float: left;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 20px;
   line-height: 1.25rem;
   color: #EA6F51;
-  padding: 25px 0 25px !important;
 }
 
 .searchandfilter ul > li[data-sf-field-input-type=checkbox] ul {
@@ -8105,7 +8107,7 @@ ul.post-categories li a:hover {
   width: 50%;
   height: 400px;
   overflow: hidden;
-  border-top: 1.2px solid #EA6F51;
+  border-bottom: 1.2px solid #EA6F51;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8226,7 +8228,7 @@ input.sf-input-radio {
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header h3 a {
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header p.timeit {
@@ -8728,7 +8730,7 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   }
 }
 
-.structure_de_page_articlefooter {
+.structure_de_page_articlefooterhome {
   background-color: white;
   padding-top: 25px;
   width: 100%;
@@ -8740,19 +8742,44 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   box-sizing: border-box;
   display: inline-block;
 }
+@media only screen and (max-width: 520px) {
+  .structure_de_page_articlefooterhome {
+    position: relative;
+  }
+}
 
-.structure_de_page_articlefooter a {
+.structure_de_page_articlefooter {
+  z-index: 99999;
+  position: absolute;
+  background-color: white;
+  padding-top: 25px;
+  width: 100%;
+  height: calc(60px * 3);
+  border-top: 1.2px solid #EA6F51;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+}
+@media only screen and (max-width: 520px) {
+  .structure_de_page_articlefooter {
+    position: relative;
+  }
+}
+
+.structure_de_page_articlefooter a, .structure_de_page_articlefooterhome a {
   font-family: "BioRhyme", serif;
+  text-decoration: none;
+  color: #333333;
+}
+
+.structure_de_page_articlefooter a:hover, .structure_de_page_articlefooterhome a:hover {
   text-decoration: none;
   color: #EA6F51;
 }
 
-.structure_de_page_articlefooter a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-.structure_de_page_articlefooter .logo1 {
+.structure_de_page_articlefooter .logo1, .structure_de_page_articlefooterhome .logo1 {
   height: 60px;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
@@ -8764,24 +8791,24 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   float: left;
 }
 @media only screen and (min-width: 1524px) {
-  .structure_de_page_articlefooter .logo1 {
+  .structure_de_page_articlefooter .logo1, .structure_de_page_articlefooterhome .logo1 {
     margin-left: 5%;
     width: 10%;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
-  .structure_de_page_articlefooter .logo1 {
+  .structure_de_page_articlefooter .logo1, .structure_de_page_articlefooterhome .logo1 {
     margin-left: 0%;
     width: 33.3333%;
   }
 }
 @media only screen and (max-width: 520px) {
-  .structure_de_page_articlefooter .logo1 {
+  .structure_de_page_articlefooter .logo1, .structure_de_page_articlefooterhome .logo1 {
     width: 50%;
   }
 }
 
-.structure_de_page_articlefooter .boxlogo {
+.structure_de_page_articlefooter .boxlogo, .structure_de_page_articlefooterhome .boxlogo {
   width: 100%;
   height: 100%;
   position: relative;
@@ -8795,7 +8822,8 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   width: 120px;
 }
 
-.structure_de_page_articlefooter .logo1 img, .structure_de_page_articlefooter .logo2 img {
+.structure_de_page_articlefooter .logo1 img, .structure_de_page_articlefooter .logo2 img,
+.structure_de_page_articlefooterhome .logo1 img, .structure_de_page_articlefooterhome .logo2 img {
   position: absolute;
   left: 0;
   top: 50%;
@@ -8803,14 +8831,14 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 }
 
 @media only screen and (max-width: 520px) {
-  .structure_de_page_articlefooter.logo2 img {
+  .structure_de_page_articlefooter.logo2 img, .structure_de_page_articlefooterhome .logo2 img {
     left: unset;
     right: 0;
     transform: translate(0%, -50%);
   }
 }
 
-.structure_de_page_articlefooter .logo2 {
+.structure_de_page_articlefooter .logo2, .structure_de_page_articlefooterhome .logo2 {
   height: 60px;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
@@ -8822,22 +8850,22 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   float: left;
 }
 @media only screen and (min-width: 1524px) {
-  .structure_de_page_articlefooter .logo2 {
+  .structure_de_page_articlefooter .logo2, .structure_de_page_articlefooterhome .logo2 {
     width: 20%;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
-  .structure_de_page_articlefooter .logo2 {
+  .structure_de_page_articlefooter .logo2, .structure_de_page_articlefooterhome .logo2 {
     width: 33.3333%;
   }
 }
 @media only screen and (max-width: 520px) {
-  .structure_de_page_articlefooter .logo2 {
+  .structure_de_page_articlefooter .logo2, .structure_de_page_articlefooterhome .logo2 {
     width: 50%;
   }
 }
 
-.structure_de_page_articlefooter .logo4 {
+.structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -8854,17 +8882,17 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   width: 33.3333%;
 }
 @media only screen and (min-width: 1524px) {
-  .structure_de_page_articlefooter .logo4 {
+  .structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
     width: 33.3333%;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
-  .structure_de_page_articlefooter .logo4 {
+  .structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
     width: 33.3333%;
   }
 }
 @media only screen and (max-width: 520px) {
-  .structure_de_page_articlefooter .logo4 {
+  .structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
     width: 100%;
     padding: 25px;
   }
@@ -8874,12 +8902,12 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 .footer_post_structure a {
   font-family: "BioRhyme", serif;
   text-decoration: none;
-  color: #EA6F51;
+  color: #333333;
 }
 
 .footer_post_structure a:hover {
   text-decoration: none;
-  color: black;
+  color: #EA6F51;
 }
 
 .footer_post_structure {
@@ -8966,6 +8994,7 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 
 .footer_post_structure .logo4 {
   font-family: "Open Sans", sans-serif;
+  color: #333333;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 24px;
@@ -9074,6 +9103,18 @@ html {
 body {
   height: auto;
   overflow-x: hidden;
+}
+
+::-moz-selection {
+  background: #e0e0e0;
+  opacity: 1;
+  color: white;
+}
+
+::selection {
+  background: #e0e0e0;
+  opacity: 1;
+  color: white;
 }
 
 .breadcrumb {

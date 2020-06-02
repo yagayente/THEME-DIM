@@ -200,7 +200,7 @@ display: block;
 @include h3;
 font-family: 'BioRhyme', serif;
 font-weight: 200;
-color: $red;
+color: $black;
 @include respond-to(small-screens){
   display: none;
   }
@@ -425,8 +425,8 @@ display: none;
   background-color: white;
 
   @include respond-to(wide-screens) {
-          padding: $spacing_large;
-min-height: 200px;
+          padding: $spacing_small $margeexterieur_small $spacing_small $margeexterieur_small;
+          min-height: 200px;
 
       }
       @include respond-to(medium-screens) {

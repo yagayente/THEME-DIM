@@ -206,12 +206,6 @@ get_template_part( 'func/affiche_chemin_post' );
 get_template_part( 'func/ajax_call' );
 
 
-function enqueue_my_scripts() {
-if ( is_page_template( 'presentation.php' ) ) { //will check if we are on page ID 42, please see conditional tags or is_page_template( 'about.php' ) to check if the page template is about.php ) {
-        wp_enqueue_script( 'jqueryfixedprojet', get_stylesheet_directory_uri() . '/inc/jqueryfixedprojet.js', array('jquery'));  }
-}
-add_action( 'wp_enqueue_scripts', 'enqueue_my_scripts' );
-
 
  //*  SCRIPT
 add_action( 'wp_enqueue_scripts', 'theme_scripts_styles', 'wpb_adding_scripts');
@@ -223,8 +217,7 @@ function theme_scripts_styles() {
   wp_enqueue_script( 'polyfill', get_stylesheet_directory_uri() . '/polyfill/stickybits.min.js');
 
 }
- //*  wp_enqueue_script( 'jqueryfixedprojet', get_stylesheet_directory_uri() . '/inc/jqueryfixedprojet.js', array('jquery'));
-  //*  wp_enqueue_script( 'jqueryfixedall', get_stylesheet_directory_uri() . '/inc/jqueryfixedall.js', array('jquery'));
+//*  wp_enqueue_script( 'jqueryfixedall', get_stylesheet_directory_uri() . '/inc/jqueryfixedall.js', array('jquery'));
   //*  wp_enqueue_script( 'polyfill', get_stylesheet_directory_uri() . '/inc/modernizr.js');
 
 

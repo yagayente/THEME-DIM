@@ -6,6 +6,7 @@
 .noresult {
   width: 100%;
   color: $red;
+  display: inline-block;
   @include mixin_border_bottom;
   @include abstract;
   @include padding;
@@ -129,12 +130,19 @@ a.toggle_menu {
   }
 }
 
+#stick .searchandfilter ul li.sf-field-sort_order{
+    margin-top: 20px !important;
+}
+.searchandfilter h4 {
+    padding: 0 0 $spacing_large 0!important;
+}
 
 .searchandfilter ul li {
     float: right;
     @include respond-to(small-screens){
-    float: left;
+    float: right;
     }
+
 }
 .searchandfilter ul li ul.children {
   float: right;
@@ -153,10 +161,7 @@ a.toggle_menu {
 }
 .searchandfilter ul li.sf-field-category ul li label {
   @include button;
-  @include respond-to(small-screens){
-      margin-left: 0px;
-        margin-right: 7px;
-  }
+
 }
 .searchandfilter ul li.sf-field-category input:checked + label {
   @include button_checked;
@@ -181,15 +186,11 @@ a.search-filter-reset {
 }
 
 .searchandfilter ul li ul li label.sf-label-radio {
-  background-color: white;
   color: $red;
   padding: 0;
   margin: 0;
   margin-left: 10px;
-  @include respond-to(small-screens){
-    margin-left: 0px;
-    margin-right: $spacing_large;
-  }
+
 }
 
 .searchandfilter ul li ul li label.sf-label-radio:hover {
@@ -219,10 +220,9 @@ a.search-filter-reset {
 
 .searchandfilter h4 {
   display: inline-block;
-  width: 100%;
+float: left;
   @include abstract;
   color: $red;
-  padding: $spacing_large 0 $spacing_large !important;
 }
 .searchandfilter ul > li[data-sf-field-input-type=checkbox] ul {
   display: inline-block;
@@ -315,7 +315,7 @@ ul.post-categories li a:hover {
   width: 50%;
   height: $hauteur_de_post;
   overflow: hidden;
-  @include mixin_border_top;
+  @include mixin_border_bottom;
   position: relative;
   float: left;
   background-color: white;
