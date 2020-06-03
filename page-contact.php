@@ -11,6 +11,7 @@ Template Name: Contact
 
 <?php while (have_posts()) : the_post(); ?>
 
+
 <div class="row_prez">
 
 					<div class="prez_gauche">
@@ -18,7 +19,7 @@ Template Name: Contact
 							<div class="stickyprez" id="stick">
 									<div class="info_contact">
 
-								
+
 
 										<p><?php the_field( 'contact' ); ?></p>
 									</div>
@@ -37,6 +38,10 @@ Template Name: Contact
 
 
 							 <div class="contact_fields">
+
+								 <?php $contactform = get_field('formulaire_de_contact'); ?>
+								 <?php echo do_shortcode($contactform); ?>
+
 												 <?php the_content(); ?>
 							</div>
 

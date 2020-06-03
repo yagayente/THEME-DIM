@@ -40,20 +40,11 @@ add_action( 'init', 'people_init' );
 
 
 
-
-
  //*  THEME SUPPORT
 add_theme_support('menus');
 register_nav_menus(
   array(
-    'Menu principal'    => __( 'Menu principal', 'BASE_THEME' ),
-  )
-);
-
-add_theme_support('buttons_home');
-register_nav_menus(
-  array(
-    'Boutons'    => __( 'Boutons', 'BASE_THEME' ),
+    'Menuprincipal'    => __( 'Menuprincipal', 'BASE_THEME' ),
   )
 );
 
@@ -225,6 +216,11 @@ function theme_scripts_styles() {
  //*  TRADUCTION
 //*  Traduction en string du formulaire de contact pour Polylang
 add_action('init', function() {
+  pll_register_string('BASE_THEME', 'all_right');
+  pll_register_string('BASE_THEME', 'credit');
+  pll_register_string('BASE_THEME', 'les_membres');
+  pll_register_string('BASE_THEME', 'le_projet');
+  pll_register_string('BASE_THEME', 'partager');
   pll_register_string('BASE_THEME', 'lire_plus');
   pll_register_string('BASE_THEME', 'lien_copie');
   pll_register_string('BASE_THEME', 'copier_le_lien');

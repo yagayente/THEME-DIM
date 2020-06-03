@@ -190,6 +190,10 @@ font-size: 0px;
   @include mixin_border_left;
 
 }
+
+.Menu_général ul#Menu_principal li.current_page_item a{
+  color: $red;
+}
 .Menu_général ul#Menu_principal li{
   display: inline;
   line-height: 60px;

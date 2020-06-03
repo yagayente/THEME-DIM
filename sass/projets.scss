@@ -300,6 +300,7 @@ min-height: 50vh;
 
 .article_complet .entry-content h3 {
   @include h3;
+  @include mixin_border_top;
   @include mixin_border_bottom;
   width: 100%;
   display: inline-block;

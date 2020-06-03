@@ -33,6 +33,7 @@ height: calc(#{$hauteurderow_large} * 3);
 display: inline-block;
 @include respond-to(small-screens){
     position: relative;
+    z-index: 1;
   }
 }
 
@@ -50,20 +51,25 @@ display: inline-block;
   float: left;
   @include respond-to(wide-screens) {
   margin-left: 5%;
-  width: 10%;
-    }
+  width: 11.66665%;
+  }
   @include respond-to(medium-screens) {
     margin-left: 0%;
-    width: 33.3333%;
-}
-@include respond-to(small-screens){
-  width: 50%;
+    width: 16.666666666666667%;
+  }
+  @include respond-to(small-screens){
+  width: 40%;
+  margin-left: $margeexterieur_small;
+  }
+
+  @include respond-to-bis(middle-screens) {
+    width: 16.666666666666667%;
   }
 }
 
 .structure_de_page_articlefooter .boxlogo, .structure_de_page_articlefooterhome .boxlogo{
-
-width: 100%;
+width: 95%;
+margin-left: 5%;
 height: 100%;
  position: relative;
 }
@@ -83,6 +89,9 @@ height: 100%;
   left: 0;
   top: 50%;
   transform: translate(0%, -50%);
+  @include respond-to-bis(middle-screens) {
+    max-width: 90%;
+  }
 }
 
 .structure_de_page_articlefooter.logo2 img, .structure_de_page_articlefooterhome .logo2 img {
@@ -91,6 +100,9 @@ height: 100%;
     left: unset;
     right: 0;
     transform: translate(0%, -50%);
+  }
+  @include respond-to-bis(middle-screens) {
+    width: 100%;
   }
 }
 
@@ -101,20 +113,25 @@ height: 100%;
       float: left;
 
   @include respond-to(wide-screens) {
-    width: 20%;
+    width: 18.24%;
   }
     @include respond-to(medium-screens) {
-      width: 33.3333%;
+      width: 16.666666666666667%;;
   }
   @include respond-to(small-screens){
     width: 50%;
     }
+    @include respond-to-bis(middle-screens) {
+      width: 16.666666666666667%;
 
+    }
 }
 
 .structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
   @include fadein;
   @include abstract;
+  color: $black;
+  font-size: 80% !important;
   float: left;
   width: 33.3333%;
   @include respond-to(wide-screens) {

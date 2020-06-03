@@ -132,15 +132,16 @@ a.toggle_menu {
 
 #stick .searchandfilter ul li.sf-field-sort_order{
     margin-top: 20px !important;
+    margin-bottom: $spacing_large;
 }
 .searchandfilter h4 {
     padding: 0 0 $spacing_large 0!important;
 }
 
 .searchandfilter ul li {
-    float: right;
+    float: left;
     @include respond-to(small-screens){
-    float: right;
+    float: left;
     }
 
 }
@@ -160,7 +161,7 @@ a.toggle_menu {
   width: 100%;
 }
 .searchandfilter ul li.sf-field-category ul li label {
-  @include button;
+  @include button_inpost;
 
 }
 .searchandfilter ul li.sf-field-category input:checked + label {
@@ -172,7 +173,7 @@ a.toggle_menu {
 }
 
 .searchandfilter ul li.sf-field-post_type ul li label {
-  @include button2;
+  @include button3;
 }
 
 .searchandfilter ul li.sf-field-post_type ul li input:checked + label {
@@ -189,7 +190,7 @@ a.search-filter-reset {
   color: $red;
   padding: 0;
   margin: 0;
-  margin-left: 10px;
+  margin-right: 10px;
 
 }
 
@@ -220,9 +221,11 @@ a.search-filter-reset {
 
 .searchandfilter h4 {
   display: inline-block;
-float: left;
+  float: left;
+  width: 100%;
   @include abstract;
   color: $red;
+  text-align: left;
 }
 .searchandfilter ul > li[data-sf-field-input-type=checkbox] ul {
   display: inline-block;
@@ -319,6 +322,9 @@ ul.post-categories li a:hover {
   position: relative;
   float: left;
   background-color: white;
+  @include respond-to(wide-screens){
+        height: $hauteur_de_post_home_wide;
+    }
   @include respond-to(medium-screens){
         height: $hauteur_de_post_home_medium;
     }

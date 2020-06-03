@@ -4,8 +4,11 @@
 @import "grid";
 
 .setup p.share {
-  @include abstract;
+  @include font_courant;
+  @include font-size($font_size_texte);
+  @include line-height($line_height_texte);
   cursor: pointer;
+  color: $black;
 }
 .setup p:hover {
   @include link_noir_over;

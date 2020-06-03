@@ -38,6 +38,7 @@
 
 .prez_droite {
   float: right;
+  min-height: 90vh;
   @include mixin_border_left;
   @include respond-to(wide-screens) {
     width: 65%;

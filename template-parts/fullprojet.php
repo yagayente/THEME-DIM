@@ -48,7 +48,7 @@ get_header(); ?>
 									                  <?php the_title(); ?></a>
 									                	</h2>
 				              				</div>
-				               
+
 				              	</div><!-- .entry-header -->
 
 
@@ -80,11 +80,11 @@ get_header(); ?>
 
 
 
-												<h3>Le projet</h3><!-- A traduire -->
+												<h3><?php pll_e('le_projet'); ?></h3>
 							                <div class="formatingtext">
 							                <?php the_content(); ?>
 							                </div>
-												<h3>Les Membres</h3><!-- A traduire -->
+												<h3><?php pll_e('les_membres'); ?></h3>
 
 							<div class="formatingtext">
 												<span class="bolder">

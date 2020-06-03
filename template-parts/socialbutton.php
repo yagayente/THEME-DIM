@@ -10,7 +10,7 @@ function show(elem) {
 
 
 <div class="setup" onclick="show(this)">
-  <p class="share">Partager</p>
+  <p class="share"><?php pll_e('partager'); ?></p>
   <p class="hidden" style="display: none">
 
             <a class="share-twitter" href="https://twitter.com/intent/tweet?text=<?php echo $title; ?>&amp;url=<?php echo $url; ?>&amp;via=DIM_STCN" target="_blank">
