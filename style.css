@@ -7,52 +7,12 @@ Author: Simon Bouchard
 Author URI: www.simonbouchard.fr
 Version: 1.1
 */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -76,7 +36,6 @@ Version: 1.1
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -105,7 +64,6 @@ Version: 1.1
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -130,7 +88,6 @@ Version: 1.1
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -154,7 +111,6 @@ Version: 1.1
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -286,91 +242,12 @@ Version: 1.1
   z-index: -999;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -394,7 +271,6 @@ Version: 1.1
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -423,7 +299,6 @@ Version: 1.1
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -448,7 +323,6 @@ Version: 1.1
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -472,7 +346,6 @@ Version: 1.1
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -1256,91 +1129,12 @@ img.logoprincipalehover {
   padding-right: 30px;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -1364,7 +1158,6 @@ img.logoprincipalehover {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -1393,7 +1186,6 @@ img.logoprincipalehover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -1418,7 +1210,6 @@ img.logoprincipalehover {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -1442,7 +1233,6 @@ img.logoprincipalehover {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -2316,91 +2106,12 @@ body.home .row {
   }
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -2424,7 +2135,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -2453,7 +2163,6 @@ body.home .row {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -2478,7 +2187,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -2502,7 +2210,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -2679,91 +2386,12 @@ body.home .row {
   }
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -2787,7 +2415,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -2816,7 +2443,6 @@ body.home .row {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -2841,7 +2467,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -2865,7 +2490,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -3006,91 +2630,12 @@ body.home .row {
   background-color: yellow;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -3114,7 +2659,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -3143,7 +2687,6 @@ body.home .row {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -3168,7 +2711,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -3192,7 +2734,6 @@ body.home .row {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -3902,91 +3443,12 @@ ul.Menu_principal_mobile_2 li a:hover {
   top: 0;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -4010,7 +3472,6 @@ ul.Menu_principal_mobile_2 li a:hover {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -4039,7 +3500,6 @@ ul.Menu_principal_mobile_2 li a:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -4064,7 +3524,6 @@ ul.Menu_principal_mobile_2 li a:hover {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -4088,7 +3547,6 @@ ul.Menu_principal_mobile_2 li a:hover {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -4504,45 +3962,6 @@ picture.background_picture img {
   }
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .components-toolbar__control[aria-label="Align left"],
 .components-toolbar__control[aria-label="Align center"],
 .components-toolbar__control[aria-label="Align right"],
@@ -4732,91 +4151,12 @@ picture.background_picture img {
   color: #333333;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -4840,7 +4180,6 @@ picture.background_picture img {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -4869,7 +4208,6 @@ picture.background_picture img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -4894,7 +4232,6 @@ picture.background_picture img {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -4918,7 +4255,6 @@ picture.background_picture img {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -5106,7 +4442,6 @@ picture.background_picture img {
 
 .image_projet_full {
   z-index: 1 !important;
-  /* ici l'illustration est traitée hors grille */
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -5669,91 +5004,12 @@ ul.slides li.slide {
   color: #333333;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -5777,7 +5033,6 @@ ul.slides li.slide {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -5806,7 +5061,6 @@ ul.slides li.slide {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -5831,7 +5085,6 @@ ul.slides li.slide {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -5855,7 +5108,6 @@ ul.slides li.slide {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -6033,91 +5285,12 @@ ul.slides li.slide {
   }
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -6141,7 +5314,6 @@ ul.slides li.slide {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -6170,7 +5342,6 @@ ul.slides li.slide {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -6195,7 +5366,6 @@ ul.slides li.slide {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -6219,7 +5389,6 @@ ul.slides li.slide {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -6695,25 +5864,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
 /*Formulaire*/
 .message_was_send {
   width: 100%;
@@ -6766,91 +5916,12 @@ textarea {
   background-color: red;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -6874,7 +5945,6 @@ textarea {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -6903,7 +5973,6 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -6928,7 +5997,6 @@ textarea {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -6952,7 +6020,6 @@ textarea {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -7501,91 +6568,12 @@ div.stickyprez {
   color: #EA6F51;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -7609,7 +6597,6 @@ div.stickyprez {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -7638,7 +6625,6 @@ div.stickyprez {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -7663,7 +6649,6 @@ div.stickyprez {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -7687,7 +6672,6 @@ div.stickyprez {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -8561,91 +7545,12 @@ input.sf-input-radio {
   background-blend-mode: normal;
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 .structure_de_page {
   display: grid;
   width: 100%;
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page {
@@ -8669,7 +7574,6 @@ input.sf-input-radio {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_2 {
@@ -8698,7 +7602,6 @@ input.sf-input-radio {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_menu {
@@ -8723,7 +7626,6 @@ input.sf-input-radio {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_footer {
@@ -8747,7 +7649,6 @@ input.sf-input-radio {
   grid-template-columns: 5% repeat(15, 1fr) 5%;
   grid-row-gap: unset;
   grid-column-gap: unset;
-  /* A POURSUIVRE */
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_simple {
@@ -9235,45 +8136,6 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   }
 }
 
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Dynamic grid */
-/* none ou grid*/
-/* PIMP */
-/* Marge texte */
-/* LARGE */
-/* valeur de 1  col large = 6 */
-/* MEDIUM */
-/* SMALL */
-/* RESPONSIVE */
-/* Padding */
-/* Post_home */
-/* Border */
-/* Couleur */
-/* FONT SIZE*/
-/* TITLE*/
-/* TEXTE*/
-/* TEXTE ABSTRACT*/
-/* DATE POST*/
-/* MENU */
-/* Parametre mixin */
 /*
 @font-face {
     font-family: 'dim-stcn-glyphsregular', monospace;

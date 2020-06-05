@@ -19,7 +19,7 @@
 @function calculateRem_lh($size) {$remSize: $size / 16px; @return $remSize * 1rem;}
 @mixin line-height($size) {line-height: $size; line-height: calculateRem_lh($size);}
 
-/* Parametre mixin */
+// Parametre mixin
 @mixin font_courant {font-family: "Open Sans", sans-serif;}
 @mixin font_courant_tailles {font-size: calc(#{$font_size_global} * 1.1); line-height: calc(#{$font_size_global} * 1.5);}
 @mixin font_titrage {font-family: 'BioRhyme', serif;}

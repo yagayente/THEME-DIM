@@ -62,34 +62,34 @@ grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr)
 .structure_de_page {
   @include global_grid;
   @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
-  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}
   @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
 }
 .structure_de_page_2 {
   @include global_grid;
   @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
-  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}
   @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
 }
 .structure_de_page_menu {
   @include global_grid;
   @include mixin_border_bottom;
   @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small; border-bottom: none;}
-  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}
   @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
 }
 
 .structure_de_page_footer {
   @include global_grid;
   @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
-  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}
   @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
 }
 
 .structure_de_page_simple {
   @include global_grid;
   @include respond-to(small-screens){ grid-template-columns: $margeexterieur_small repeat($nombredecolonne_small, 1fr) $margeexterieur_small;}
-  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}/* A POURSUIVRE */
+  @include respond-to(medium-screens) { grid-template-columns: $margeexterieur_medium repeat($nombredecolonne_medium, 1fr) $margeexterieur_medium;}
   @include respond-to(wide-screens) { grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr) $margeexterieur_large;}
 }
 .structure_de_page_fullarticle {
