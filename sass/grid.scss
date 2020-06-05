@@ -122,7 +122,6 @@ grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr)
   display: grid;
   @include respond-to(small-screens){
     width: 100%;
-    grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_small;
     z-index: 9999;
   }
   @include respond-to(medium-screens) {
@@ -134,20 +133,17 @@ grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr)
 }
 
 .accordionContent {
-display: grid;
   @include respond-to(small-screens){
-    grid-template-columns: $margeexterieur_small repeat(5, 1fr) $margeexterieur_large;
-    z-index: 9999;
+      padding: $spacing_small $margeexterieur_small $spacing_small $margeexterieur_small;
+      z-index: 9999;
   }
   @include respond-to(medium-screens) {
-    grid-template-columns: repeat(6, 1fr) $margeexterieur_medium;
+      padding: $spacing_medium $txt_medium $spacing_medium $spacing_medium ;
   }
   @include respond-to(wide-screens) {
-    grid-template-columns: repeat(10, 1fr) $margeexterieur_large;
+    padding: $spacing_large $txt_large $spacing_large $spacing_large_x2 ;
 }
 }
-
-
 
 
 .grille_dev{

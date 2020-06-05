@@ -71,12 +71,10 @@ while ($query->have_posts())
 
 else
 {
-  echo "<div class='noresult'>
-  Aucune page ne correspond à cette recherche !<br>
-Vous pouvez réinitialiser les filtres, faire une autre recherche,<br>
-ou utiliser les pages Actualités ou Projets.<br>
-</div>";
-  // Restore original post data.
+  echo '<div class="noresult">' ?>
+        <?php pll_e('error_article') ?>
+        </div>
 
+	<?php
 
 }?>

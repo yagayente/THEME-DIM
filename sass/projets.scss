@@ -5,7 +5,16 @@
 .categ_posttype {
   width: 100%;
   display: inline-block;
-  padding: $spacing_large $spacing_large 0px $spacing_large;
+  @include respond-to(wide-screens) {
+    padding: $spacing_large $spacing_large_x2 0px $spacing_large_x2;
+  }
+  @include respond-to(medium-screens) {
+    padding: $spacing_medium $spacing_medium $spacing_medium $spacing_medium;
+  }
+  @include respond-to(small-screens){
+    padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+  }
+
 }
 .postype {
   float: left;
@@ -199,13 +208,15 @@ height: 100vh;
       }
 
 .entryheaderprojet .title_project{
-    padding: $spacing_large $margeexterieur_largedouble $spacing_large $spacing_large;
 
     @include respond-to(wide-screens) {
-        padding: $spacing_large 10% $spacing_large $spacing_large;
+        padding: $spacing_large 10% $spacing_large $spacing_large_x2;
     }
-
+    @include respond-to(medium-screens) {
+        padding: $spacing_medium 10% $spacing_medium $spacing_medium;
+    }
     @include respond-to(small-screens) {
+      padding: $spacing_small $spacing_small $spacing_small $spacing_small;
       @include mixin_border_top;
     }
 
@@ -225,8 +236,14 @@ height: 100vh;
     @include mixin_border_top;
     @include typo_date;
     @include respond-to(wide-screens) {
-      padding-right: $margeexterieur_large;
+      padding: $spacing_large $spacing_large_x2 $spacing_large $spacing_large_x2;
+      }
+      @include respond-to(medium-screens) {
+      padding: $spacing_medium $margeexterieur_middle $spacing_medium $spacing_medium;
     }
+    @include respond-to(small-screens){
+      padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+      }
   }
 
 #entryheaderprojet.stick {
@@ -308,7 +325,7 @@ min-height: 50vh;
   padding-bottom: $spacing_large;
   @include respond-to(wide-screens) {
     padding-right: $margeexterieur_large;
-    padding-left: $spacing_large;
+    padding-left: $spacing_large_x2;
     }
     @include respond-to(medium-screens) {
     padding-left: $spacing_medium;
@@ -323,12 +340,12 @@ min-height: 50vh;
   padding-top: $spacing_large;
   @include espace;
   @include respond-to(wide-screens) {
-    padding-right: calc(8 * #{$margeexterieur_large});
-    padding-left: $spacing_large;
+    padding-right: $txt_large;
+    padding-left: $spacing_large_x2;
     }
     @include respond-to(medium-screens) {
     padding-left: $spacing_medium;
-    padding-right: $valeurde_unecolonne_medium;
+    padding-right: $txt_medium;
   }
   @include respond-to(small-screens){
       padding-left: $spacing_small;

@@ -12,5 +12,14 @@
   @include p;
   margin-bottom: 0 !important;
   @include mixin_border_bottom;
-  padding: $spacing_large $margeexterieur_largedouble $spacing_large $spacing_large;
+
+  @include respond-to(wide-screens){
+  padding: $spacing_large $txt_large $spacing_large $spacing_large_x2;
+  }
+  @include respond-to(medium-screens){
+  padding: $spacing_medium $txt_medium $spacing_medium $spacing_medium;
+  }
+  @include respond-to(small-screens){
+  padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+  }
 }

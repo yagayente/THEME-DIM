@@ -84,12 +84,11 @@ if ( $query->have_posts() )
 }
 else
 {
-	echo "<div class='noresult'>
-  PROJET - Aucune page ne correspond à cette recherche !<br>
-Vous pouvez réinitialiser les filtres, faire une autre recherche,<br>
-ou utiliser les pages Actualités ou Projets.<br>
-Retrouvez ci-dessous l’ensemble des articles.
-</div>";
+	echo '<div class="noresult">'?>
+        <?php pll_e('error_projet') ?>
+        </div>
+
+	<?php
 	$query = new WP_Query(array('post_type' => array ( 'post', 'projets','event'),'posts_per_page'=>-1));
  // echo 'bhawna';
   //print_r($query);

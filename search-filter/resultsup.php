@@ -24,7 +24,7 @@
 
  $cur_post_type = "";
  $prev_post_type = "";
-
+wp_reset_query();
 if ( $query->have_posts() )
 {
 	?>
@@ -69,7 +69,7 @@ if ( $query->have_posts() )
 		if($cur_post_type == 'post')get_template_part('template-parts/previewprojet', 'previewprojet');
 	//}else{
 		//$query->the_post($prev_post_type);
-		if($cur_post_type == 'projets')get_template_part('template-parts/previewarticle', 'previewarticle');
+		if($cur_post_type == 'projets')get_template_part('template-parts/content', 'content');
 		//}
 	 $prev_post_type = $post->post_type;
 	}
@@ -84,12 +84,8 @@ if ( $query->have_posts() )
 }
 else
 {
-
-  echo  '<div class="noresult">'?>
-        <?php pll_e('error_search') ?>
-        </div>
-
-	<?php
+	echo "Pas d'autres articles";
+	wp_reset_query();
 	$query = new WP_Query(array('post_type' => array ( 'post', 'projets','event'),'posts_per_page'=>-1));
  // echo 'bhawna';
   //print_r($query);
@@ -115,7 +111,7 @@ else
 		if($cur_post_type == 'post')get_template_part('template-parts/previewprojet', 'previewprojet');
 	//}else{
 		//$query->the_post($prev_post_type);
-		if($cur_post_type == 'projets')get_template_part('template-parts/previewarticle', 'previewarticle');
+		if($cur_post_type == 'projets')get_template_part('template-parts/content', 'content');
 		//}
 	 $prev_post_type = $post->post_type;
 	}

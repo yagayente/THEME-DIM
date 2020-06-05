@@ -195,6 +195,7 @@ get_template_part( 'func/custom_gutemberg' );
 get_template_part( 'func/social' );
 get_template_part( 'func/affiche_chemin_post' );
 get_template_part( 'func/ajax_call' );
+get_template_part( 'func/traduire' );
 
 
 
@@ -211,36 +212,6 @@ function theme_scripts_styles() {
 //*  wp_enqueue_script( 'jqueryfixedall', get_stylesheet_directory_uri() . '/inc/jqueryfixedall.js', array('jquery'));
   //*  wp_enqueue_script( 'polyfill', get_stylesheet_directory_uri() . '/inc/modernizr.js');
 
-
-
- //*  TRADUCTION
-//*  Traduction en string du formulaire de contact pour Polylang
-add_action('init', function() {
-  pll_register_string('BASE_THEME', 'all_right');
-  pll_register_string('BASE_THEME', 'credit');
-  pll_register_string('BASE_THEME', 'les_membres');
-  pll_register_string('BASE_THEME', 'le_projet');
-  pll_register_string('BASE_THEME', 'partager');
-  pll_register_string('BASE_THEME', 'lire_plus');
-  pll_register_string('BASE_THEME', 'lien_copie');
-  pll_register_string('BASE_THEME', 'copier_le_lien');
-  pll_register_string('BASE_THEME', 'message_was_send');
-  pll_register_string('BASE_THEME', 'message_was_send');
-  pll_register_string('BASE_THEME', 'votre_prenom');
-  pll_register_string('BASE_THEME', 'votre_nom');
-  pll_register_string('BASE_THEME', 'votre_email');
-  pll_register_string('BASE_THEME', 'votre_message');
-  pll_register_string('BASE_THEME', 'question');
-  pll_register_string('BASE_THEME', 'submit');
-  pll_register_string('BASE_THEME', 'message_derreur_prenom_vide');
-  pll_register_string('BASE_THEME', 'message_derreur_nom_vide');
-  pll_register_string('BASE_THEME', 'message_derreur_message_vide');
-  pll_register_string('BASE_THEME', 'message_derreur_mauvais_numero');
-  pll_register_string('BASE_THEME', 'message_derreur_email_vide');
-  pll_register_string('BASE_THEME', 'message_derreur_email_faux');
-});
-
-//get_link_by_template
 
 
 

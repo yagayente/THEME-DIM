@@ -197,9 +197,28 @@ div.stickyprez {
   width: 100%;
   @include fadein;
   @include h2;
-  padding-top: $spacing_large;
-  padding-bottom: $spacing_large;
-  padding-left:  $spacing_large;
+
+
+
+  @include respond-to(wide-screens) {
+    padding-top: $spacing_large;
+    padding-bottom: $spacing_large;
+    padding-left:  $spacing_large_x2;
+  }
+  @include respond-to(medium-screens) {
+    padding-top: $spacing_medium;
+    padding-bottom: $spacing_medium;
+    padding-left:  $spacing_medium;
+  }
+  @include respond-to(small-screens){
+    padding-top: $spacing_small;
+    padding-bottom: $spacing_small;
+    padding-left:  $spacing_small;
+  }
+
+
+
+
   @include mixin_border_bottom;
 }
 
@@ -220,16 +239,7 @@ div.stickyprez {
 
 
 
-  /***********************************************************************************************************************
-  DOCUMENT: style/format.css
-  DEVELOPED BY: Ryan Stemkoski
-  COMPANY: Zipline Interactive
-  EMAIL: ryan@gozipline.com
-  PHONE: 509-321-2849
-  DATE: 2/26/2009
-  DESCRIPTION: This document contains the structural formatting files for the accordion style menu.
-  ************************************************************************************************************************/
-  #wrapper {
+#wrapper {
   	width: 100%;
   	margin-left: auto;
   	margin-right: auto;
@@ -249,7 +259,16 @@ div.stickyprez {
   	border-bottom: 1px solid #FFFFFF;
   	cursor: pointer;
     @include mixin_border_bottom;
-    padding: $spacing_large;
+
+    @include respond-to(wide-screens) {
+      padding: $spacing_large $spacing_large_x2 $spacing_large $spacing_large_x2;
+    }
+    @include respond-to(medium-screens) {
+        padding: $spacing_medium;
+    }
+    @include respond-to(small-screens){
+        padding: $spacing_small;
+    }
   	}
 
 

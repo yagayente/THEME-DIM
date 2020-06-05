@@ -11,6 +11,10 @@ $grid_color: red;
 $grid_opacity:0.5;
 $size_border_grid: 0.04em;
 
+/* Marge texte */
+$txt_large: 40%;
+$txt_medium: 10%;
+$txt_small: 5%;
 /* LARGE */
 /* valeur de 1  col large = 6 */
 $margeexterieur_large: 5%;
@@ -21,6 +25,7 @@ $valeurde_unecolonne_large: calc((100% - (#{$margeexterieur_large} * 2)) / #{$no
 
 /* MEDIUM */
 $margeexterieur_medium: 0px;
+$margeexterieur_middle: 11.111111111111111%;
 $nombredecolonne_medium: 9;
 $valeurde_unecolonne_medium: calc(100vw / #{$nombredecolonne_medium});
 
@@ -34,9 +39,8 @@ $break-small: 520px;
 $break-middle: 1000px;
 $break-large: 1524px;
 
-
 /* Padding */
-$spacing_big: 50px;
+$spacing_large_x2: 60px;
 $spacing_large: 30px;
 $spacing_medium: 25px;
 $spacing_small: 25px;

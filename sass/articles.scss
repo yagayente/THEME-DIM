@@ -27,13 +27,13 @@
 
 .contenu_article {
   @include respond-to(wide-screens){
-  padding: $spacing_large 40% $spacing_large $spacing_large;
+  padding: $spacing_large $txt_large $spacing_large $spacing_large_x2;
   }
   @include respond-to(medium-screens){
-  padding: $spacing_large 10% $spacing_large $spacing_large;
+  padding: $spacing_medium $txt_medium $spacing_medium $spacing_medium;
   }
   @include respond-to(small-screens){
-  padding: $spacing_large $spacing_large $spacing_large $spacing_large;
+  padding: $spacing_small $spacing_small $spacing_small $spacing_small;
   }
 }
 
