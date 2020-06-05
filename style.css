@@ -7,6 +7,21 @@ Author: Simon Bouchard
 Author URI: www.simonbouchard.fr
 Version: 1.1
 */
+@font-face {
+  font-family: "dim-stcn-glyphsregular", monospace;
+  src: url("http://www.dim-humanites-numeriques.fr/dim-stcn-glyphs-regular-webfont.woff2") format("woff2"), url("http://www.dim-humanites-numeriques.fr/dim-stcn-glyphs-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+@font-face {
+    font-family: 'dim-stcn-glyphsregular';
+    src: url('http://localhost:8888/2-DIM_STCN/wp-content/uploads/2020/06/dim-stcn-glyphs-regular-webfont.woff2') format('woff2'),
+         url('http://localhost:8888/2-DIM_STCN/wp-content/uploads/2020/06/dim-stcn-glyphs-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
 .structure_de_page {
   display: grid;
   width: 100%;
@@ -8136,21 +8151,6 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   }
 }
 
-@font-face {
-  font-family: "dim-stcn-glyphsregular", monospace;
-  src: url("http://www.dim-humanites-numeriques.fr/dim-stcn-glyphs-regular-webfont.woff2") format("woff2"), url("http://www.dim-humanites-numeriques.fr/dim-stcn-glyphs-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-/*
-@font-face {
-    font-family: 'dim-stcn-glyphsregular';
-    src: url('http://localhost:8888/2-DIM_STCN/wp-content/uploads/2020/06/dim-stcn-glyphs-regular-webfont.woff2') format('woff2'),
-         url('http://localhost:8888/2-DIM_STCN/wp-content/uploads/2020/06/dim-stcn-glyphs-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 html {
   font-size: 62.5%;
   /* 16*(62.5/100) = 10 =&nsp; 10px = 1rem */
