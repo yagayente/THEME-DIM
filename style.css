@@ -9,7 +9,7 @@ Version: 1.1
 */
 @font-face {
   font-family: "dim-stcn-glyphsregular";
-  src: url("fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2") format("woff2"), url("fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff") format("woff");
+  src: url("../fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2") format("woff2"), url("../fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
