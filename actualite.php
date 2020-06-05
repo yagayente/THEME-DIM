@@ -25,19 +25,13 @@ function myFunction() {
 }
 </script>
 
-
 <div class="mobilenav_2">
 	<?php echo do_shortcode('[searchandfilter id="259"]'); ?>
 </div>
 
-
-
-
 <div class="row">
 
 		  <div class="Navigation_recherche" id="colonnetaille">
-
-
 
         <a onclick="myFunction()" class="toggle_menu">Filtres</a>
 

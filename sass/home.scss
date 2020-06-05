@@ -283,7 +283,7 @@ display: none;
         padding: $spacing_medium $margeexterieur_largedouble $spacing_medium $spacing_medium;
     }
     @include respond-to(small-screens){
-    
+
       border-left: none;
       padding: none;
     }
