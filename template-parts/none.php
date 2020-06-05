@@ -3,16 +3,17 @@
  * Template part for displaying a message that posts cannot be found
  *
  */
-
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title">No result</h1>
-		<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyseventeen' ); ?></p>
+<div class="row_prez">
 
-	</header>
-	<div class="page-content">
+					<div class="prez_gauche">
+						&nbsp
+					</div><!-- .prez_gauche -->
 
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+				 <div class="prez_droite">
+					 <div class="notfound"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyseventeen' ); ?></div>
+				 	</div>
+
+</div>
+</div><!-- Row -->

@@ -3,6 +3,21 @@
 @import "grid";
 
 
+.prez_droite .notfound {
+  @include font-courant;
+  @include fadein;
+  color: $black;
+  @include respond-to(wide-screens) {
+    padding: $spacing_large $spacing_large_x2 $spacing_large $spacing_large_x2;
+  }
+  @include respond-to-bis(middle-screens) {
+    padding: $spacing_medium $spacing_medium $spacing_medium $spacing_medium;
+  }
+  @include respond-to(small-screens){
+    padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+  }
+}
+
 .display_article article:hover .article_home_images img{
   -webkit-filter: none;
    filter: none;

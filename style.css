@@ -1379,6 +1379,33 @@ img.logoprincipalehover {
   z-index: -999;
 }
 
+.prez_droite .notfound {
+  font-family: "Open Sans", sans-serif;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
+  color: #333333;
+}
+@media only screen and (min-width: 1524px) {
+  .prez_droite .notfound {
+    padding: 30px 60px 30px 60px;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .prez_droite .notfound {
+    padding: 25px 25px 25px 25px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .prez_droite .notfound {
+    padding: 25px 25px 25px 25px;
+  }
+}
+
 .display_article article:hover .article_home_images img {
   -webkit-filter: none;
   filter: none;
