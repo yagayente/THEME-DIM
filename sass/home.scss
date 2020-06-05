@@ -382,9 +382,22 @@ display: none;
 
 
 .display_article article header.entry-header-home ul {
-  margin-top: $spacing_large;
-  padding-left: $spacing_large_x2;
-  padding-right: $spacing_large_x2;
+
+  @include respond-to(wide-screens) {
+    margin-top: $spacing_large;
+    padding-left: $spacing_large_x2;
+    padding-right: $spacing_large_x2;
+  }
+  @include respond-to(medium-screens) {
+    margin-top: $spacing_medium;
+    padding-left: $spacing_medium;
+    padding-right: $spacing_medium;
+  }
+  @include respond-to(small-screens){
+    margin-top: $spacing_small;
+    padding-left: $spacing_small;
+    padding-right: $spacing_small;
+  }
   @include fadein;
 }
 

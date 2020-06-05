@@ -2089,9 +2089,6 @@ body.home .row {
 }
 
 .display_article article header.entry-header-home ul {
-  margin-top: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -2099,6 +2096,27 @@ body.home .row {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
+}
+@media only screen and (min-width: 1524px) {
+  .display_article article header.entry-header-home ul {
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 1523px) {
+  .display_article article header.entry-header-home ul {
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .display_article article header.entry-header-home ul {
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .display_article article header.entry-header-home ul li a {
@@ -9256,21 +9274,21 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 /* DATE POST*/
 /* MENU */
 /* Parametre mixin */
-@font-face {
-  font-family: "dim-stcn-glyphsregular", monospace;
-  src: url("http://www.dim-humanites-numeriques.fr/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2") format("woff2"), url("http://www.dim-humanites-numeriques.fr/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /*
 @font-face {
-    font-family: 'dim-stcn-glyphsregular';
-    src: url('http://localhost:8888/2-DIM_STCN/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2') format('woff2'),
-         url('http://localhost:8888/2-DIM_STCN/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff') format('woff');
+    font-family: 'dim-stcn-glyphsregular', monospace;
+    src: url('http://www.dim-humanites-numeriques.fr/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2') format('woff2'),
+         url('http://www.dim-humanites-numeriques.fr/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 */
+@font-face {
+  font-family: "dim-stcn-glyphsregular";
+  src: url("http://localhost:8888/2-DIM_STCN/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2") format("woff2"), url("http://localhost:8888/2-DIM_STCN/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   font-size: 62.5%;
   /* 16*(62.5/100) = 10 =&nsp; 10px = 1rem */
