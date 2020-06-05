@@ -9217,7 +9217,6 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   }
 }
 
-/* @use 'local'; */
 /* Dynamic grid */
 /* none ou grid*/
 /* PIMP */
@@ -9257,6 +9256,21 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 /* DATE POST*/
 /* MENU */
 /* Parametre mixin */
+@font-face {
+  font-family: "dim-stcn-glyphsregular", monospace;
+  src: url("http://www.dim-humanites-numeriques.fr/wp-content/themes/THEME-DIM/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2") format("woff2"), url("http://www.dim-humanites-numeriques.fr/wp-content/themes/THEME-DIM/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+@font-face {
+    font-family: 'dim-stcn-glyphsregular';
+    src: url('http://localhost:8888/2-DIM_STCN/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff2') format('woff2'),
+         url('http://localhost:8888/2-DIM_STCN/wp-content/themes/THEME-2.0/fonts/glyphs/dim-stcn-glyphs-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
 html {
   font-size: 62.5%;
   /* 16*(62.5/100) = 10 =&nsp; 10px = 1rem */
