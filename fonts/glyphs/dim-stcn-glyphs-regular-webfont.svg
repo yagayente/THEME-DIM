@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata></metadata>
+<defs>
+<font id="dim-stcn-glyphsregular" horiz-adv-x="1228" >
+<font-face units-per-em="2048" ascent="1638" descent="-410" />
+<missing-glyph horiz-adv-x="500" />
+<glyph horiz-adv-x="0" />
+<glyph horiz-adv-x="682" />
+<glyph unicode=" " />
+<glyph unicode="," />
+<glyph unicode="-" />
+<glyph unicode="." />
+<glyph unicode="0" />
+<glyph unicode="1" />
+<glyph unicode="2" />
+<glyph unicode="3" />
+<glyph unicode="4" />
+<glyph unicode="5" />
+<glyph unicode="6" />
+<glyph unicode="7" />
+<glyph unicode="8" />
+<glyph unicode="9" />
+<glyph unicode="A" horiz-adv-x="1773" />
+<glyph unicode="B" horiz-adv-x="1796" />
+<glyph unicode="C" horiz-adv-x="1835" d="M188 61q-2 2 0 5l668 639l-666 638q-2 4 -2 5l56 55q2 2 4 0l670 -639l669 639q2 2 4 0l56 -55q2 -1 -2 -5l-664 -638l666 -639q2 -2 0 -5l-56 -57q-2 -2 -4 -2l-669 639l-670 -639l-4 2z" />
+<glyph unicode="D" />
+<glyph unicode="E" />
+<glyph unicode="F" />
+<glyph unicode="G" />
+<glyph unicode="H" />
+<glyph unicode="I" horiz-adv-x="1796" d="M186 524q145 0 268.5 -70.5t195 -191.5t71.5 -262h92q0 166 -85 307.5t-228.5 224t-313.5 82.5v-90zM186 784q170 0 313.5 84t227.5 226.5t84 310.5h-92q0 -143 -72 -264t-193.5 -192.5t-267.5 -71.5v-93zM983 0h94q0 141 72 261t193.5 190.5t265.5 70.5v92 q-168 0 -311.5 -82.5t-228.5 -224t-85 -307.5zM983 1405q0 -170 84 -312.5t227.5 -225.5t313.5 -83v90q-146 0 -267.5 72t-193.5 194t-72 265h-92z" />
+<glyph unicode="J" />
+<glyph unicode="K" />
+<glyph unicode="L" horiz-adv-x="1744" d="M188 815q0 160 80 295t215 215t295 80t295 -80t215 -215t80 -295q0 -117 -43 -221.5t-119 -183.5l350 -349q2 -2 0 -4l-55 -55q-2 -2 -4 0l-350 352q-164 -131 -369 -131q-160 0 -295 80t-215 216t-80 296zM270 815q0 -137 69 -254t185.5 -185.5t253.5 -68.5t254 68.5 t184.5 185.5t67.5 254t-67.5 254t-184.5 185.5t-254 68.5t-253.5 -68.5t-185.5 -186.5t-69 -253z" />
+<glyph unicode="M" />
+<glyph unicode="N" horiz-adv-x="2048" d="M193 494q-4 4 0 8l305 198l-305 189q-4 4 0 8l833 506q2 2 4 0l823 -494q4 -4 0 -8l-292 -201l292 -188q4 -4 0 -8l-823 -502q-2 -2 -4 0zM328 500l700 -414l690 426l-286 180q-4 4 0 8l290 203l-694 414l-700 -424l303 -188q4 -4 0 -9z" />
+<glyph unicode="O" />
+<glyph unicode="P" />
+<glyph unicode="Q" />
+<glyph unicode="R" horiz-adv-x="1814" d="M186 649v96q0 4 4 5l478 -15q4 0 4 -4q-2 -10 -2 -31q0 -11 4 -36q2 -2 0 -4.5t-4 -2.5l-480 -12q-4 0 -4 4zM356 1155q-2 4 0 6l68 68q4 4 6 0l328 -346q2 -2 2 -4t-2 -2q-27 -23 -49 -50q0 -2 -2 -2t-5 2zM358 240q-4 4 0 8l349 325q2 2 4 2t2 -2q6 -6 20.5 -21 t26.5 -26q2 0 2 -2t-2 -4l-328 -346q-2 -2 -4 0zM836 4l10 479q0 2 2 4t4 0q25 -4 35 -4q13 0 33 4q2 2 4 0t2 -4l14 -479q0 -4 -4 -4h-96q-4 0 -4 4zM836 1401q0 4 4 4h96q4 0 4 -4l-14 -479q0 -2 -2 -4.5t-4 0.5q-10 2 -33 2t-35 -2q-2 -2 -4 0t-2 4zM1010 524q0 2 2 2 q37 29 51 45q0 2 2 2t4 -2l346 -327q4 -2 0 -6l-69 -68l-5 2l-329 348q-2 2 -2 4zM1012 881q0 2 2 4l332 348q2 2 4 0l67 -66q4 -2 0 -6l-348 -332q-2 -2 -4 -2t-2 2q-31 35 -49 50q-2 0 -2 2zM1100 662q2 8 4 17t2 21q0 10 -4 31q0 4 4 4l477 15q4 -1 4 -5v-96q0 -4 -4 -4 l-479 12q-4 0 -4 5z" />
+<glyph unicode="S" />
+<glyph unicode="T" />
+<glyph unicode="U" />
+<glyph unicode="V" />
+<glyph unicode="W" />
+<glyph unicode="X" />
+<glyph unicode="Y" />
+<glyph unicode="Z" />
+<glyph unicode="a" />
+<glyph unicode="b" />
+<glyph unicode="c" />
+<glyph unicode="d" />
+<glyph unicode="e" />
+<glyph unicode="f" />
+<glyph unicode="g" />
+<glyph unicode="h" />
+<glyph unicode="i" />
+<glyph unicode="j" />
+<glyph unicode="k" />
+<glyph unicode="l" />
+<glyph unicode="m" />
+<glyph unicode="n" />
+<glyph unicode="o" />
+<glyph unicode="p" />
+<glyph unicode="q" />
+<glyph unicode="r" />
+<glyph unicode="s" />
+<glyph unicode="t" />
+<glyph unicode="u" />
+<glyph unicode="v" />
+<glyph unicode="w" />
+<glyph unicode="x" />
+<glyph unicode="y" />
+<glyph unicode="z" />
+<glyph unicode="&#x25fc;" horiz-adv-x="1024" d="M0 0z" />
+</font>
+</defs></svg> 
