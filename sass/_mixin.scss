@@ -109,8 +109,8 @@
 
 @mixin button3 {
   @include button_shape;
-  margin-right: 7px;
-  margin-bottom: 7px;
+  margin-right: 11px;
+  margin-bottom: 11px;
   background-color: white;
   border: 1px solid $red;
   color: $red;
