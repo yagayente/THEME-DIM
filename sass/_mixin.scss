@@ -90,8 +90,8 @@
 }
 @mixin button_inpost {
   @include button_shape;
-  margin-right: 7px;
-  margin-bottom: 7px;
+  margin-right: 11px;
+  margin-bottom: 11px;
   background-color: $red;
   color: white;
 }
@@ -118,8 +118,8 @@
 
 @mixin button_posttype {
   @include button_shape;
-  margin-bottom: 7px;
-  margin-right: 7px;
+  margin-bottom: 11px;
+  margin-right: 11px;
   background-color: white;
   color: $red;
 }
@@ -158,7 +158,7 @@ animation: fadeout 1s;
 }
 
 @mixin link {
-  @include font_titrage;
+  @include font_courant;
   text-decoration: none;
   color: $black;
 }
@@ -271,6 +271,38 @@ margin-top:2px;
     @include font-size($SMALL_font_size_title);
     @include line-height($SMALL_line_height_title);
     }
+}
+
+@mixin h3_height {
+  padding-left: $spacing_large_x2;
+  @include font-size($font_size_title);
+  @include line-height($line_height_title);
+  padding-top: calc((#{$hauteurderow_large} - #{$line_height_title}) / 2);
+  padding-bottom: calc((#{$hauteurderow_large} - #{$line_height_title}) / 2);
+  font-family: 'BioRhyme', serif;
+  font-weight: 200;
+  @include fadein;
+  @include respond-to-bis(wide-screens) {
+    @include font-size($font_size_title);
+    @include line-height($line_height_title);
+    padding-left: $spacing_large_x2;
+    padding-top: calc((#{$hauteurderow_large} - #{$line_height_title}) / 2);
+    padding-bottom: calc((#{$hauteurderow_large} - #{$line_height_title}) / 2);
+    }
+  @include respond-to-bis(middle-screens) {
+    @include font-size($MIDDLE_font_size_title);
+    @include line-height($MIDDLE_line_height_title);
+    padding-left: $spacing_medium;
+    padding-top: calc((#{$hauteurderow_large} - #{$MIDDLE_line_height_title}) / 2);
+    padding-bottom: calc((#{$hauteurderow_large} - #{$MIDDLE_line_height_title}) / 2);
+  }
+    @include respond-to(small-screens) {
+      @include font-size($SMALL_font_size_title);
+      @include line-height($SMALL_line_height_title);
+      padding-left: $spacing_small;
+      padding-top: calc((#{$hauteurderow_large} - #{$SMALL_line_height_title}) / 2);
+      padding-bottom: calc((#{$hauteurderow_large} - #{$SMALL_line_height_title}) / 2);
+      }
 }
 
 @mixin h_texte {

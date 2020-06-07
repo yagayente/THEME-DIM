@@ -7,6 +7,9 @@ Author: Simon Bouchard
 */
 
 add_action('init', function() {
+  pll_register_string('BASE_THEME', 'filtrage');
+  pll_register_string('BASE_THEME', 'fermer');
+  pll_register_string('BASE_THEME', 'error_search');
   pll_register_string('BASE_THEME', 'error_search');
   pll_register_string('BASE_THEME', 'error_article');
   pll_register_string('BASE_THEME', 'error_projet');
@@ -33,6 +36,9 @@ add_action('init', function() {
   pll_register_string('BASE_THEME', 'message_derreur_email_vide');
   pll_register_string('BASE_THEME', 'message_derreur_email_faux');
 });
+/*
+Use <?php pll_e('lire_plus'); ?>
+*/
 
 
 ?>

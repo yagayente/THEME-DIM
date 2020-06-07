@@ -27,19 +27,29 @@
 
 .contenu_article {
   @include respond-to(wide-screens){
-  padding: $spacing_large $txt_large $spacing_large $spacing_large_x2;
+  padding-top: $spacing_large ;
+  padding-right:$txt_large;
+  @include espace;
+  padding-left: $spacing_large_x2;
   }
   @include respond-to(medium-screens){
-  padding: $spacing_medium $txt_medium $spacing_medium $spacing_medium;
+  padding-top: $spacing_medium ;
+  padding-right: $txt_medium ;
+  @include espace;
+  padding-left: $spacing_medium;
   }
   @include respond-to(small-screens){
-  padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+  padding-top: $spacing_small ;
+  padding-right: $spacing_small ;
+    @include espace;
+  padding-left: $spacing_small;
   }
 }
 
 .contenu_article ul.post-categories {
   display: inline-block;
   width: 100%;
+  margin-bottom: $spacing_large;
 }
 picture.background_picture {
   width: 800px;

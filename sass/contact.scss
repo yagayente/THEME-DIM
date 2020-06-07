@@ -119,8 +119,12 @@ div.wpcf7 .ajax-loader {
   padding:  $spacing_large $spacing_large 0px 0px;
 }
 div.wpcf7-response-output {
+    @include abstract;
     margin: unset !important;
-     padding: $spacing_large !important;
+    padding-top: $spacing_large !important;
+    padding-right: 0px!important;
+    padding-bottom:$spacing_large!important;
+    padding-left:0px!important;
     border: unset !important;
     @include mixin_border_bottom;
     color: $red !important;
@@ -133,6 +137,7 @@ background-image: unset !important;
 
 div.wpcf7  .wpcf7-not-valid-tip {
   text-transform: lowercase;
+  @include abstract;
 }
 
 div.wpcf7 label .wpcf7-form-control-wrap{
@@ -197,6 +202,7 @@ width: 100% !important;
 .wpcf7 input[type="submit"],
 .wpcf7 input[type="button"] {
 @include button;
+margin-left: 0 !important;
 
 width: 80px;
 text-align: center;

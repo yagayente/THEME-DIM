@@ -235,7 +235,7 @@ background-color: white;
   padding-bottom: $spacing_large;
 }
 .abovethetext {
-    height: calc(#{$hauteurderow_large} * 4);
+    height: calc(#{$hauteurderow_large} * 6);
     width: calc(100% - #{$margeexterieur_small} * 2);
     position: absolute;
 }
@@ -261,8 +261,8 @@ right: 0;
 }
 
 .button_text {
-  @include font_courant;
-  @include link;
+  color: $red;
+  @include abstract;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -272,14 +272,14 @@ right: 0;
   display: inline-block;
 }
 .button_text:hover {
-  @include linkover;
+  color: $black;
   cursor: pointer;
 }
 
 .truncate {
   /*BOTH of the following are required for text-overflow (overflow: hidden; and white-space: nowrap;)*/
   overflow: hidden;
-  height: calc(#{$hauteurderow_large} * 4);
+  height: calc(#{$hauteurderow_large} * 6);
 }
 
 .truncatenone {
@@ -388,7 +388,6 @@ display: none;
 }
 
 .display_article article:nth-of-type(2n){
-@include mixin_border_right;
 @include mixin_border_left;
 @include respond-to(small-screens){
   border:none;
@@ -490,25 +489,11 @@ display: none;
 }
 
 
-.display_article article:nth-of-type(2n){
-    grid-column-start: 7;  grid-column-end: 12;
-    @include respond-to(medium-screens) {
-      grid-column-start: 5;  grid-column-end: 8;
-      }
-      @include respond-to(small-screens){
-        grid-column-start: 1; grid-column-end: 9;
-      }
+.display_article article:first-child{
+
     }
 
 
-
-
 .display_article article:nth-of-type(3n){
-    grid-column-start: 12;  grid-column-end: 17;
-    @include respond-to(medium-screens) {
-      grid-column-start: 8;  grid-column-end: 12;
-      }
-      @include respond-to(small-screens){
-          grid-column-start: 1; grid-column-end: 9;
-      }
+@include mixin_border_left;
 }
