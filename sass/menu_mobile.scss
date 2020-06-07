@@ -488,6 +488,7 @@ ul.Menu_principal_mobile_2 li a:hover{
 }
 .intro_site_mobile {
   width: 54%;
+  display: inline-block;
   float: left;
   height: 100%;
 }
@@ -495,7 +496,6 @@ ul.Menu_principal_mobile_2 li a:hover{
   font-size: 0px;
 }
 .intro_site_mobile h2 {
-  padding-left: $spacing_large;
   position: absolute;               /* 2 */
    top: 50%;                         /* 3 */
    transform: translate(0, -50%);
@@ -515,8 +515,8 @@ height: 100%;
   left: $spacing_small;
   top: 50%;
   transform: translate(0%, -50%);
-  height: auto;
-  width: 80%;
+  height: 70px;
+  width: auto;
 }
 .containermobile {
 width: 20%;

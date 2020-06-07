@@ -204,16 +204,19 @@ div.stickyprez {
     padding-top: $spacing_large;
     padding-bottom: $spacing_large;
     padding-left:  $spacing_large_x2;
+    padding-right:$spacing_large;
   }
   @include respond-to(medium-screens) {
     padding-top: $spacing_medium;
     padding-bottom: $spacing_medium;
     padding-left:  $spacing_medium;
+    padding-right:$spacing_medium;
   }
   @include respond-to(small-screens){
     padding-top: $spacing_small;
     padding-bottom: $spacing_small;
     padding-left:  $spacing_small;
+    padding-right:  $spacing_small;
   }
 
 

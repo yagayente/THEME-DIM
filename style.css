@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: DIM STCN 3.3
+Theme Name: DIM STCN 3.2
 Theme URI: DIM STCN
 Description: Thème du DIM STCN
 Author: Simon Bouchard
@@ -212,7 +212,7 @@ Version: 1.1
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -447,7 +447,7 @@ Version: 1.1
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -593,24 +593,32 @@ Version: 1.1
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
   .Menu_général_gauche .logo_area #iefix {
-    width: 40%;
+    width: 50%;
   }
 }
 
-.Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover {
-  position: absolute;
-  width: 100px;
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 100px;
+@media only screen and (min-width: 1524px) {
+  .Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover {
+    width: auto;
+    height: 76px;
+    overflow: auto;
+    margin: auto;
+    margin-right: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
   .Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover {
-    width: 70%;
-    height: auto;
+    width: auto;
+    height: 76px;
     overflow: auto;
     margin: auto;
     position: absolute;
+    margin-right: 10px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -619,7 +627,16 @@ Version: 1.1
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
   .Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover {
-    width: 80%;
+    width: auto;
+    height: 76px;
+    overflow: auto;
+    margin-right: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -705,8 +722,8 @@ img.logoprincipalehover {
 }
 @media only screen and (min-width: 1524px) {
   .Menu_général .Menu_général_droite .menu_search p {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -785,7 +802,7 @@ img.logoprincipalehover {
 }
 @media only screen and (min-width: 1524px) {
   .Menu_général ul#Menu_principal {
-    padding-left: 60px;
+    padding-left: 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -1334,7 +1351,7 @@ img.logoprincipalehover {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -1393,7 +1410,7 @@ img.logoprincipalehover {
 }
 @media only screen and (min-width: 1524px) {
   .prez_droite .notfound {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 30px 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
@@ -1597,10 +1614,10 @@ body.home .row {
 
 .structure_de_page_recherche .intro .screen #norm {
   display: block;
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -1624,8 +1641,8 @@ body.home .row {
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_recherche .intro .screen #norm {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 35px;
     line-height: 2.1875rem;
   }
@@ -1648,10 +1665,10 @@ body.home .row {
 }
 
 .demo {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -1673,8 +1690,8 @@ body.home .row {
 }
 @media only screen and (max-width: 520px) {
   .demo {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 35px;
     line-height: 2.1875rem;
   }
@@ -1719,10 +1736,10 @@ body.home .row {
 }
 
 .font_size {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -1744,8 +1761,8 @@ body.home .row {
 }
 @media only screen and (max-width: 520px) {
   .font_size {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 35px;
     line-height: 2.1875rem;
   }
@@ -1776,7 +1793,7 @@ body.home .row {
 }
 @media only screen and (min-width: 1524px) {
   .structure_de_page_recherche .intro {
-    padding: 30px 10% 30px 60px;
+    padding: 30px 10% 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -1933,8 +1950,8 @@ body.home .row {
 @media only screen and (min-width: 1524px) {
   .display_article article header.entry-header-home ul {
     margin-top: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -2012,7 +2029,7 @@ body.home .row {
 }
 @media only screen and (min-width: 1524px) {
   .display_article article header.entry-header-home .subwhite {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 30px 30px 30px;
     min-height: 200px;
   }
 }
@@ -2029,10 +2046,10 @@ body.home .row {
 }
 
 .display_article article header.entry-header-home .subwhite h3 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -2056,8 +2073,8 @@ body.home .row {
 }
 @media only screen and (max-width: 520px) {
   .display_article article header.entry-header-home .subwhite h3 {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 35px;
     line-height: 2.1875rem;
   }
@@ -2338,7 +2355,7 @@ body.home .row {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -2618,7 +2635,7 @@ body.home .row {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -2862,7 +2879,7 @@ body.home .row {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -3379,6 +3396,7 @@ ul.Menu_principal_mobile_2 li a:hover {
 
 .intro_site_mobile {
   width: 54%;
+  display: inline-block;
   float: left;
   height: 100%;
 }
@@ -3388,7 +3406,6 @@ ul.Menu_principal_mobile_2 li a:hover {
 }
 
 .intro_site_mobile h2 {
-  padding-left: 30px;
   position: absolute;
   /* 2 */
   top: 50%;
@@ -3411,8 +3428,8 @@ ul.Menu_principal_mobile_2 li a:hover {
   left: 25px;
   top: 50%;
   transform: translate(0%, -50%);
-  height: auto;
-  width: 80%;
+  height: 70px;
+  width: auto;
 }
 
 .containermobile {
@@ -3675,7 +3692,7 @@ ul.Menu_principal_mobile_2 li a:hover {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -3754,7 +3771,7 @@ ul.Menu_principal_mobile_2 li a:hover {
 
 @media only screen and (min-width: 1524px) {
   .contenu_article {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -3884,7 +3901,7 @@ picture.background_picture img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 36px;
+  font-size: 33px;
 }
 @media only screen and (min-width: 1524px) {
   .article_complet .entry-header {
@@ -4383,7 +4400,7 @@ picture.background_picture img {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -4435,7 +4452,7 @@ picture.background_picture img {
 }
 @media only screen and (min-width: 1524px) {
   .categ_posttype {
-    padding: 30px 60px 0px 60px;
+    padding: 30px 30px 0px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -4695,7 +4712,7 @@ picture.background_picture img {
 
 @media only screen and (min-width: 1524px) {
   .entryheaderprojet .title_project {
-    padding: 30px 10% 30px 60px;
+    padding: 30px 10% 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -4715,10 +4732,10 @@ picture.background_picture img {
 }
 
 .entryheaderprojet .title_project h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 57px;
+  line-height: 3.5625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -4729,12 +4746,28 @@ picture.background_picture img {
   -o-animation: fadein 1s;
   /* Opera */
 }
-@media only screen and (min-width: 521px) and (max-width: 999px) {
+@media only screen and (min-width: 1524px) {
   .entryheaderprojet .title_project h2 {
-    font-size: 26px;
-    font-size: 1.625rem;
-    line-height: 30px;
-    line-height: 1.875rem;
+    font-size: 56px;
+    font-size: 3.5rem;
+    line-height: 57px;
+    line-height: 3.5625rem;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 1523px) {
+  .entryheaderprojet .title_project h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 50px;
+    line-height: 3.125rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .entryheaderprojet .title_project h2 {
+    font-size: 43px;
+    font-size: 2.6875rem;
+    line-height: 50px;
+    line-height: 3.125rem;
   }
 }
 
@@ -4770,7 +4803,7 @@ picture.background_picture img {
 }
 @media only screen and (min-width: 1524px) {
   .entryheaderprojet p.time {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 30px 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -4890,10 +4923,10 @@ picture.background_picture img {
 }
 
 .article_complet .entry-content h3 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -4928,8 +4961,8 @@ picture.background_picture img {
 }
 @media only screen and (max-width: 520px) {
   .article_complet .entry-content h3 {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 35px;
     line-height: 2.1875rem;
   }
@@ -4937,7 +4970,7 @@ picture.background_picture img {
 @media only screen and (min-width: 1524px) {
   .article_complet .entry-content h3 {
     padding-right: 5%;
-    padding-left: 60px;
+    padding-left: 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -4960,7 +4993,7 @@ picture.background_picture img {
 @media only screen and (min-width: 1524px) {
   .article_complet .entry-content .formatingtext, .article_complet .entry-content .details_bellow {
     padding-right: 40%;
-    padding-left: 60px;
+    padding-left: 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -5236,7 +5269,7 @@ ul.slides li.slide {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -5314,7 +5347,7 @@ ul.slides li.slide {
 }
 @media only screen and (min-width: 1524px) {
   .about_membre {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -5517,7 +5550,7 @@ ul.slides li.slide {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -5599,7 +5632,7 @@ ul.slides li.slide {
 }
 @media only screen and (min-width: 1524px) {
   .prez_gauche .stickyprez .info_contact {
-    padding: 30px 60px 30px 16%;
+    padding: 30px 30px 30px 16%;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -5635,7 +5668,7 @@ ul.slides li.slide {
 }
 @media only screen and (min-width: 1524px) {
   .header_contact {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 30px 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -5650,10 +5683,10 @@ ul.slides li.slide {
 }
 
 .header_contact h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 57px;
+  line-height: 3.5625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -5671,12 +5704,28 @@ ul.slides li.slide {
   -o-animation: fadein 1s;
   /* Opera */
 }
-@media only screen and (min-width: 521px) and (max-width: 999px) {
+@media only screen and (min-width: 1524px) {
   .header_contact h2 {
-    font-size: 26px;
-    font-size: 1.625rem;
-    line-height: 30px;
-    line-height: 1.875rem;
+    font-size: 56px;
+    font-size: 3.5rem;
+    line-height: 57px;
+    line-height: 3.5625rem;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 1523px) {
+  .header_contact h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 50px;
+    line-height: 3.125rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .header_contact h2 {
+    font-size: 43px;
+    font-size: 2.6875rem;
+    line-height: 50px;
+    line-height: 3.125rem;
   }
 }
 
@@ -5685,8 +5734,8 @@ div.contact_fields {
 }
 @media only screen and (min-width: 1524px) {
   div.contact_fields {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
     grid-template-columns: repeat(10, 1fr) 5%;
   }
 }
@@ -6148,7 +6197,7 @@ textarea {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -6408,10 +6457,10 @@ div.stickyprez {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 57px;
+  line-height: 3.5625rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -6427,19 +6476,36 @@ div.stickyprez {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media only screen and (min-width: 521px) and (max-width: 999px) {
+@media only screen and (min-width: 1524px) {
   .prez_droite .basic h2 {
-    font-size: 26px;
-    font-size: 1.625rem;
-    line-height: 30px;
-    line-height: 1.875rem;
+    font-size: 56px;
+    font-size: 3.5rem;
+    line-height: 57px;
+    line-height: 3.5625rem;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 1523px) {
+  .prez_droite .basic h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 50px;
+    line-height: 3.125rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .prez_droite .basic h2 {
+    font-size: 43px;
+    font-size: 2.6875rem;
+    line-height: 50px;
+    line-height: 3.125rem;
   }
 }
 @media only screen and (min-width: 1524px) {
   .prez_droite .basic h2 {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -6447,6 +6513,7 @@ div.stickyprez {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 25px;
+    padding-right: 25px;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -6454,6 +6521,7 @@ div.stickyprez {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -6466,10 +6534,10 @@ div.stickyprez {
 }
 
 .accordionButton h3 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -6490,8 +6558,8 @@ div.stickyprez {
 }
 @media only screen and (max-width: 520px) {
   .accordionButton h3 {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 35px;
     line-height: 2.1875rem;
   }
@@ -6520,7 +6588,7 @@ div.stickyprez {
 }
 @media only screen and (min-width: 1524px) {
   .accordionButton {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 30px 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -6800,7 +6868,7 @@ div.stickyprez {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 
@@ -7348,7 +7416,7 @@ input.sf-input-radio {
 
 @media only screen and (min-width: 1524px) {
   .structure_de_page_recherche .search-filter-results article.projets header.entry-header .subwhite {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 30px 30px 30px;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -7371,10 +7439,10 @@ input.sf-input-radio {
 }
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header h3 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 42px;
-  line-height: 2.625rem;
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
   animation: fadein 1s;
@@ -7405,8 +7473,8 @@ input.sf-input-radio {
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_recherche .search-filter-results article.projets header.entry-header h3 {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 35px;
     line-height: 2.1875rem;
   }
@@ -7777,7 +7845,7 @@ input.sf-input-radio {
 }
 @media only screen and (min-width: 1524px) {
   .accordionContent {
-    padding: 30px 40% 30px 60px;
+    padding: 30px 40% 30px 30px;
   }
 }
 

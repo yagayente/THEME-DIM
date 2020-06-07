@@ -39,7 +39,7 @@ $break-middle: 1000px;
 $break-large: 1524px;
 
 //  Padding
-$spacing_large_x2: 60px;
+$spacing_large_x2: 30px;
 $spacing_large: 30px;
 $spacing_medium: 25px;
 $spacing_small: 25px;
@@ -70,11 +70,19 @@ $my_color_transpa: rgba(117, 190, 218, 0.5);
 //  FONT SIZE
 $font_size_global: 10px;
 //  TITLE
-  $font_size_title: ($font_size_global * 3.6);
-  $line_height_title: ($font_size_global * 4.2);
+  $font_size_title_h2: ($font_size_global * 5.6);
+  $line_height_title_h2: ($font_size_global * 5.7);
+  $MIDDLE_font_size_title_h2: ($font_size_global * 5);
+  $MIDDLE_line_height_title_h2: ($font_size_global * 5);
+  $SMALL_font_size_title_h2: ($font_size_global * 4.3);
+  $SMALL_line_height_title_h2: ($font_size_global * 5);
+
+
+  $font_size_title: ($font_size_global * 3.3);
+  $line_height_title: ($font_size_global * 4.5);
   $MIDDLE_font_size_title: ($font_size_global * 2.6);
   $MIDDLE_line_height_title: ($font_size_global * 3);
-  $SMALL_font_size_title: ($font_size_global * 3);
+  $SMALL_font_size_title: ($font_size_global * 2.5);
   $SMALL_line_height_title: ($font_size_global * 3.5);
 //  TEXTE
   $font_size_texte: ($font_size_global * 1.7);
