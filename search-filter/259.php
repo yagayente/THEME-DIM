@@ -75,6 +75,35 @@ else
         <?php pll_e('error_article') ?>
         </div>
 
-	<?php
 
-}?>
+        	<?php
+        	$query = new WP_Query(array('post_type' => array ( 'post', 'projets','event'),'posts_per_page'=>-1));
+         // echo 'bhawna';
+          //print_r($query);
+        	while ($query->have_posts())
+        	{
+            $cur_post = $query->the_post();
+        	$post = get_post();
+        	$ids[]= $post->ID.''.$post->post_type;
+        	$pro=array();
+        	$pos=array();
+        	$cur_post_type = $post->post_type;
+        	//if($cur_post_type == 'projets') $pro[]=$post->ID;
+        	//if($cur_post_type == 'post') $pos[]=$post->ID;
+        	//$mix[]= $post->post_type;
+
+        		//$cur_post = $query->the_post();
+            //print_r($post);
+        	//echo 'ccurent'.$cur_post_type ."=". 'prev'.$prev_post_type .'<br/>';
+        	if($prev_post_type !=$cur_post_type) $mix[]= $post->post_type;
+        	//if($cur_post_type == 'projets'){
+        		//
+        		//if($prev_post_type == 'projets') get_template_part('template-parts/content', 'content');
+        		if($cur_post_type == 'post')get_template_part('template-parts/previewprojet', 'previewprojet');
+        	//}else{
+        		//$query->the_post($prev_post_type);
+        		//}
+        	 $prev_post_type = $post->post_type;
+        	}
+        }
+        ?>

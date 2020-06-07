@@ -7414,6 +7414,26 @@ ul.post-categories li a:hover {
   }
 }
 
+.result2 {
+  width: 100%;
+  display: inline-block;
+}
+
+.structure_de_page_recherche .search-filter-results .result2 article.projets:nth-child(2n+2) {
+  border-left: 1.4px solid #EA6F51;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 0px !important;
+}
+@media only screen and (max-width: 520px) {
+  .structure_de_page_recherche .search-filter-results .result2 article.projets:nth-child(2n+2) {
+    border-left: none;
+    border-right: none;
+  }
+}
+
 input.sf-input-radio {
   position: absolute;
   left: -9999999px;

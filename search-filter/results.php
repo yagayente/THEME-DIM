@@ -45,7 +45,6 @@ if ( $query->have_posts() )
    //echo '<pre>';
   //print_r($query);
    //$query = new WP_Query(array('posts_per_page'=>-1));
- // echo 'bhawna';
   //print_r($query);
 	while ($query->have_posts())
 	{
@@ -85,13 +84,13 @@ if ( $query->have_posts() )
 else
 {
 
-  echo  '<div class="noresult">'?>
+  echo  '<div class="noresult"><span data-search-filter-action="infinite-scroll-end">'?>
         <?php pll_e('error_search') ?>
-        </div>
+        </span></div>
+        <div class="result2">
 
 	<?php
 	$query = new WP_Query(array('post_type' => array ( 'post', 'projets','event'),'posts_per_page'=>-1));
- // echo 'bhawna';
   //print_r($query);
 	while ($query->have_posts())
 	{
@@ -112,12 +111,13 @@ else
 	//if($cur_post_type == 'projets'){
 		//
 		//if($prev_post_type == 'projets') get_template_part('template-parts/content', 'content');
-		if($cur_post_type == 'post')get_template_part('template-parts/previewprojet', 'previewprojet');
+		if($cur_post_type == 'post')get_template_part('template-parts/previewprojet_fin', 'previewprojet_fin');
 	//}else{
 		//$query->the_post($prev_post_type);
-		if($cur_post_type == 'projets')get_template_part('template-parts/previewarticle', 'previewarticle');
+		if($cur_post_type == 'projets')get_template_part('template-parts/previewarticle_fin', 'previewarticle_fin');
 		//}
 	 $prev_post_type = $post->post_type;
 	}
 }
 ?>
+</div>

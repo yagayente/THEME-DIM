@@ -111,7 +111,7 @@ else
 	//if($cur_post_type == 'projets'){
 		//
 		//if($prev_post_type == 'projets') get_template_part('template-parts/content', 'content');
-		if($cur_post_type == 'post')get_template_part('template-parts/previewprojet', 'previewprojet');
+		if($cur_post_type == 'post')get_template_part('template-parts/previewarticle', 'previewarticle');
 	//}else{
 		//$query->the_post($prev_post_type);
 		//}
