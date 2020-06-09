@@ -1698,7 +1698,7 @@ body.home .row {
 }
 
 .abovethetext {
-  height: calc(60px * 6);
+  height: calc(35px * 10.5);
   width: calc(100% - 5% * 2);
   position: absolute;
 }
@@ -1778,7 +1778,7 @@ body.home .row {
 .truncate {
   /*BOTH of the following are required for text-overflow (overflow: hidden; and white-space: nowrap;)*/
   overflow: hidden;
-  height: calc(60px * 6);
+  height: calc(35px * 10.5);
 }
 
 .truncatenone {
@@ -1971,6 +1971,8 @@ body.home .row {
 }
 
 .display_article article header.entry-header-home ul li {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -1990,6 +1992,7 @@ body.home .row {
 }
 
 .display_article article header.entry-header-home ul li:hover {
+  -webkit-appearance: none;
   background-color: pink !important;
   color: white !important;
   border-color: pink !important;
@@ -4454,6 +4457,8 @@ picture.background_picture img {
 }
 
 .postype .button {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -5868,8 +5873,8 @@ div.wpcf7 label .wpcf7-form-control-wrap {
 }
 
 div.wpcf7 label {
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
 }
 
 div.wpcf7 label:hover {
@@ -5948,6 +5953,8 @@ input[type=submit] {
 
 .wpcf7 input[type=submit],
 .wpcf7 input[type=button] {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -5966,11 +5973,13 @@ input[type=submit] {
   color: white;
   text-decoration: none;
   margin-left: 0 !important;
+  -webkit-appearance: none;
   width: 80px;
   text-align: center;
 }
 
 .wpcf7 input[type=submit]:hover {
+  -webkit-appearance: none;
   background-color: pink !important;
   color: white !important;
   border-color: pink !important;
@@ -7052,6 +7061,7 @@ div.sticky {
   position: sticky;
   top: 0;
   display: inline-block;
+  word-wrap: break-word;
   width: 100%;
 }
 @media only screen and (min-width: 521px) and (max-width: 1523px) {
@@ -7136,7 +7146,17 @@ a.toggle_menu {
   width: 100%;
 }
 
+.searchandfilter ul li.sf-field-category ul li ul {
+  max-width: 100%;
+}
+
+.searchandfilter ul li.sf-field-category ul li {
+  max-width: 100%;
+}
+
 .searchandfilter ul li.sf-field-category ul li label {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -7153,15 +7173,20 @@ a.toggle_menu {
   margin-bottom: 11px;
   background-color: #EA6F51;
   color: white;
+  white-space: pre-wrap;
+  text-align: left;
+  max-width: 100%;
 }
 
 .searchandfilter ul li.sf-field-category input:checked + label {
+  -webkit-appearance: none;
   background-color: pink !important;
   border-color: pink !important;
   color: white !important;
 }
 
 .searchandfilter ul li.sf-field-category ul li label:hover, input:focus + label {
+  -webkit-appearance: none;
   background-color: pink !important;
   color: white !important;
   border-color: pink !important;
@@ -7169,6 +7194,8 @@ a.toggle_menu {
 }
 
 .searchandfilter ul li.sf-field-post_type ul li label {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -7189,6 +7216,7 @@ a.toggle_menu {
 }
 
 .searchandfilter ul li.sf-field-post_type ul li input:checked + label {
+  -webkit-appearance: none;
   background-color: white !important;
   border-color: pink !important;
   color: pink !important;
@@ -7297,6 +7325,8 @@ input:checked + label::before {
 }
 
 .article_complet ul.post-categories li a, .structure_de_page_recherche ul.post-categories li a {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 7px;
@@ -7317,6 +7347,7 @@ input:checked + label::before {
 }
 
 ul.post-categories li a:hover {
+  -webkit-appearance: none;
   background-color: pink !important;
   color: white !important;
   border-color: pink !important;

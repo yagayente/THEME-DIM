@@ -93,6 +93,7 @@ div.sticky {
   position: sticky;
   top:0;
   display: inline-block;
+  word-wrap: break-word;
   width: 100%;
   @include respond-to(wide-screens) {
 
@@ -160,8 +161,19 @@ a.toggle_menu {
 .searchandfilter ul li.sf-field-sort_order {
   width: 100%;
 }
-.searchandfilter ul li.sf-field-category ul li label {
+.searchandfilter ul li.sf-field-category ul li ul  {
+  max-width: 100%;
+}
+.searchandfilter ul li.sf-field-category ul li {
+  max-width: 100%;
+}
+.searchandfilter ul li.sf-field-category ul li label{
   @include button_inpost;
+  white-space: pre-wrap;
+  text-align: left;
+  max-width: 100%;
+}
+.searchandfilter ul li.sf-field-category ul {
 
 }
 .searchandfilter ul li.sf-field-category input:checked + label {

@@ -235,7 +235,7 @@ background-color: white;
   padding-bottom: $spacing_large;
 }
 .abovethetext {
-    height: calc(#{$hauteurderow_large} * 6);
+    height: calc(#{$SMALL_line_height_title} * 10.5);
     width: calc(100% - #{$margeexterieur_small} * 2);
     position: absolute;
 }
@@ -279,7 +279,7 @@ right: 0;
 .truncate {
   /*BOTH of the following are required for text-overflow (overflow: hidden; and white-space: nowrap;)*/
   overflow: hidden;
-  height: calc(#{$hauteurderow_large} * 6);
+  height: calc(#{$SMALL_line_height_title} * 10.5);
 }
 
 .truncatenone {

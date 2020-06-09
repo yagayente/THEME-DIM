@@ -146,8 +146,8 @@ div.wpcf7 label .wpcf7-form-control-wrap{
 
 div.wpcf7 label {
 
-    padding-top: $spacing_large !important;
-    padding-bottom: $spacing_large !important;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
 }
 
 div.wpcf7 label:hover {
@@ -203,7 +203,7 @@ width: 100% !important;
 .wpcf7 input[type="button"] {
 @include button;
 margin-left: 0 !important;
-
+-webkit-appearance: none;
 width: 80px;
 text-align: center;
 }

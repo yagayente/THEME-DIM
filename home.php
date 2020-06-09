@@ -19,7 +19,7 @@ get_header();
       ?>
 
         <?php
-        $images = get_field('gallerie_homepage');
+        $images = get_field('gallerie_homepage', false);
         $rand = array_rand($images, 1);
         if( $images ): ?>
                     <svg version="1.1" width="0" height="0" class="filter-rot">
@@ -40,7 +40,7 @@ get_header();
 
                     </svg>
 
-                    <div class="illustration_home" id="illustration_home" style="background-image: url('<?php echo $images[$rand]; ?>');"></div>
+                    <div class="illustration_home" id="illustration_home" style="background-image: url('<?php echo $images[$rand]?>');"></div>
       <?php endif; ?>
   </div><!-- image block  -->
   <div class="structure_de_page_recherche">
