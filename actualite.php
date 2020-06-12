@@ -36,10 +36,11 @@ function myFunction() {
         <a onclick="myFunction()" class="toggle_menu">Filtres</a>
 
 				<div class="sticky" id="stick">
+            <div class="scroll_mobile">
 
             <a onclick="myFunction()"  class="toggle_menu">Fermer</a>
             <?php echo do_shortcode('[searchandfilter id="259"]'); ?>
-
+            </div>
 					</div>
 				</div>
 
@@ -51,6 +52,18 @@ function myFunction() {
 
 
 <div class="structure_de_page_articlefooter">
+  <style>.noresult~.noresult {display:none !important;}.noresult~.noresult~.noresult {display:none !important;}.noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .result2~.result2 {display:none !important;}
+  .result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  </style>
     <?php
     get_footer(); ?>
 </div>

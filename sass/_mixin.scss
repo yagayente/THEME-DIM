@@ -1,5 +1,8 @@
 @import "vars";
 
+@mixin espace {
+  padding-bottom: 10vh;
+}
 
 @mixin global_border {
   box-sizing:border-box;  -webkit-box-sizing: border-box;
@@ -12,6 +15,7 @@
 @mixin mixin_border_left {border-left: $border solid $red; @include global_border;}
 @mixin mixin_border {border: $border solid $red; @include global_border;}
 
+@mixin mixin_border_bottom_sans {border-bottom: $border solid $red;}
 
 @function calculateRem($size) {$remSize: $size / 16px; @return $remSize * 1rem;}
 @mixin font-size($size) {font-size: $size; font-size: calculateRem($size);}
@@ -70,10 +74,10 @@
 
 @mixin button_shape {
   -webkit-appearance: none; // iphone fix
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   text-transform: lowercase;
   display: inline-block;
   @include font_courant;
@@ -93,8 +97,8 @@
 @mixin button_inpost {
   -webkit-appearance: none; // iphone fix
   @include button_shape;
-  margin-right: 11px;
-  margin-bottom: 11px;
+  margin-right: 9px;
+  margin-bottom: 9px;
   background-color: $red;
   color: white;
 }
@@ -124,8 +128,8 @@
 @mixin button_posttype {
   -webkit-appearance: none; // iphone fix
   @include button_shape;
-  margin-bottom: 11px;
-  margin-right: 11px;
+  margin-bottom: 9px;
+  margin-right: 9px;
   background-color: white;
   color: $red;
 }
@@ -225,7 +229,6 @@ animation: fadeout 1s;
   line-height: 0.1em;
   counter-increment: number;
   content: counter(number)"\a0";
-  position: absolute;
   display: inline-block;
   width: 1em;
   margin-left: -0.7em;
@@ -328,8 +331,4 @@ margin-top:2px;
   font-weight: 700;
     @include font-size($font_size_date_post);
     @include line-height($line_height_date_post);
-}
-
-@mixin espace {
-  padding-bottom: 10vh;
 }

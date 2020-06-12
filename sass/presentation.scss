@@ -3,9 +3,12 @@
 @import "grid";
 
 /* COL */
+
 .row_prez {
-  	display: flex;
-    min-height: 80vh;
+    /*   display: flex; */
+    flex-direction: column;
+    min-height: 100vh;
+
     /* same height div for sticky */
     @include respond-to(small-screens){
       	display: block;
@@ -14,11 +17,14 @@
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 .row_prez  {
-  height:  70vh; overflow: hidden;}
+overflow: hidden;}
 
 }
+
+
 .prez_gauche {
-  top:0px;
+
+    top:0px;
     z-index: 3!important;
     /* ici l'illustration est traitée hors grille */
     float: left;
@@ -30,15 +36,16 @@
       }
     @include respond-to(small-screens){
       width: 100%;
-      top: 40px !important;  /* unset */
+      top: 00px !important;  /* unset */
       float: none;
 
     }
 }
 
+
 .prez_droite {
+  min-height: 100%;
   float: right;
-  min-height: 90vh;
   @include mixin_border_left;
   @include respond-to(wide-screens) {
     width: 65%;
@@ -55,23 +62,7 @@
 
 
 
-
-
-div.stickyprez {
-  position: -webkit-sticky;
-  position: sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  top:0;
-
-
-}
-
-
 /* Illu prez */
-
-
 .stickyprez .image_presentation {
   z-index: 1!important;
   /* ici l'illustration est traitée hors grille */
@@ -125,6 +116,7 @@ div.stickyprez {
 
 .stickyprez .image_presentation img {
     cursor: crosshair;
+
     -webkit-filter: url(#traitement_couleur_1);
     -moz-filter: url(#traitement_couleur_1);
     -o-filter: url(#traitement_couleur_1);
@@ -219,9 +211,6 @@ div.stickyprez {
     padding-right:  $spacing_small;
   }
 
-
-
-
   @include mixin_border_bottom;
 }
 
@@ -243,6 +232,7 @@ div.stickyprez {
 
 
 #wrapper {
+
   	width: 100%;
   	margin-left: auto;
   	margin-right: auto;
@@ -252,7 +242,11 @@ div.stickyprez {
   	}
   .accordionButton h3 {
     @include h3_height;
+    background-color: white;
   }
+.accordionButton:first-child {
+  border-top: none;
+}
   .accordionButton {
     align-items: center;
     @include fadein;
@@ -261,18 +255,17 @@ div.stickyprez {
     background-color: white;
     float: left;
   	_float: none;  /* Float works in all browsers but IE6 */
-  	border-bottom: 1px solid #FFFFFF;
   	cursor: pointer;
-    @include mixin_border_bottom;
+    @include mixin_border_top;
 
   	}
 
 
   .accordionContent {
     width: 100%;
+    @include mixin_border_top;
   	float: left;
   	_float: none; /* Float works in all browsers but IE6 */
-    @include mixin_border_bottom;
     @include respond-to(wide-screens) {
       padding-left: $spacing_large;
       padding-top: $spacing_large;

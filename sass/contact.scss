@@ -13,6 +13,18 @@
     grid-column-start: 1;  grid-column-end: 8;
     }
 }
+#stickycontact {
+  position: -webkit-sticky;
+    position: sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+
+    @include respond-to(small-screens){
+      position: relative;
+    }
+}
 .prez_gauche .stickyprez .info_contact {
   @include fadein;
   @include abstract;
@@ -40,6 +52,14 @@
 
 .header_contact {
 width:100%;
+position: -webkit-sticky;
+position: sticky;
+position: -moz-sticky;
+position: -ms-sticky;
+position: -o-sticky;
+top:0;
+background-color: white;
+z-index: 8888;
 @include mixin_border_bottom;
 
 @include respond-to(wide-screens) {
@@ -50,6 +70,8 @@ width:100%;
 }
 @include respond-to(small-screens){
   padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+  position: relative;
+  top: unset;
 }
 
 }
@@ -59,6 +81,7 @@ width:100%;
 }
 div.contact_fields {
 display: grid;
+min-height: 10vh;
 
 @include respond-to(wide-screens) {
 padding-left: $spacing_large_x2;

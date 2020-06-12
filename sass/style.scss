@@ -12,6 +12,8 @@
 @use 'projets';
 @use 'membre';
 
+@use 'new_theme';
+
 @use 'contact';
 @use 'contact_form';
 @use 'presentation';
@@ -19,22 +21,22 @@
 @use 'footer';
 
 
-
 @import "vars";
 @import "_mixin.scss";
 
-
-
-
-
+html, body{
+    width:100%;
+    height:100%
+}
 html {
   font-size: 62.5%; /* 16*(62.5/100) = 10 =&nsp; 10px = 1rem */
   line-height: 1.5;
+  position: relative;
 }
 
 
 body {
-  height: auto;
+
   overflow-x: hidden; //horizontal
 }
 ::-moz-selection { background: #e0e0e0; opacity: 1; color:white;}

@@ -2,6 +2,9 @@
 @import "_mixin.scss";
 @import "grid";
 
+
+
+
 .categ_posttype {
   width: 100%;
   display: inline-block;
@@ -23,6 +26,7 @@
   @include button_posttype;
 }
 
+
 .row_prez .prez_gauche div.stickyprez {
   position: -webkit-sticky;
   position: sticky;
@@ -32,24 +36,11 @@
   top:0;
   display: inline-block;
   width: 100%;
+}
 
-}
-.image_projet_full  {
-  z-index: 1!important;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  @include respond-to(small-screens){
-    height: 40vh !important;
-    position: relative;
-    display: inline-block;
-    margin-top: 120px;
-  }
-}
 .image_projet_full img {
   min-height: 100%; /* iE hack */
-  min-width: 100%; /* iE hack */
+  min-width: 33.3333%; /* iE hack */
   position: absolute; /* iE hack */
   top: 50%; /* iE hack */
   padding: 0 ;
@@ -174,9 +165,8 @@ height: 100vh;
     color: $black;
 }
 
-
 .article_complet .entryheaderprojet {
-@include mixin_border_bottom;
+
     position: -webkit-sticky;
     position: sticky;
     position: -moz-sticky;
@@ -207,7 +197,7 @@ height: 100vh;
       }
 
 .entryheaderprojet .title_project{
-
+    @include mixin_border_bottom;
     @include respond-to(wide-screens) {
         padding: $spacing_large 10% $spacing_large $spacing_large_x2;
     }
@@ -224,17 +214,20 @@ height: 100vh;
   @include h2;
 }
 
+
 .entryheaderprojet a {
     @include fadein;
     @include respond-to(wide-screens) {
     }
   }
+
+// 11 juin
 .entryheaderprojet p.time {
     @include fadein;
+    @include mixin_border_bottom;
     padding-left: $spacing_large_x2;
     padding-top: calc((#{$hauteurderow_large} - #{$line_height_date_post}) / 2);
     padding-bottom: calc((#{$hauteurderow_large} - #{$line_height_date_post}) / 2);
-    @include mixin_border_top;
 
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -330,6 +323,7 @@ background-color: pink;
 
 .article_complet .entry-content{
 min-height: 50vh;
+@include espace;
 
 @include respond-to(small-screens){
     background-color: white;
@@ -338,12 +332,10 @@ min-height: 50vh;
 
 .article_complet .entry-content h3 {
   @include h3_height;
-  @include mixin_border_top;
-  @include mixin_border_bottom;
   width: 100%;
   display: inline-block;
 }
-.article_complet .entry-content .formatingtext, .article_complet .entry-content .details_bellow{
+.article_complet .entry-content .details_bellow{
   padding-top: $spacing_large;
   @include espace;
   @include respond-to(wide-screens) {
@@ -361,6 +353,7 @@ min-height: 50vh;
 }
 .article_complet .entry-content .details_bellow {
   display: block;
+  @include mixin_border_bottom;
 }
 .leader  {
   margin-bottom: $spacing_large;

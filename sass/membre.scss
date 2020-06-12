@@ -2,9 +2,14 @@
 @import "_mixin.scss";
 @import "grid";
 
+
+
+
+
 .basic {
    @include espace;
-   min-height: 90vh;
+   min-height: calc(100% - 100px);
+   flex: 1 0 auto;
 }
 .about_membre {
   width: 100%;
@@ -12,7 +17,6 @@
   @include p;
   margin-bottom: 0 !important;
   @include mixin_border_bottom;
-
   @include respond-to(wide-screens){
   padding: $spacing_large $txt_large $spacing_large $spacing_large_x2;
   }
@@ -22,4 +26,17 @@
   @include respond-to(small-screens){
   padding: $spacing_small $spacing_small $spacing_small $spacing_small;
   }
+}
+
+
+
+.sticky_content_right {
+  background-color: white;
+  z-index: 99999;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top:0;
 }

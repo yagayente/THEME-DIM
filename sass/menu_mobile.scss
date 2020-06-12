@@ -102,7 +102,7 @@ display: inline-block;
   left: 0; */
 }
 .nav-toggle-2 {
-    height: 100%;
+
 }
 .nav-toggle-bar-2 {
   @include font_glyph;
@@ -137,6 +137,52 @@ display: inline-block;
   background: $red;
 }
 
+p.close_search {
+  @include mixin_border_bottom;
+  background-color: white;
+  cursor: pointer;
+  height: 120px;
+  line-height: 120px;
+  right: 0;
+  padding-right: $spacing_small;
+    padding-left: $spacing_small;
+  position: absolute;
+  color: $red;
+  z-index: map-get($z-index, text_menu_allover_mobile);
+}
+p.close_search:hover {
+  color: $black;
+}
+body.noscroll {
+
+  @include respond-to(wide-screens) {
+overflow-y:scroll;
+
+}
+  @include respond-to(medium-screens) {
+overflow-y:scroll;
+}
+@include respond-to(small-screens) {
+  overflow-y: hidden;
+}
+}
+.scroll_mobile {
+  overflow-y: scroll;
+  height: 100vh;
+  @include respond-to(wide-screens) {
+overflow-y: hidden;
+
+}
+  @include respond-to(medium-screens) {
+overflow-y: hidden;
+}
+@include respond-to(small-screens) {
+padding-right: $spacing_small;
+padding-left: $spacing_small;
+padding-bottom: $spacing_small;
+}
+}
+
 .hamburger {
   position: absolute;
   right: 50px;
@@ -154,7 +200,7 @@ display: inline-block;
 .mobilenav li {
   list-style-type: none;
   text-align: left;
-  padding: $spacing_large $spacing_large 0px $spacing_large;
+  padding: 20px $spacing_large 0px $spacing_large;
 }
 
 .mobilenav li a {
@@ -469,8 +515,6 @@ ul.Menu_principal_mobile_2 li a:hover{
         z-index: 9999;
         top: 0;
         left: 0;
-        -webkit-box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 ); /* 1 4 */
-        box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 ); /* 1 4 */
       }
     }
 

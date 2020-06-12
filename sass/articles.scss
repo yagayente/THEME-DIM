@@ -8,10 +8,10 @@
   @include font-size($font_size_texte);
   @include line-height($line_height_texte);
   cursor: pointer;
-  color: $black;
+  color: $red;
 }
 .setup p:hover {
-  @include link_noir_over;
+  color: $black;
 }
 .setup p.hidden {
   padding-top: $spacing_large;

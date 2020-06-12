@@ -120,12 +120,15 @@ grid-template-columns: $margeexterieur_large repeat($nombredecolonne_large, 1fr)
   top: calc(#{$hauteurderow_large} * 2);
   right: 0;
   display: grid;
+  @include mixin_border_left;
   @include respond-to(small-screens){
     width: 100%;
     z-index: 9999;
+        border: none;
   }
   @include respond-to(medium-screens) {
     width: 66.6666%;
+
   }
   @include respond-to(wide-screens) {
     width: 65%;

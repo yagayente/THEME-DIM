@@ -12,9 +12,9 @@ Template Name: Contact
 <?php while (have_posts()) : the_post(); ?>
 
 
-<div class="row_prez">
+<div class="row_prez" id="contact_prez">
 
-					<div class="prez_gauche">
+					<div class="prez_gauche" id="stickycontact">
 
 							<div class="stickyprez" id="stick">
 									<div class="info_contact">
@@ -28,7 +28,7 @@ Template Name: Contact
 					</div><!-- .prez_gauche -->
 
 
-				 <div class="prez_droite">
+				 <div class="prez_droite" id="contact_prez">
 
 
 

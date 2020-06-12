@@ -59,6 +59,7 @@
   <div class="searchoverbar">
 
     <div class="content_menu">
+      <p class="close_search">X</p>
       <?php echo do_shortcode('[searchandfilter id="264"]'); ?>
     </div>
     <div class="outside_menu_search">

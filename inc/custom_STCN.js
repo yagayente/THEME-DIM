@@ -52,16 +52,19 @@ window.onload=function(){
       navsearch: document.querySelector('.searchoverbar'),
       body: document.querySelector('body'),
       outside_menu_search: document.querySelector('.outside_menu_search'),
+      close_button: document.querySelector('.close_search'),
 
       doToggle: function(e) {
         e.preventDefault();
         this.navTogglesearch.classList.toggle('expanded');
         this.navsearch.classList.toggle('expanded');
+        this.body.classList.toggle('noscroll');
       }
     };
     searchham.navTogglesearch.addEventListener('click', function(e) { searchham.doToggle(e); });
     searchham.outside_menu_search.addEventListener('click', function(e) { searchham.doToggle(e); });
+    searchham.close_button.addEventListener('click', function(e) { searchham.doToggle(e); });
 
   }());
-  
+
 }

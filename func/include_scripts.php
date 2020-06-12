@@ -21,4 +21,6 @@ function wpdocs_theme_name_scripts() {
     wp_enqueue_style( 'reset', get_stylesheet_directory_uri() . '/inc/reset.css', array(), '1.0', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+
+
 ?>

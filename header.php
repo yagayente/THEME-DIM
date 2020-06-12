@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>  >
 
   <div class="grille_dev">
     <div class="box">X1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>

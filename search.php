@@ -36,9 +36,11 @@ function myFunction() {
 				<a onclick="myFunction()" class="toggle_menu"><?php pll_e('filtrage'); ?></a>
 
 				<div class="sticky" id="stick">
+            <div class="scroll_mobile">
 					<a onclick="myFunction()"  class="toggle_menu"><?php pll_e('fermer'); ?></a>
 					<?php echo do_shortcode('[searchandfilter id="264"]'); ?></div>
-				</div>
+            </div>
+        </div>
 
 			 <div class="structure_de_page_recherche" id="colonne">
 				   <?php echo do_shortcode('[searchandfilter id="264" show="results"]'); ?>
@@ -48,6 +50,20 @@ function myFunction() {
 </div>
 
 <div class="structure_de_page_articlefooter">
+  <style>.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .noresult~.noresult~.noresult~.noresult~.noresult~.noresult {display:none !important;}
+  .result2~.result2 {display:none !important;}
+  .result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  .result2~.result2~.result2~.result2~.result2~.result2~.result2~.result2 {display:none !important;}
+  </style>
     <?php
     get_footer(); ?>
 </div>

@@ -290,7 +290,7 @@ display: none;
 
 
 .structure_de_page_recherche .intro {
-    @include mixin_border_left;
+
     @include respond-to(wide-screens) {
       padding: $spacing_large $margeexterieur_largedouble $spacing_large $spacing_large_x2;
     }
@@ -338,6 +338,7 @@ display: none;
     overflow: hidden;
 }
 .display_article article {
+    padding: 0;
     overflow: hidden;
     position: relative;
     float: left;
@@ -388,6 +389,7 @@ display: none;
 }
 
 .display_article article:nth-of-type(2n){
+
 @include mixin_border_left;
 @include respond-to(small-screens){
   border:none;

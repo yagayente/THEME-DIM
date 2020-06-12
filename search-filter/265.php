@@ -87,6 +87,7 @@ else
 	echo '<div class="noresult">'?>
         <?php pll_e('error_projet') ?>
         </div>
+        <div class="result_alter">
 
 	<?php
 	$query = new WP_Query(array('post_type' => array ( 'post', 'projets','event'),'posts_per_page'=>-1));
@@ -119,3 +120,4 @@ else
 	}
 }
 ?>
+</div>

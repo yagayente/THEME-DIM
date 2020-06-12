@@ -51,9 +51,7 @@ $(document).ready(function() {
 
 });</script>
 	<div class="basic">
-					<h2>
-						<?php the_title(); ?>
-					</h2>
+			
 
 
 						<div id="wrapper">
