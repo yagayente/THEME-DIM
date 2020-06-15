@@ -5079,6 +5079,10 @@ picture.background_picture img {
 .leader {
   margin-bottom: 30px;
   line-height: 1.3em;
+  background-color: white;
+  column-count: 2;
+  column-width: 100px;
+  line-height: 1.3em;
 }
 
 .leader a {
@@ -5098,6 +5102,8 @@ picture.background_picture img {
 }
 
 .members_case {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
   margin-bottom: 30px;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;

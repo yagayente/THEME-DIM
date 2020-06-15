@@ -358,6 +358,10 @@ min-height: 50vh;
 .leader  {
   margin-bottom: $spacing_large;
   line-height: 1.3em;
+  background-color: white;
+  column-count: 2;
+  column-width: 100px;
+  line-height: 1.3em;
 }
 .leader a {
   border-bottom: 1px solid $black;
@@ -374,6 +378,8 @@ font-weight: 300;
 }
 
 .members_case {
+  @include font_courant;
+  color: $black;
   margin-bottom: $spacing_large;
   -webkit-column-break-inside: avoid;
           page-break-inside: avoid;

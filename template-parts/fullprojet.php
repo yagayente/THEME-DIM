@@ -143,64 +143,65 @@ function myFunction() {
 
 															<div class="accordionContent">
 																			<div class="formatingtext">
-																								<span class="bolder">
-																								<?php the_field('responsable_projet_-_appelation'); ?>
-																								</span>
-
-																								<div class="leader">
-																												<?php $post_objects = get_field('Responsable');
-																												if( $post_objects ): ?>
-
-																													 <?php foreach( $post_objects as $post): ?>
-																															 <?php setup_postdata($post); ?>
-
-																																	 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-																																	 <span class="subperson"><?php the_field('universite'); ?></span>
-
-																													 <?php endforeach; ?>
-
-																													 <?php wp_reset_postdata();?>
-																												 <?php endif;?>
-																								</div>
 
 
-																								<span class="bolder"><?php the_field('membres_du_projet_-_appelation'); ?></span>
-
-																								<div class="membres">
-																												<?php $post_objects = get_field('auteur');
-																												if( $post_objects ): ?>
-
-																													 <?php foreach( $post_objects as $post): ?>
-																															 <?php setup_postdata($post); ?>
-																															 <div class="members_case">
-																																	 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-																																	 <span class="subperson"><?php the_field('universite'); ?></span>
-																															 </div>
-																													 <?php endforeach; ?>
-
-																													 <?php wp_reset_postdata();?>
-																												 <?php endif;?>
 
 
-																										<?php if( have_rows('membres_non_enregistre') ): ?>
 
-																											<?php while( have_rows('membres_non_enregistre') ): the_row();
-																												$content = get_sub_field('nom_du_membre');
-																												$content2 = get_sub_field('texte_de_presentation');  ?>
 
-																																			<div class="members_case">
-																																			<?php if( $content ): ?>
-																																			<span class="nameperson"><?php echo $content; ?></span><br>
-																																			<?php endif; ?>
 
-																																			<?php if( $content2 ): ?>
-																																			<span class="subperson"><?php echo $content2; ?></span>
-																																			<?php endif; ?>
-																																		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+																										<?php if ( have_rows( 'membres_projet' ) ): ?>
+																											<?php while ( have_rows( 'membres_projet' ) ) : the_row(); ?>
+
+																												<?php if ( get_row_layout() == 'membresDIMSTCN' ) : ?>
+
+																													<span class="bolder"><?php the_sub_field( 'titre_membre' ); ?></span><br>
+																													<div class="leader">
+																													<?php if ( have_rows( 'membre-DIMSTCN_1' ) ): ?>
+																														<?php while ( have_rows( 'membre-DIMSTCN_1' ) ) : the_row(); ?>
+																															<div class="members_case">
+																															<?php if ( get_row_layout() == 'membre_enregistre' ) : ?>
+
+																																<?php $lien_1 = get_sub_field( 'lien_1' ); ?>
+																																<?php if ( $lien_1 ) : ?>
+																																	<a href="<?php echo esc_url( $lien_1); ?>"><?php the_sub_field( 'Nom_du_membre_1' ); ?></a><br>
+																																<?php else: ?><?php the_sub_field( 'Nom_du_membre_1' ); ?><br>
+
+																																<?php endif; ?>
+																																<?php the_sub_field( 'univercite_du_membre_1' ); ?>
+
+
+																															<?php elseif ( get_row_layout() == 'membre_non_enregistre' ) : ?>
+																																<?php the_sub_field( 'membre_non_enregistre_2' ); ?><br>
+																																<?php the_sub_field( 'univercite_non_enregistré_2' ); ?>
+
+																															<?php endif; ?>
+																															</div><!-- members_case  -->
+																														<?php endwhile; ?>
+
+																													</div><!-- leader  -->
+																													<?php else: ?>
+																														<?php // no layouts found ?>
+																													<?php endif; ?>
+																												<?php endif; ?>
 																											<?php endwhile; ?>
-
-
+																										<?php else: ?>
+																											<?php // no layouts found ?>
 																										<?php endif; ?>
+
 
 																								</div><!-- membre end -->
 																		</div><!-- formating texte -->
