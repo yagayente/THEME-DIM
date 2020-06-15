@@ -39,7 +39,7 @@ function Projets() {
 		'filter_items_list'     => __( 'Filter items list', 'BASE_THEME' ),
 	);
 	$args = array(
-    'show_in_rest' => true,
+    'show_in_rest' => false,
 		'label'                 => __( 'Projets', 'BASE_THEME' ),
 		'description'           => __( 'Post Type Description', 'BASE_THEME' ),
 		'labels'                => $labels,
@@ -103,7 +103,7 @@ function Membres() {
 		'filter_items_list'     => __( 'Filter items list', 'BASE_THEME' ),
 	);
 	$args = array(
-    'show_in_rest' => true,
+    'show_in_rest' => false,
 		'label'                 => __( 'Membres', 'BASE_THEME' ),
 		'description'           => __( 'Post Type Description', 'BASE_THEME' ),
 		'labels'                => $labels,

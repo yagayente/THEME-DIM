@@ -15,6 +15,8 @@ add_action( 'after_setup_theme', 'wpdc_disable_gutenberg_colour_settings' );
 add_theme_support('disable-custom-font-sizes');
 
 
+
+
  //*  QUEL TYPE DE BLOCK DISPLAY ?
 add_filter( 'allowed_block_types', 'misha_allowed_block_types' );
 add_filter( 'allowed_block_types', 'misha_allowed_block_types', 10, 2 );

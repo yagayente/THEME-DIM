@@ -14,3 +14,11 @@ get_template_part( 'func/affiche_chemin_post' );
 get_template_part( 'func/traduire' );
 get_template_part( 'func/custom_post_type' );
 get_template_part( 'func/details' );
+
+add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
+function prefix_disable_gutenberg($current_status, $post_type)
+{
+    // Use your post type key instead of 'product'
+    if ($post_type === 'Projets') return false;
+    return $current_status;
+}
