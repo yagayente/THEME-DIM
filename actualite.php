@@ -33,12 +33,12 @@ function myFunction() {
 
 		  <div class="Navigation_recherche" id="colonnetaille">
 
-        <a onclick="myFunction()" class="toggle_menu">Filtres</a>
+        <a onclick="myFunction()" class="toggle_menu"><?php pll_e('filtrage'); ?></a>
 
 				<div class="sticky" id="stick">
             <div class="scroll_mobile">
 
-            <a onclick="myFunction()"  class="toggle_menu">Fermer</a>
+            <a onclick="myFunction()"  class="toggle_menu">C</a>
             <?php echo do_shortcode('[searchandfilter id="259"]'); ?>
             </div>
 					</div>

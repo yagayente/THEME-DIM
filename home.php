@@ -50,7 +50,7 @@ get_header();
 												<div id="norm"><?php the_field('introduction'); ?></div>
 												<div id="mobile">
 													<div class="abovethetext">
-													<div class="but"><span class="button_text"><?php pll_e('lire_plus'); ?></span><p class="font_size">&nbsp</p></div>
+													<div class="but"><span class="button_text"><?php pll_e('lire_plus'); ?></span><span class="petit_glyph">R</span><p class="font_size">&nbsp</p></div>
 													</div>
 
 													<section class="demo" id="demo">

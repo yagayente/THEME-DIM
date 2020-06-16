@@ -197,6 +197,7 @@ height: 100vh;
       }
 
 .entryheaderprojet .title_project{
+    color:  $black;
     @include mixin_border_bottom;
     @include respond-to(wide-screens) {
         padding: $spacing_large 10% $spacing_large $spacing_large_x2;
@@ -414,7 +415,7 @@ ul.slides {
   display: inline-block;
 }
 li.slide {
-    margin-bottom: calc(#{$spacing_large} / 3);
+    margin-bottom: calc(#{$spacing_large} / 5);
 }
 ul.slides li.slide {
   display: inline-block;

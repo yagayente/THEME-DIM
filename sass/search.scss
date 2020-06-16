@@ -9,8 +9,9 @@
 
   display: inline-block;
   @include mixin_border_bottom;
-  @include abstract;
+  @include font_titrage;
   @include padding;
+  @include line-height(20px);
 }
 #colonne .search-filter-results article a.allpostlink {
   width: 100%;
@@ -122,6 +123,7 @@ a.toggle_menu {
     padding: $spacing_large 0 5px 0;
     right: 0px;
   @include link;
+  @include font_glyph;
   color: $red !important;
   cursor: pointer;
   @include respond-to(wide-screens) {
@@ -136,10 +138,18 @@ a.toggle_menu {
     display: inline-block;
   }
 }
+.scroll_mobile a.toggle_menu {
+  @include font-size(30px);
+  position: absolute;
+  right: $spacing_small;
 
+}
 #stick .searchandfilter ul li.sf-field-sort_order{
     margin-top: 20px !important;
     margin-bottom: $spacing_large;
+    @include respond-to(small-screens){
+      margin-top: 40px !important;
+    }
 }
 .searchandfilter h4 {
     padding: 0 0 10px 0!important;
@@ -402,7 +412,7 @@ article.projets header.entry-header  {
   z-index: 5;
   display: inline-block;
   width: 100%;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .structure_de_page_recherche
 .search-filter-results
@@ -438,7 +448,6 @@ article.projets header.entry-header h3 {
   @include fadein;
 display: inline-block;
 width: 100%;
-padding-bottom: calc(#{$spacing_large} / 2);
 
 }
 
@@ -453,6 +462,8 @@ article.projets header.entry-header h3 a{
 .structure_de_page_recherche
 .search-filter-results
 article.projets header.entry-header p.timeit {
+
+  margin-top: calc(#{$spacing_large} / 2);
   @include fadein;
   @include abstract;
   @include mixin_border_top;
@@ -530,6 +541,10 @@ article.projets header.entry-header p{
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+  }
+
+  div.sticky {
+    position: relative;
   }
 }
 

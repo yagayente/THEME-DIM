@@ -260,7 +260,9 @@ overflow: hidden;}
 
   	}
 
-
+  .accordionButton:hover {
+    color: $red;
+  }
   .accordionContent {
     width: 100%;
     @include mixin_border_top;
@@ -285,12 +287,11 @@ overflow: hidden;}
     }
     }
 
-    .accordionButton:last-child {
-      border-bottom: none;
-    }
-    .accordionContent:last-child {
-      border-bottom: none;
-    }
+#wrapper {
+  @include mixin_border_bottom;
+}
+
+
   .accordionContent .texte{
       @include texte_courant;
       @include respond-to(wide-screens) {

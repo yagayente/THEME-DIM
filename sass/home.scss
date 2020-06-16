@@ -267,11 +267,24 @@ right: 0;
   padding-bottom: 5px;
 }
 
+.petit_glyph {
+  color: $red;
+  @include font_glyph;
+  padding-left: 5px;
+}
+
 .font_size {
   @include h3;
   display: inline-block;
 }
-.button_text:hover {
+.but {
+  cursor: pointer;
+}
+.but:hover .button_text{
+  color: $black;
+  cursor: pointer;
+}
+.but:hover .petit_glyph{
   color: $black;
   cursor: pointer;
 }
@@ -498,4 +511,6 @@ display: none;
 
 .display_article article:nth-of-type(3n){
 @include mixin_border_left;
+@include respond-to(small-screens){
+          border-left: none;}
 }

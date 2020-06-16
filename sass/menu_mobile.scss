@@ -137,6 +137,16 @@ display: inline-block;
   background: $red;
 }
 
+.mobilenav .language ul li.lang-item {
+  float: left;
+}
+.mobilenav .language ul li.lang-item:first-child a:after{
+   content: " /";
+}
+.mobilenav .language ul li.lang-item:last-child a:before{
+   white-space: pre;
+   content: " ";
+}
 p.close_search {
   @include mixin_border_bottom;
   background-color: white;
@@ -197,11 +207,14 @@ padding-bottom: $spacing_small;
 .mobilenav_2 .sf-input-text{
   display: none;
 }
-
+.mobilenav ul {
+  padding-left: $spacing_small;
+  padding-right: $spacing_small;
+}
 .mobilenav li {
   list-style-type: none;
   text-align: left;
-  padding: 10px $spacing_large 0px $spacing_large;
+  padding-top: 60px
 }
 
 .mobilenav li a {
@@ -211,11 +224,9 @@ padding-bottom: $spacing_small;
   font-weight: 300;
   width: 100%;
   @include font_courant;
+  @include font-size(22px);
 }
 
-.mobilenav li:first-child {
-  margin-top: 60px;
-}
 
 
 
@@ -528,14 +539,11 @@ ul.Menu_principal_mobile_2 li a:hover{
 
 .logo_site  .boxlogo_site {
 
-   width: 26%;
+   width: 100%;
    float: left;
 }
 .intro_site_mobile {
-  width: 54%;
-  display: inline-block;
-  float: left;
-  height: 100%;
+  display: none;
 }
 .intro_site_mobile h1 {
   font-size: 0px;
@@ -561,15 +569,15 @@ height: 100%;
 
 .logo_site  .boxlogo_site .box_mobile_logo img{
   position: absolute;
-  left: $spacing_small;
   top: 50%;
-  transform: translate(0%, -50%);
-  height: 70px;
+  transform: translate(-50%, -50%);
+  height: 90px;
   width: auto;
 }
 .containermobile {
-width: 20%;
-float: left;
+  position: absolute;
+  width: 20%;
+  right: 0px;
 }
 
 .containermobile .nav-toggle  {

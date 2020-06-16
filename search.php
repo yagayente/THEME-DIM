@@ -37,7 +37,7 @@ function myFunction() {
 
 				<div class="sticky" id="stick">
             <div class="scroll_mobile">
-					<a onclick="myFunction()"  class="toggle_menu"><?php pll_e('fermer'); ?></a>
+					<a onclick="myFunction()"  class="toggle_menu">C</a>
 					<?php echo do_shortcode('[searchandfilter id="264"]'); ?></div>
             </div>
         </div>
