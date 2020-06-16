@@ -140,6 +140,7 @@ display: inline-block;
 p.close_search {
   @include mixin_border_bottom;
   background-color: white;
+  @include font_glyph;
   cursor: pointer;
   height: 120px;
   line-height: 120px;
