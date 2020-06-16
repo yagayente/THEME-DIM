@@ -78,7 +78,7 @@
         width: 33.3333%;
     }
     @include respond-to(small-screens){
-      padding-left: $spacing_large;
+      padding-left: $spacing_small;
       width: 100%;
       margin-top: 120px !important;  /* unset */
       float: none;

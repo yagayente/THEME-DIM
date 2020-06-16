@@ -7657,7 +7657,7 @@ textarea {
 }
 @media only screen and (max-width: 520px) {
   .Navigation_recherche {
-    padding-left: 30px;
+    padding-left: 25px;
     width: 100%;
     margin-top: 120px !important;
     /* unset */
