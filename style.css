@@ -8921,7 +8921,15 @@ html {
   position: relative;
 }
 
+html,
 body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+body {
+  overscroll-behavior: contain;
   overflow-x: hidden;
 }
 
