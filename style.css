@@ -1418,6 +1418,41 @@ img.logoprincipalehover {
   z-index: -999;
 }
 
+.block_scroll {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  background-color: white;
+  height: 50vh;
+  top: -50vh;
+}
+
+.block_scroll .lefttr {
+  border-left: 0.05em solid #EA6F51;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.6666%;
+  float: right;
+  height: 100%;
+}
+@media only screen and (min-width: 1524px) {
+  .block_scroll .lefttr {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .block_scroll .lefttr {
+    width: 66.6666%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .block_scroll .lefttr {
+    display: none;
+  }
+}
+
 .prez_droite .notfound {
   font-family: "Open Sans", sans-serif;
   animation: fadein 1s;

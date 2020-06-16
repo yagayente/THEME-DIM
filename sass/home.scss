@@ -3,6 +3,31 @@
 @import "grid";
 
 
+.block_scroll {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  background-color: white;
+  height: 50vh;
+  top: -50vh;
+}
+
+.block_scroll .lefttr {
+  @include mixin_border_left;
+  width: 66.6666%;
+  float: right;
+  height: 100%;
+  @include respond-to(wide-screens) {
+    width: 65%;
+  }
+  @include respond-to-bis(middle-screens) {
+    width: 66.6666%;
+  }
+  @include respond-to(small-screens){
+    display: none;
+  }
+}
+
 .prez_droite .notfound {
   @include font-courant;
   @include fadein;
