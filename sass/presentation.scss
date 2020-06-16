@@ -44,7 +44,7 @@ overflow: hidden;}
 
 
 .prez_droite {
-  min-height: 100%;
+  min-height: 100vh;
   float: right;
   @include mixin_border_left;
   @include respond-to(wide-screens) {

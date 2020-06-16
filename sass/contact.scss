@@ -225,6 +225,7 @@ width: 100% !important;
 .wpcf7 input[type="submit"],
 .wpcf7 input[type="button"] {
 @include button;
+border-radius: 0;
 margin-left: 0 !important;
 -webkit-appearance: none;
 width: 80px;

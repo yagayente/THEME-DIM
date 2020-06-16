@@ -6581,6 +6581,7 @@ input[type=submit] {
   background-color: #EA6F51;
   color: white;
   text-decoration: none;
+  border-radius: 0;
   margin-left: 0 !important;
   -webkit-appearance: none;
   width: 80px;
@@ -6932,7 +6933,7 @@ textarea {
 }
 
 .prez_droite {
-  min-height: 100%;
+  min-height: 100vh;
   float: right;
   border-left: 0.05em solid #EA6F51;
   box-sizing: border-box;
