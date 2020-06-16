@@ -123,7 +123,7 @@ a.toggle_menu {
     padding: $spacing_large 0 5px 0;
     right: 0px;
   @include link;
-  @include font_glyph;
+
   color: $red !important;
   cursor: pointer;
   @include respond-to(wide-screens) {
@@ -141,6 +141,7 @@ a.toggle_menu {
 .scroll_mobile a.toggle_menu {
   @include font-size(30px);
   position: absolute;
+    @include font_glyph;
   right: $spacing_small;
 
 }

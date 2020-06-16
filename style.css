@@ -7674,7 +7674,6 @@ a.toggle_menu {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #333333;
-  font-family: "dim-stcn-glyphsregular", serif;
   color: #EA6F51 !important;
   cursor: pointer;
 }
@@ -7700,6 +7699,7 @@ a.toggle_menu {
   font-size: 30px;
   font-size: 1.875rem;
   position: absolute;
+  font-family: "dim-stcn-glyphsregular", serif;
   right: 25px;
 }
 
