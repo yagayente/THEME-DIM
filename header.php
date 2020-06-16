@@ -13,7 +13,11 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>  >
-
+<script type="text/javascript">
+document.body.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+});
+</script>
   <div class="grille_dev">
     <div class="box">X1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
     <div class="box">5</div><div class="box">6</div><div class="box">7</div><div class="box">8</div>
