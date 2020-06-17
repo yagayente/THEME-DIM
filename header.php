@@ -31,25 +31,5 @@
   <?php get_template_part('template-parts/menu2');?>
 	</header><!-- #masthead -->
 
-  <nav class="nav">
-  	<div class="outside_menu">
-  	</div>
-  	<div class="content_menu">
-          <?php
-          $page = get_page_by_title('Accueil' );
-          $pag1 = get_page_by_title('Home' );
-          $ids = "{$page->ID},{$pag1->ID}";
-          wp_nav_menu(
-            array(
-              'theme_location' => 'header-menu',
-              'menu_id'        => 'Menu_principal_mobile',
-              'exclude' => $ids,
-              'container' => 'ul',
-              'menu_class'=> 'Menu_principal_mobile'
-            )
-          );
-          ?>
-          <ul class="Menu_principal_mobile_2"><?php pll_the_languages();?></ul>
-  	</div>
-  </nav>
+  
 <div class="breadcrumb"><?php echo my_path_breadcrumbs(); ?>*/</div>
