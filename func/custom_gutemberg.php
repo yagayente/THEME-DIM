@@ -15,6 +15,8 @@ add_action( 'after_setup_theme', 'wpdc_disable_gutenberg_colour_settings' );
 add_theme_support('disable-custom-font-sizes');
 
 
+// disable gutemberg for posts
+add_filter('use_block_editor_for_post', '__return_false', 10);
 
 
  //*  QUEL TYPE DE BLOCK DISPLAY ?
