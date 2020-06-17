@@ -190,7 +190,7 @@ overflow-y: hidden;
 @include respond-to(small-screens) {
 padding-right: $spacing_small;
 padding-left: $spacing_small;
-padding-bottom: $spacing_small;
+padding-bottom: 50vh;
 }
 }
 
