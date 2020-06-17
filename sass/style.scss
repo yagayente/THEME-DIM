@@ -37,11 +37,7 @@ body {
   overflow-x: hidden; //horizontal
 }
 
-body > .mainwrapper {
 
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; /* enables “momentum” (smooth) scrolling */
-}
 
 
 ::-moz-selection { background: #e0e0e0; opacity: 1; color:white;}

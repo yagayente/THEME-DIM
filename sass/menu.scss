@@ -76,7 +76,7 @@
      overflow: hidden;
      float: left;
      @include respond-to-bis(middle-screens) {
-        width    : 50%;
+        width    : 100%;
      }
 }
 .Menu_général_gauche .logo_area .block_image_logo img.logoprincipale, .Menu_général_gauche .logo_area .block_image_logo img.logoprincipalehover{
