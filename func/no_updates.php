@@ -4,6 +4,7 @@ Plugin Name: Pas de mise à jour
 Plugin URI: #
 Version: 1.0
 Author: Simon Bouchard
+https://jasonjalbuena.com/disable-wordpress-update-notifications/
 */
 
 
