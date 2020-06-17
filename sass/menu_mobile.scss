@@ -538,13 +538,16 @@ ul.Menu_principal_mobile_2 li a:hover{
 
 
 .logo_site  .boxlogo_site {
-
    width: 100%;
    float: left;
 }
 .intro_site_mobile {
-  display: none;
+  width: 30%;
+  margin-left: 120px;
+  float: left;
 }
+
+
 .intro_site_mobile h1 {
   font-size: 0px;
 }
@@ -561,7 +564,8 @@ ul.Menu_principal_mobile_2 li a:hover{
   color: $red;
 }
 .logo_site  .boxlogo_site .box_mobile_logo{
-width: 100%;
+margin-left: $spacing_small;
+width: 76px;
 height: 100%;
  position: relative;
 }

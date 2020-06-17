@@ -122,7 +122,10 @@ img.logoprincipalehover {z-index: map-get($z-index, logohover);}
   @include respond-to-bis(middle-screens) {
     display: none;
 }
-
+@include respond-to-bis(small-screens) {
+  width    : 50%;
+  display: inline-block;
+}
 }
 .Menu_général_gauche .logo_area .block_text_logo .enfant_block_text_logo {
   position: absolute;/* centrage vertical iE*/
