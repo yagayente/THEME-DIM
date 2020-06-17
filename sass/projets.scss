@@ -162,7 +162,13 @@ height: 100vh;
 
 .article_complet a {
     text-decoration: none;
+    border-bottom: 1px solid $black;
     color: $black;
+}
+.article_complet a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $red;
+    color: $red;
 }
 
 .article_complet .entryheaderprojet {

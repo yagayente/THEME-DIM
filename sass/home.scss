@@ -399,6 +399,7 @@ display: none;
       @include respond-to(small-screens){
         height: $hauteur_de_post_home_small;
         width: 100%;
+        @include mixin_border_bottom;
 
       }
 }
