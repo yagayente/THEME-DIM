@@ -2064,6 +2064,7 @@ body.home .row {
   float: left;
   margin-right: 9px;
   margin-bottom: 9px;
+  border-bottom: 0px;
   background-color: #EA6F51;
   color: white;
 }
@@ -7837,6 +7838,7 @@ a.toggle_menu {
   float: left;
   margin-right: 9px;
   margin-bottom: 9px;
+  border-bottom: 0px;
   background-color: #EA6F51;
   color: white;
   white-space: pre-wrap;
@@ -8007,6 +8009,7 @@ input:checked + label::before {
   float: left;
   margin-right: 9px;
   margin-bottom: 9px;
+  border-bottom: 0px;
   background-color: #EA6F51;
   color: white;
   text-decoration: none;
