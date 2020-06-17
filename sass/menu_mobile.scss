@@ -179,7 +179,7 @@ overflow-y:scroll;
 }
 .scroll_mobile {
   overflow-y: scroll;
-  height: 100vh;
+  min-height: 100vh;
   @include respond-to(wide-screens) {
 overflow-y: hidden;
 
