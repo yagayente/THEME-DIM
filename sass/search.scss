@@ -108,7 +108,7 @@ div.sticky {
 
 padding: 0;
     position: fixed;
-    height: 100%;
+    min-height: 110vh;
     width: 100%;
     background-color: white;
     top:0px;

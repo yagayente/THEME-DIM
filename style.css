@@ -3180,7 +3180,7 @@ p.close_search:hover {
 
 .scroll_mobile {
   overflow-y: scroll;
-  height: 100vh;
+  min-height: 100vh;
 }
 @media only screen and (min-width: 1524px) {
   .scroll_mobile {
@@ -7702,7 +7702,7 @@ div.sticky {
   div.sticky {
     padding: 0;
     position: fixed;
-    height: 100%;
+    min-height: 110vh;
     width: 100%;
     background-color: white;
     top: 0px;
