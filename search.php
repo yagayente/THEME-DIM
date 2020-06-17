@@ -9,21 +9,26 @@ get_header(); ?>
 <script>
 $(window).resize(function() {
   if ( window.innerWidth >  520 ) {
-      document.getElementById("stick").style.display =
-      'block';
+      document.getElementById("stick").style.display ='block';
+      document.getElementById("bodystick").style.overflowY ='scroll';
       }else {
-        document.getElementById("stick").style.display =
-        'none';
+        document.getElementById("stick").style.display ='none';
       }
 });
 
 function myFunction() {
   var x = document.getElementById("stick");
+  var bodyit = document.getElementById("bodystick");
+
   if (x.style.display === "none") {
     x.style.display = "block";
+    bodyit.style.overflowY = "hidden";
   } else {
     x.style.display = "none";
+    bodyit.style.overflowY = "scroll";
   }
+
+
 }
 </script>
 

@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>  >
+<body id="bodystick">
 <div class="mainwrapper">
 
 

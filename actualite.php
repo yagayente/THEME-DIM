@@ -66,4 +66,3 @@ function myFunction() {
   </style>
     <?php
     get_footer(); ?>
-</div>
