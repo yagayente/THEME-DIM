@@ -1565,6 +1565,13 @@ body.home .row {
 }
 
 .illustration_home {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   z-index: 3 !important;
   background-color: rgba(117, 190, 218, 0.5);
   top: 0px;
@@ -8111,7 +8118,7 @@ input.sf-input-radio {
   z-index: 5;
   display: inline-block;
   width: 100%;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 @media only screen and (min-width: 1524px) {

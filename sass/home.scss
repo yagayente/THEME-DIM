@@ -137,6 +137,7 @@ body.home .row {
 
 
 .illustration_home {
+  @include fadein;
   z-index: 3!important;
     background-color: $my_color_transpa;
     top:0px;
