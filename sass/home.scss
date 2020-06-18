@@ -420,9 +420,9 @@ display: none;
 }
 .display_article article:last-child {
   margin-bottom: 0px;
-
-
 }
+
+
 .display_article article header.entry-header-home  {
   position: absolute;
 
@@ -554,5 +554,6 @@ display: none;
 .display_article article:nth-of-type(3n){
 @include mixin_border_left;
 @include respond-to(small-screens){
-          border-left: none;}
+          border-left: none;
+        border-bottom: none;}
 }

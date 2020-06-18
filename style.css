@@ -2237,6 +2237,7 @@ body.home .row {
 @media only screen and (max-width: 520px) {
   .display_article article:nth-of-type(3n) {
     border-left: none;
+    border-bottom: none;
   }
 }
 
@@ -8779,8 +8780,7 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_articlefooter .logo1, .structure_de_page_articlefooterhome .logo1 {
-    width: 40%;
-    margin-left: 5%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
@@ -8797,29 +8797,57 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_articlefooter .boxlogo, .structure_de_page_articlefooterhome .boxlogo {
-    margin-left: 0px;
     width: 65%;
   }
 }
 
-.boxlogo img.logoiledefrance {
+.structure_de_page_articlefooter .logo2 .boxlogo2, .structure_de_page_articlefooterhome .logo2 .boxlogo2 {
+  width: 55%;
+  margin-right: 15%;
+  float: right;
+  height: 100%;
+  position: relative;
+}
+@media only screen and (max-width: 520px) {
+  .structure_de_page_articlefooter .logo2 .boxlogo2, .structure_de_page_articlefooterhome .logo2 .boxlogo2 {
+    width: 65%;
+  }
+}
+
+.structure_de_page_articlefooter .logo2 .boxlogo2 img.logosorbonne {
+  right: 0px;
+}
+
+.boxlogo img.logoiledefrance, .boxlogo2 img.logoiledefrance {
   width: 110px;
 }
 
-.boxlogo img.logosorbonne {
+.boxlogo img.logosorbonne, .boxlogo2 img.logosorbonne {
   width: 110px;
 }
 
-.structure_de_page_articlefooter .logo1 img, .structure_de_page_articlefooter .logo2 img,
-.structure_de_page_articlefooterhome .logo1 img, .structure_de_page_articlefooterhome .logo2 img {
+.structure_de_page_articlefooter .logo1 img,
+.structure_de_page_articlefooterhome .logo1 img {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translate(0%, -50%);
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
-  .structure_de_page_articlefooter .logo1 img, .structure_de_page_articlefooter .logo2 img,
-.structure_de_page_articlefooterhome .logo1 img, .structure_de_page_articlefooterhome .logo2 img {
+  .structure_de_page_articlefooter .logo1 img,
+.structure_de_page_articlefooterhome .logo1 img {
+    max-width: 90%;
+  }
+}
+
+.structure_de_page_articlefooter .logo2 .boxlogo2 img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+@media only screen and (min-width: 521px) and (max-width: 999px) {
+  .structure_de_page_articlefooter .logo2 .boxlogo2 img {
     max-width: 90%;
   }
 }
@@ -8900,6 +8928,7 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
+    text-align: center;
     width: 100%;
     padding: 25px;
   }

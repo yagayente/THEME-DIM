@@ -64,8 +64,7 @@ display: inline-block;
     width: 16.666666666666667%;
   }
   @include respond-to(small-screens){
-  width: 40%;
-  margin-left: $margeexterieur_small;
+  width: 50%;
   }
 
   @include respond-to-bis(middle-screens) {
@@ -79,26 +78,52 @@ margin-left: 15%;
 height: 100%;
  position: relative;
  @include respond-to(small-screens){
- margin-left: 0px;
  width: 65%;
  }
 }
-.boxlogo img.logoiledefrance {
+
+.structure_de_page_articlefooter .logo2 .boxlogo2, .structure_de_page_articlefooterhome .logo2 .boxlogo2{
+width: 55%;
+margin-right: 15%;
+float: right;
+height: 100%;
+ position: relative;
+ @include respond-to(small-screens){
+ width: 65%;
+ }
+}
+.structure_de_page_articlefooter .logo2 .boxlogo2 img.logosorbonne {
+  right: 0px;
+}
+
+.boxlogo img.logoiledefrance, .boxlogo2 img.logoiledefrance {
   width: 110px;
 }
-.boxlogo img.logosorbonne {
+.boxlogo img.logosorbonne, .boxlogo2 img.logosorbonne {
   width: 110px;
 }
 
 
-.structure_de_page_articlefooter .logo1 img, .structure_de_page_articlefooter .logo2 img,
-.structure_de_page_articlefooterhome .logo1 img, .structure_de_page_articlefooterhome .logo2 img
+.structure_de_page_articlefooter .logo1 img,
+.structure_de_page_articlefooterhome .logo1 img,
 
 {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translate(0%, -50%);
+  @include respond-to-bis(middle-screens) {
+    max-width: 90%;
+  }
+}
+
+.structure_de_page_articlefooter .logo2 .boxlogo2 img,
+
+{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
   @include respond-to-bis(middle-screens) {
     max-width: 90%;
   }
@@ -154,6 +179,7 @@ height: 100%;
       width: 66.6666%;
   }
   @include respond-to(small-screens){
+    text-align: center;
     width: 100%;
     padding: $spacing_small;
     }

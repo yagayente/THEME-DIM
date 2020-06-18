@@ -12,7 +12,7 @@
   </div>
 
   <div class="logo2">
-      <div class="boxlogo">
+      <div class="boxlogo2">
         <img class="logosorbonne" <?php awesome_acf_responsive_image(get_field( 'partenaire_1', 'option' ),'2-width','640px'); ?>  alt="text" />
 
 
