@@ -178,7 +178,24 @@ body.home .row {
   -webkit-filter: none;
    filter: none;
    background-blend-mode: normal;
+   @include respond-to(small-screens){
+     cursor: crosshair;
+     -webkit-filter: url(#traitement_couleur_1) saturate(100%);
+     -moz-filter: url(#traitement_couleur_1) saturate(100%);
+     -o-filter: url(#traitement_couleur_1)saturate(100%);
+     -ms-filter: url(#traitement_couleur_1) saturate(100%);
+     filter: url(#traitement_couleur_1) saturate(100%);
+
+   }
   }
+
+.illustration_home:active {
+  @include respond-to(small-screens){
+    -webkit-filter: none;
+     filter: none;
+     background-blend-mode: normal;
+  }
+}
 
 #illustration_home.stick {
     margin-top: 0;

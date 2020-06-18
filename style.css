@@ -1619,6 +1619,24 @@ body.home .row {
   filter: none;
   background-blend-mode: normal;
 }
+@media only screen and (max-width: 520px) {
+  .illustration_home:hover {
+    cursor: crosshair;
+    -webkit-filter: url(#traitement_couleur_1) saturate(100%);
+    -moz-filter: url(#traitement_couleur_1) saturate(100%);
+    -o-filter: url(#traitement_couleur_1) saturate(100%);
+    -ms-filter: url(#traitement_couleur_1) saturate(100%);
+    filter: url(#traitement_couleur_1) saturate(100%);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .illustration_home:active {
+    -webkit-filter: none;
+    filter: none;
+    background-blend-mode: normal;
+  }
+}
 
 #illustration_home.stick {
   margin-top: 0;
