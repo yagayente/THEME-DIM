@@ -19,6 +19,7 @@
 .setup p.hidden a {
   @include link_noir;
     padding-right: 10px;
+    border-bottom: none;
 }
 .setup p.hidden a:hover {
   @include link_noir_over;

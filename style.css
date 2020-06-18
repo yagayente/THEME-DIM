@@ -3931,6 +3931,7 @@ ul.Menu_principal_mobile_2 li a:hover {
   text-decoration: none;
   color: #333333;
   padding-right: 10px;
+  border-bottom: none;
 }
 
 .setup p.hidden a:hover {
