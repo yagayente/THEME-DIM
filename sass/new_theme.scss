@@ -136,11 +136,5 @@
     -webkit-filter: none;
      filter: none;
      background-blend-mode: normal;
-     @include respond-to(small-screens){
-       -webkit-filter: url(#traitement_couleur_1);
-       -moz-filter: url(#traitement_couleur_1);
-       -o-filter: url(#traitement_couleur_1);
-       -ms-filter: url(#traitement_couleur_1);
-       filter: url(#traitement_couleur_1);
-     }
+ 
     }

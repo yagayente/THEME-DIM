@@ -1486,15 +1486,6 @@ img.logoprincipalehover {
   background-blend-mode: normal;
   cursor: pointer;
 }
-@media only screen and (max-width: 520px) {
-  .display_article article:hover .article_home_images img {
-    -webkit-filter: url(#traitement_couleur_1);
-    -moz-filter: url(#traitement_couleur_1);
-    -o-filter: url(#traitement_couleur_1);
-    -ms-filter: url(#traitement_couleur_1);
-    filter: url(#traitement_couleur_1);
-  }
-}
 
 .display_article article:hover .entry-header-home a.allpostlink {
   text-decoration: none;
@@ -1627,15 +1618,6 @@ body.home .row {
   -webkit-filter: none;
   filter: none;
   background-blend-mode: normal;
-}
-@media only screen and (max-width: 520px) {
-  .illustration_home:hover {
-    -webkit-filter: url(#traitement_couleur_1) saturate(100%);
-    -moz-filter: url(#traitement_couleur_1) saturate(100%);
-    -o-filter: url(#traitement_couleur_1) saturate(100%);
-    -ms-filter: url(#traitement_couleur_1) saturate(100%);
-    filter: url(#traitement_couleur_1) saturate(100%);
-  }
 }
 
 #illustration_home.stick {
@@ -6009,15 +5991,6 @@ ul.slides li.slide {
   filter: none;
   background-blend-mode: normal;
 }
-@media only screen and (max-width: 520px) {
-  .prez_gauche_projet .article_illustration img:hover {
-    -webkit-filter: url(#traitement_couleur_1);
-    -moz-filter: url(#traitement_couleur_1);
-    -o-filter: url(#traitement_couleur_1);
-    -ms-filter: url(#traitement_couleur_1);
-    filter: url(#traitement_couleur_1);
-  }
-}
 
 .structure_de_page {
   display: grid;
@@ -7675,15 +7648,6 @@ textarea {
   background-blend-mode: normal;
   cursor: pointer;
 }
-@media only screen and (max-width: 520px) {
-  #colonne .search-filter-results article:hover .article_search_images img {
-    -webkit-filter: url(#traitement_couleur_1);
-    -moz-filter: url(#traitement_couleur_1);
-    -o-filter: url(#traitement_couleur_1);
-    -ms-filter: url(#traitement_couleur_1);
-    filter: url(#traitement_couleur_1);
-  }
-}
 
 #colonne .search-filter-results article:hover a.allpostlink {
   text-decoration: none;
@@ -7699,15 +7663,6 @@ textarea {
   -webkit-filter: none;
   filter: none;
   background-blend-mode: normal;
-}
-@media only screen and (max-width: 520px) {
-  #colonne .search-filter-results article:hover .article_search_images img {
-    -webkit-filter: url(#traitement_couleur_1);
-    -moz-filter: url(#traitement_couleur_1);
-    -o-filter: url(#traitement_couleur_1);
-    -ms-filter: url(#traitement_couleur_1);
-    filter: url(#traitement_couleur_1);
-  }
 }
 
 .message {

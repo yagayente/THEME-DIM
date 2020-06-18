@@ -48,13 +48,6 @@
    filter: none;
    background-blend-mode: normal;
    cursor: pointer;
-   @include respond-to(small-screens){
-     -webkit-filter: url(#traitement_couleur_1);
-     -moz-filter: url(#traitement_couleur_1);
-     -o-filter: url(#traitement_couleur_1);
-     -ms-filter: url(#traitement_couleur_1);
-     filter: url(#traitement_couleur_1);
-   }
   }
 .display_article article:hover .entry-header-home a.allpostlink {
   @include linkover;
@@ -185,14 +178,6 @@ body.home .row {
   -webkit-filter: none;
    filter: none;
    background-blend-mode: normal;
-   @include respond-to(small-screens){
-     -webkit-filter: url(#traitement_couleur_1) saturate(100%);
-     -moz-filter: url(#traitement_couleur_1) saturate(100%);
-     -o-filter: url(#traitement_couleur_1)saturate(100%);
-     -ms-filter: url(#traitement_couleur_1) saturate(100%);
-     filter: url(#traitement_couleur_1) saturate(100%);
-
-   }
   }
 
 #illustration_home.stick {
