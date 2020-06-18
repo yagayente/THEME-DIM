@@ -4633,6 +4633,13 @@ picture.background_picture img {
 
 .categ_posttype {
   width: 100%;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   display: inline-block;
 }
 @media only screen and (min-width: 1524px) {
@@ -5186,6 +5193,13 @@ picture.background_picture img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
 }
 
 .leader {
@@ -7337,6 +7351,13 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
 }
 
 .accordionContent .texte {
@@ -8316,6 +8337,13 @@ input.sf-input-radio {
 }
 
 .article_search_images {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   z-index: 3 !important;
   bottom: 0px;
   position: absolute;

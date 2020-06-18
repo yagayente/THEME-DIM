@@ -522,6 +522,7 @@ article.projets header.entry-header p{
 
 
 .article_search_images {
+  @include fadein;
   z-index: 3!important;
   bottom: 0px;
   position: absolute;

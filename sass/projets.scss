@@ -7,6 +7,7 @@
 
 .categ_posttype {
   width: 100%;
+  @include fadein;
   display: inline-block;
   @include respond-to(wide-screens) {
     padding: $spacing_large $spacing_large_x2 0px $spacing_large_x2;
@@ -361,6 +362,7 @@ min-height: 50vh;
 .article_complet .entry-content .details_bellow {
   display: block;
   @include mixin_border_bottom;
+  @include fadein;
 }
 .leader  {
   margin-bottom: $spacing_large;

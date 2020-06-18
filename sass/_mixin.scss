@@ -161,6 +161,7 @@ animation: fadein 1s;
  -webkit-animation: fadein 1s; /* Safari and Chrome */
  -o-animation: fadein 1s; /* Opera */
 }
+
 @mixin fadeout {
 animation: fadeout 1s;
  -moz-animation: fadeout 1s; /* Firefox */
