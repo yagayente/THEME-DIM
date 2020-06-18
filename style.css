@@ -4227,6 +4227,10 @@ picture.background_picture img {
   display: none !important;
 }
 
+.formatingtext {
+  overflow-wrap: break-word;
+}
+
 .formatingtext p {
   font-family: "Open Sans", sans-serif;
   color: #333333;

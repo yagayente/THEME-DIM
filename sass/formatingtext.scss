@@ -8,8 +8,9 @@
 .components-toolbar__control[aria-label="Full width"] {
 	display: none !important;
 }
-
-
+.formatingtext {
+	overflow-wrap: break-word;
+}
 .formatingtext p {
   @include p;
 }
