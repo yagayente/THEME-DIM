@@ -31,6 +31,13 @@
    filter: none;
    background-blend-mode: normal;
    cursor: pointer;
+   @include respond-to(small-screens){
+     -webkit-filter: url(#traitement_couleur_1);
+     -moz-filter: url(#traitement_couleur_1);
+     -o-filter: url(#traitement_couleur_1);
+     -ms-filter: url(#traitement_couleur_1);
+     filter: url(#traitement_couleur_1);
+   }
   }
 
 #colonne .search-filter-results article:hover a.allpostlink {
@@ -46,6 +53,13 @@
       -webkit-filter: none;
        filter: none;
        background-blend-mode: normal;
+       @include respond-to(small-screens){
+         -webkit-filter: url(#traitement_couleur_1);
+         -moz-filter: url(#traitement_couleur_1);
+         -o-filter: url(#traitement_couleur_1);
+         -ms-filter: url(#traitement_couleur_1);
+         filter: url(#traitement_couleur_1);
+       }
       }
 
     #colonne .search-filter-results article .article_search_images img:hover  article a {
