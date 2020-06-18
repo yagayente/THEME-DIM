@@ -59,8 +59,8 @@ function myFunction() {
 
 									  		<div class="entryheaderprojet" id="entryheaderprojet">
 				                			<div class="title_project">
-									                  <h2><a href="<?php the_permalink(); ?>" class="bar" rel="<?php the_ID(); ?>" title="<?php the_title(); ?>">
-									                  <?php the_title(); ?></a>
+									                  <h2>
+									                  <?php the_title(); ?>
 									                	</h2>
 				              				</div>
 
