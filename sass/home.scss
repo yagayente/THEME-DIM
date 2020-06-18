@@ -261,10 +261,16 @@ background-color: white;
   padding-bottom: $spacing_large;
 }
 .abovethetext {
-    height: calc(#{$SMALL_line_height_title} * 10.5);
+    height: calc(#{$SMALL_line_height_title} * 12);
     width: calc(100% - #{$margeexterieur_small} * 2);
     position: absolute;
 }
+.truncate {
+  /*BOTH of the following are required for text-overflow (overflow: hidden; and white-space: nowrap;)*/
+  overflow: hidden;
+  height: calc(#{$SMALL_line_height_title} *  12);
+}
+
 .abovethetext:after {
   position: absolute;
   bottom: 0;
@@ -281,9 +287,8 @@ margin-right: auto;
 left: 0;
 right: 0;
   bottom: 0;
-  padding-bottom: $margeexterieur_small;
+  padding-bottom: $spacing_small;
   background-color: white;
-  @include line-height($SMALL_line_height_title);
 }
 
 .button_text {
@@ -315,11 +320,6 @@ right: 0;
   cursor: pointer;
 }
 
-.truncate {
-  /*BOTH of the following are required for text-overflow (overflow: hidden; and white-space: nowrap;)*/
-  overflow: hidden;
-  height: calc(#{$SMALL_line_height_title} * 10.5);
-}
 
 .truncatenone {
 display: none;
