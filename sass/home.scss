@@ -48,7 +48,24 @@
    filter: none;
    background-blend-mode: normal;
    cursor: pointer;
+   @include respond-to(small-screens){
+     cursor: crosshair;
+     -webkit-filter: url(#traitement_couleur_1);
+     -moz-filter: url(#traitement_couleur_1);
+     -o-filter: url(#traitement_couleur_1);
+     -ms-filter: url(#traitement_couleur_1);
+     filter: progid:DXImageTransform.Microsoft.blur(pixelradius=20);
+ }
   }
+
+.display_article article:active .article_home_images img {
+    @include respond-to(small-screens){
+      -webkit-filter: none;
+       filter: none;
+       background-blend-mode: normal;
+    }
+  }
+
 .display_article article:hover .entry-header-home a.allpostlink {
   @include linkover;
 }

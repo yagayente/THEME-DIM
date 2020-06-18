@@ -31,8 +31,24 @@
    filter: none;
    background-blend-mode: normal;
    cursor: pointer;
-
+   @include respond-to(small-screens){
+     cursor: crosshair;
+     -webkit-filter: url(#traitement_couleur_1);
+     -moz-filter: url(#traitement_couleur_1);
+     -o-filter: url(#traitement_couleur_1);
+     -ms-filter: url(#traitement_couleur_1);
+     filter: progid:DXImageTransform.Microsoft.blur(pixelradius=20);
+   }
   }
+
+  #colonne .search-filter-results article:active .article_search_images img{
+     @include respond-to(small-screens){
+       -webkit-filter: none;
+        filter: none;
+        background-blend-mode: normal;
+        cursor: pointer;}
+    }
+
 
 #colonne .search-filter-results article:hover a.allpostlink {
     @include linkover;
@@ -43,12 +59,7 @@
 }
 
 
-    #colonne .search-filter-results article:hover .article_search_images img{
-      -webkit-filter: none;
-       filter: none;
-       background-blend-mode: normal;
 
-      }
 
     #colonne .search-filter-results article .article_search_images img:hover  article a {
         }
