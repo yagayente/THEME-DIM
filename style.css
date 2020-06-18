@@ -8797,7 +8797,7 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(0%, -50%);
 }
 @media only screen and (min-width: 521px) and (max-width: 999px) {
   .structure_de_page_articlefooter .logo2 .boxlogo2 img {

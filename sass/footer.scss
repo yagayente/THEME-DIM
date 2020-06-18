@@ -123,9 +123,12 @@ height: 100%;
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(0%, -50%);
   @include respond-to-bis(middle-screens) {
     max-width: 90%;
+  }
+  @include respond-to-bis(small-screens) {
+    transform: translate(50%, -50%);
   }
 }
 
