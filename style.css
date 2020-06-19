@@ -8912,7 +8912,7 @@ ul.post-categories li a:hover {
 }
 @media only screen and (max-width: 520px) {
   .structure_de_page_recherche .search-filter-results article.projets:nth-child(odd) {
-    border: none;
+    border-right: none;
   }
 }
 

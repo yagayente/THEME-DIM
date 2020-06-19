@@ -352,7 +352,7 @@ ul.post-categories li a:hover {
 .structure_de_page_recherche .search-filter-results article.projets:nth-child(odd) {
     @include mixin_border_right;
     @include respond-to(small-screens){
-          border:none;
+          border-right:none;
       }
 }
 .result_alter article.projets:nth-child(even){
