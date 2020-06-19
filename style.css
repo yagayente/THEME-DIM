@@ -9661,6 +9661,7 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #333333;
+  padding-right: 5px;
 }
 
 .structure_de_page_articlefooter a:hover, .structure_de_page_articlefooterhome a:hover {

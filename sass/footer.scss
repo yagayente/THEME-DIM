@@ -45,6 +45,7 @@ display: inline-block;
 
 .structure_de_page_articlefooter a, .structure_de_page_articlefooterhome a {
   @include link;
+  padding-right: 5px;
 }
 .structure_de_page_articlefooter a:hover, .structure_de_page_articlefooterhome a:hover {
   @include linkover;
