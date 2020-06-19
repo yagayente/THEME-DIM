@@ -1622,14 +1622,14 @@ img.logoprincipalehover {
     padding: 30px 30px 30px 30px;
   }
 }
-@media only screen and (min-width: 521px) and (max-width: 999px) {
+@media only screen and (min-width: 521px) and (max-width: 1523px) {
   .prez_droite .notfound {
     padding: 25px 25px 25px 25px;
   }
 }
 @media only screen and (max-width: 520px) {
   .prez_droite .notfound {
-    padding: 25px 25px 25px 25px;
+    padding: 140px 25px 25px 25px;
   }
 }
 

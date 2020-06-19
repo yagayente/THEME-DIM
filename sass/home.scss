@@ -33,13 +33,13 @@
   @include fadein;
   color: $black;
   @include respond-to(wide-screens) {
-    padding: $spacing_large $spacing_large_x2 $spacing_large $spacing_large_x2;
+    padding: $spacing_large $spacing_large $spacing_large $spacing_large;
   }
-  @include respond-to-bis(middle-screens) {
+  @include respond-to(medium-screens) {
     padding: $spacing_medium $spacing_medium $spacing_medium $spacing_medium;
   }
   @include respond-to(small-screens){
-    padding: $spacing_small $spacing_small $spacing_small $spacing_small;
+    padding: 140px $spacing_small $spacing_small $spacing_small;
   }
 }
 
