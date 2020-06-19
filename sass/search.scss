@@ -349,14 +349,14 @@ ul.post-categories li a:hover {
 
 }
 
-.structure_de_page_recherche .search-filter-results article.projets:nth-child(even) {
+.structure_de_page_recherche .search-filter-results article.projets:nth-child(odd) {
     @include mixin_border_right;
     @include respond-to(small-screens){
           border:none;
       }
 }
-.result_alter article.projets:nth-child(odd){
-@include mixin_border_right;
+.result_alter article.projets:nth-child(even){
+
 @include respond-to(small-screens){
       border:none;
   }

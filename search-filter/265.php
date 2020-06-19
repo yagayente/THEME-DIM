@@ -29,7 +29,6 @@ if ( $query->have_posts() )
 {
 	?>
 
-	<div class="pagination">
 
 		<?php
 			/* example code for using the wp_pagenavi plugin */
@@ -39,7 +38,6 @@ if ( $query->have_posts() )
 				wp_pagenavi( array( 'query' => $query ) );
 			}
 		?>
-	</div>
 
 	<?php
    //echo '<pre>';
