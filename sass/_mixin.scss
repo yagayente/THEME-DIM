@@ -72,6 +72,10 @@
   @include prefix(transform, translateY(-50%), 'webkit' 'ms');
 }
 
+@mixin cesure {
+  word-wrap: break-word;
+  hyphens: auto;
+}
 @mixin abstract {
   @include font_courant;
   @include font-size($font_size_abstract);
@@ -293,8 +297,7 @@ margin-top:2px;
   @include line-height($line_height_title);
   font-family: 'BioRhyme', serif;
   font-weight: 200;
-  word-wrap: break-word;
-  hyphens: auto;
+  @include cesure;
   @include fadein;
   @include respond-to-bis(wide-screens) {
     @include font-size($font_size_title);
