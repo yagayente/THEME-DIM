@@ -404,15 +404,24 @@ border-top: none;
   width: 100%;
   display: inline-block;
 }
+.structure_de_page_recherche .search-filter-results .result2 article.projets {
 
+}
 .structure_de_page_recherche .search-filter-results .result2 article.projets:nth-child(2n+2)  {
-      @include mixin_border_left;
       border-right: 0px !important;
       @include respond-to(small-screens){
       border-left: none;
       border-right: none;
     }
 }
+.structure_de_page_recherche .search-filter-results .result2 article.projets:nth-child(2n+1)  {
+    @include mixin_border_right;
+      @include respond-to(small-screens){
+      border-left: none;
+      border-right: none;
+    }
+}
+
 input.sf-input-radio{
         position: absolute;
         left: -9999999px;
