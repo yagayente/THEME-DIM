@@ -5944,6 +5944,13 @@ ul.slides li.slide {
 }
 
 .article_illustration {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
   z-index: 1 !important;
   position: fixed;
   height: 100vh;

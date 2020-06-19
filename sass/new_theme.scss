@@ -67,6 +67,7 @@
   }
 
   .article_illustration {
+    @include fadein;
     z-index: 1!important;
     position: fixed;
     height: 100vh;
