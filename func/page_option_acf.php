@@ -17,9 +17,9 @@ function my_acf_op_init() {
 
         // Register options page.
         $option_page = acf_add_options_page(array(
-            'page_title'    => __('DIM'),
+            'page_title'    => __('DIM STCN'),
 						'icon_url' => 'dashicons-marker',
-            'menu_title'    => __('DIM'),
+            'menu_title'    => __('DIM STCN'),
             'menu_slug'     => 'theme-general-settings',
             'capability'    => 'edit_posts',
             'redirect'      => false,
