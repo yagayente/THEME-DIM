@@ -12,8 +12,10 @@
 					</div><!-- .prez_gauche -->
 
 				 <div class="prez_droite">
-					 <div class="notfound"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyseventeen' ); ?>
-						 <br><br>retour à la page d'accueil
+					 <div class="notfound">
+						 <span class="quatrequatre">404</span><br>
+						<?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyseventeen' ); ?>
+						 <br><br><a class="link_back_home" href="<?php echo home_url(); ?>"><?php pll_e('retour_home'); ?></a>
 					 </div>
 				 	</div>
 

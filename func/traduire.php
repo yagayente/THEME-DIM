@@ -7,6 +7,7 @@ Author: Simon Bouchard
 */
 
 add_action('init', function() {
+  pll_register_string('BASE_THEME', 'retour_home');
   pll_register_string('BASE_THEME', 'filtrage');
   pll_register_string('BASE_THEME', 'fermer');
   pll_register_string('BASE_THEME', 'error_search');

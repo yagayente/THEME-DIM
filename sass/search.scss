@@ -3,6 +3,16 @@
 @import "grid";
 
 
+.quatrequatre {
+  @include font_titrage;
+  color: $red;
+}
+a.link_back_home {
+  @include link;
+}
+a.link_back_home:hover {
+  @include linkover;
+}
 .noresult {
   width: 100%;
   color: $red;

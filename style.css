@@ -8417,6 +8417,22 @@ textarea {
   z-index: -999;
 }
 
+.quatrequatre {
+  font-family: "BioRhyme", serif;
+  color: #EA6F51;
+}
+
+a.link_back_home {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #333333;
+}
+
+a.link_back_home:hover {
+  text-decoration: none;
+  color: #EA6F51;
+}
+
 .noresult {
   width: 100%;
   color: #EA6F51;
