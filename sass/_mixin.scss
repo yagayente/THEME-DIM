@@ -10,11 +10,31 @@
           box-sizing: border-box;
 
 }
-@mixin mixin_border_top { border-top: $border solid $red; @include global_border; }
-@mixin mixin_border_bottom {border-bottom: $border solid $red; @include global_border;}
-@mixin mixin_border_right {border-right: $border solid $red; @include global_border;}
-@mixin mixin_border_left {border-left: $border solid $red; @include global_border;}
-@mixin mixin_border {border: $border solid $red; @include global_border;}
+@mixin mixin_border_top { border-top: $border solid $red; @include global_border;
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)  {border-top: $borderretina solid $red; @include global_border; }
+}
+@mixin mixin_border_bottom {border-bottom: $border solid $red; @include global_border;
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)  {border-bottom: $borderretina solid $red; @include global_border; }
+}
+@mixin mixin_border_right {border-right: $border solid $red; @include global_border;
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)  {border-right: $borderretina solid $red; @include global_border; }
+}
+@mixin mixin_border_left {border-left: $border solid $red; @include global_border;
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)  {border-left: $borderretina solid $red; @include global_border; }
+}
+@mixin mixin_border {border: $border solid $red; @include global_border;
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)  {border: $borderretina solid $red; @include global_border; }
+}
 
 @mixin mixin_border_bottom_sans {border-bottom: $border solid $red;}
 
