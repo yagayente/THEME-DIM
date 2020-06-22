@@ -1,0 +1,62 @@
+body.css_for_user  {
+  background-color: none !important;
+}
+
+body.css_for_user li.wp-has-submenu wp-has-current-submenu wp-menu-open menu-top toplevel_page_edit?post_type=search-filter-widget
+
+body.css_for_user  .row-actions .trash, body.role-administrator  .row-actions .duplicate {
+  display: none !important;
+}
+
+body.css_for_user #search-filter-welcome-panel{
+  display: none !important;
+}
+
+body.css_for_user .sf_tab_content_taxonomies table tbody tr:nth-child(3n) {
+display: none !important;
+}
+body.css_for_user .sf_tab_content_taxonomies table tbody tr:nth-child(4n) {
+display: none !important;
+}
+body.css_for_user .sf_tab_content_taxonomies table tbody tr:nth-child(5n) {
+display: none !important;
+}
+body.css_for_user .sf_tab_content_taxonomies table tbody tr:nth-child(6n) {
+display: none !important;
+}
+body.css_for_user .sf_tab_content_taxonomies table tbody tr:nth-child(7n) {
+display: none !important;
+}
+body.css_for_user  .wrap .wp-heading-inline+.page-title-action{
+  display: none !important;
+}
+
+body.css_for_user .tab-header label {
+  display: none;
+}
+body.css_for_user  .form-wrap p, p.description {
+  display: none !important;
+}
+body.css_for_user #search-filter-shortcodes {
+  display: none !important;
+}
+body.css_for_user  .sf_tab_content_settings {
+  display: none !important;
+}
+body.css_for_user .widgets-search-filter-sortables {
+display: none;
+}
+body.css_for_user #search-filter-available-fields {
+  display: none;
+}
+body.css_for_user .sf_tab_content_taxonomies {
+  display: block;
+}
+
+body.css_for_user .sf_tab_content_taxonomies {
+  display: block;
+}
+
+#adminmenumain #adminmenuwrap #adminmenu #toplevel_page_edit-post_type-search-filter-widget ul.wp-submenu wp-submenu-wrap {
+  display: none;
+}
