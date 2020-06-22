@@ -2,6 +2,10 @@ body.css_for_user  {
   background-color: none !important;
 }
 
+.wrap .pll-notice {
+  display: none !important;
+}
+
 body.css_for_user li.wp-has-submenu wp-has-current-submenu wp-menu-open menu-top toplevel_page_edit?post_type=search-filter-widget
 
 body.css_for_user  .row-actions .trash, body.role-administrator  .row-actions .duplicate {
