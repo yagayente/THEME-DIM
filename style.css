@@ -1872,8 +1872,6 @@ body.home .row {
   line-height: 2.5rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  word-wrap: break-word;
-  hyphens: auto;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -1925,8 +1923,6 @@ body.home .row {
   line-height: 2.5rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  word-wrap: break-word;
-  hyphens: auto;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -2010,8 +2006,6 @@ body.home .row {
   line-height: 2.5rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  word-wrap: break-word;
-  hyphens: auto;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -2349,8 +2343,6 @@ body.home .row {
   line-height: 2.5rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  word-wrap: break-word;
-  hyphens: auto;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */
@@ -9091,8 +9083,6 @@ input.sf-input-radio {
   line-height: 2.5rem;
   font-family: "BioRhyme", serif;
   font-weight: 200;
-  word-wrap: break-word;
-  hyphens: auto;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   /* Firefox */

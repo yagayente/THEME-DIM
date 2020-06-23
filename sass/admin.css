@@ -1,3 +1,8 @@
+body.css_for_user  p.description {
+  display: none !important;
+}
+
+
 body.css_for_user  {
   background-color: none !important;
 }
@@ -38,9 +43,7 @@ body.css_for_user  .wrap .wp-heading-inline+.page-title-action{
 body.css_for_user .tab-header label {
   display: none;
 }
-body.css_for_user  .form-wrap p, p.description {
-  display: none !important;
-}
+
 body.css_for_user #search-filter-shortcodes {
   display: none !important;
 }
