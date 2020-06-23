@@ -165,14 +165,17 @@ height: 100%;
 
     }
 }
-
 .structure_de_page_articlefooter .logo4, .structure_de_page_articlefooterhome .logo4 {
   @include fadein;
   @include font_courant;
   @include font-size(9px);
   @include line-height(13px);
   text-transform: uppercase;
-  padding-top: 13px;
+
+  height: 100%;
+  align-items: center;
+  display: flex;
+
   color: $black;
   float: left;
   width: 33.3333%;
@@ -188,7 +191,11 @@ height: 100%;
     padding: $spacing_small;
     }
 }
+.structure_de_page_articlefooter .logo4 .vertical, .structure_de_page_articlefooterhome .logo4 .vertical {
 
+  display: flex;
+ align-items: center;
+}
 
 
 /* FOOTER 2 */

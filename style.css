@@ -9049,7 +9049,7 @@ input.sf-input-radio {
   z-index: 5;
   display: inline-block;
   width: 100%;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media only screen and (min-width: 1524px) {
@@ -9815,7 +9815,9 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
   line-height: 13px;
   line-height: 0.8125rem;
   text-transform: uppercase;
-  padding-top: 13px;
+  height: 100%;
+  align-items: center;
+  display: flex;
   color: #333333;
   float: left;
   width: 33.3333%;
@@ -9836,6 +9838,11 @@ body.page-template-presentation-php .structure_de_page_articlefooter {
     width: 100%;
     padding: 25px;
   }
+}
+
+.structure_de_page_articlefooter .logo4 .vertical, .structure_de_page_articlefooterhome .logo4 .vertical {
+  display: flex;
+  align-items: center;
 }
 
 /* FOOTER 2 */

@@ -22,12 +22,22 @@
 
 
   <div class="logo4">
+    <div class="vertical">
     <?php pll_e('all_right'); ?> &#169; <?php bloginfo('name'); ?> <?php echo date('Y'); ?><br>
     <?php pll_e('credit'); ?><br>
     <?php if( have_rows('reseaux_sociaux', 'option') ): while ( have_rows('reseaux_sociaux', 'option') ) : the_row();?>
-    <a href="<?php the_sub_field('lien_vers_le_reseau_social');?>" target="_blank"><?php the_sub_field('nom_du_reseau_social');?></a>
-  <?php endwhile; else : endif; ?><br>
+      <?php
+        $link = the_sub_field('lien_vers_le_reseau_social');
+        $name = the_sub_field('nom_du_reseau_social');
+      ?>
+      <?php if( $link ): ?>
+      <a href=”<?php echo $link; ?>” target=”_blank”> <?php echo $name; ?>
+      <?php endif; ?>
+      </a>
 
+  <?php endwhile; else : endif; ?>
+
+    <div>
   </div>
 
 

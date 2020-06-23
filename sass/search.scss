@@ -365,6 +365,9 @@ ul.post-categories li a:hover {
           border-right:none;
       }
 }
+
+
+
 .result_alter article.projets:nth-child(even){
 
 @include respond-to(small-screens){
@@ -450,7 +453,7 @@ article.projets header.entry-header  {
   z-index: 5;
   display: inline-block;
   width: 100%;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .structure_de_page_recherche
 .search-filter-results
