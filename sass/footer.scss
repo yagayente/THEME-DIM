@@ -35,6 +35,7 @@ background-color: white;
 padding-top: $spacing_large;
 width: 100%;
 height: calc(#{$hauteurderow_large} * 2);
+padding-bottom: $spacing_large;
 @include mixin_border_top;
 display: inline-block;
 @include respond-to(small-screens){
