@@ -4742,6 +4742,11 @@ picture.background_picture img {
 
 .formatingtext ol li {
   padding-bottom: calc(30px / 1.5);
+  margin-left: 1.3em;
+}
+
+.formatingtext ul li {
+  margin-left: 1.3em;
 }
 
 .formatingtext ol li::before {
@@ -4750,8 +4755,8 @@ picture.background_picture img {
   counter-increment: number;
   content: counter(number) " ";
   display: inline-block;
-  width: 1em;
-  margin-left: -0.7em;
+  width: 2em;
+  margin-left: -2em;
 }
 
 .formatingtext ul {
@@ -4773,8 +4778,8 @@ picture.background_picture img {
   content: "•";
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -0.7em;
+  width: 2em;
+  margin-left: -2em;
   margin-top: 2px;
 }
 

@@ -37,8 +37,11 @@
 }
 .formatingtext ol li{
   @include li;
+	margin-left: 1.3em;
 }
-
+.formatingtext ul li{
+	margin-left: 1.3em;
+}
 .formatingtext ol li::before {
   @include ol_li_before;
 }

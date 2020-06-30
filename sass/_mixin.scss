@@ -257,8 +257,8 @@ animation: fadeout 1s;
   counter-increment: number;
   content: counter(number)"\a0";
   display: inline-block;
-  width: 1em;
-  margin-left: -0.7em;
+  width: 2em;
+  margin-left: -2em;
 }
 
 @mixin ul_li_before {
@@ -266,8 +266,8 @@ content: "\2022";
 font-weight: bold;
 
 display: inline-block;
-width: 1em;
-margin-left: -0.7em;
+width: 2em;
+margin-left: -2em;
 margin-top:2px;
 }
 
