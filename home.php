@@ -20,7 +20,7 @@ get_header();
 
         <?php
         $images = get_field('gallerie_homepage', false);
-        $rand = array_rand($images, 1);
+				$rand = array_rand($images, 1);
         if( $images ): ?>
                     <svg version="1.1" width="0" height="0" class="filter-rot">
 

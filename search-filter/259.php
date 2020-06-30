@@ -68,9 +68,12 @@ while ($query->have_posts())
 
 else
 {
-  echo '<div class="noresult">' ?>
-        <?php pll_e('error_article') ?>
-        </div>
+  echo
+
+        '<div class="noresult"><span data-search-filter-action="infinite-scroll-end">'?>
+              <?php pll_e('error_search') ?>
+              </span></div>
+              <div class="result2">
 
 
         	<?php
@@ -104,3 +107,4 @@ else
         	}
         }
         ?>
+</div>
