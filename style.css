@@ -9055,6 +9055,7 @@ input.sf-input-radio {
   display: inline-block;
   width: 100%;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 @media only screen and (min-width: 1524px) {
@@ -9075,6 +9076,7 @@ input.sf-input-radio {
 
 .structure_de_page_recherche .search-filter-results article.projets header.entry-header .subwhite {
   background-color: white;
+  overflow-y: hidden;
   overflow-x: hidden;
   z-index: 8888;
   display: inline-block;

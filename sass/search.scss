@@ -454,6 +454,7 @@ article.projets header.entry-header  {
   display: inline-block;
   width: 100%;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 .structure_de_page_recherche
 .search-filter-results
@@ -475,6 +476,7 @@ article.projets header.entry-header .subwhite {
 .search-filter-results
 article.projets header.entry-header .subwhite{
   background-color: white;
+  overflow-y: hidden;
   overflow-x: hidden;
   z-index: 8888;
   display: inline-block;
