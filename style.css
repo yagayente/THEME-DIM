@@ -8668,9 +8668,6 @@ a.toggle_menu {
   padding: 0 0 10px 0 !important;
 }
 
-.searchandfilter ul li {
-  float: left;
-}
 @media only screen and (max-width: 520px) {
   .searchandfilter ul li {
     float: left;
@@ -8678,7 +8675,7 @@ a.toggle_menu {
 }
 
 .searchandfilter ul li ul.children {
-  float: right;
+  display: inline !important;
 }
 
 .searchandfilter ul li ul li ul {
@@ -8778,8 +8775,9 @@ a.search-filter-reset {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #333333;
-  margin-top: 30px;
+  margin-top: 10px;
   display: block;
+  text-align: left;
 }
 
 .searchandfilter ul li ul li label.sf-label-radio {
@@ -8787,6 +8785,7 @@ a.search-filter-reset {
   padding: 0;
   margin: 0;
   margin-right: 10px;
+  margin-bottom: 15px;
 }
 
 .searchandfilter ul li ul li label.sf-label-radio:hover {
