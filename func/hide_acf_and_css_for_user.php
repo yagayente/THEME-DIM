@@ -65,9 +65,6 @@
       remove_menu_page( 'jetpack' );                    //Jetpack*
       remove_menu_page( 'edit-comments.php' );          //Comments
       remove_menu_page( 'themes.php' );                 //Appearance
-      remove_menu_page( 'tools.php' );                  //Tools
-
-      remove_menu_page( 'users.php' );
   }
   add_action( 'admin_menu', 'wpdocs_remove_menus' );
 
